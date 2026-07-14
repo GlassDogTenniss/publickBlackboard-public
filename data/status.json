@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-14T15:55:36.584Z",
-  "sourceUpdatedAt": "2026-07-15T00:44:00+09:00",
+  "generatedAt": "2026-07-14T16:13:27.176Z",
+  "sourceUpdatedAt": "2026-07-15T01:08:00+09:00",
   "runs": [
     {
       "id": "run_20260712T224706JST_jrpg",
@@ -9,7 +9,7 @@
       "theme": "マネージャー、要件定義、アセット、実装、独立検証、レビューを固定順序で一つずつ実行し、一般販売可能な2D JRPGを反復制作する",
       "status": "in_progress",
       "createdAt": "2026-07-12T22:47:06+09:00",
-      "updatedAt": "2026-07-15T00:44:00+09:00",
+      "updatedAt": "2026-07-15T01:08:00+09:00",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_agent",
@@ -133,8 +133,8 @@
           "agentId": "program_agent",
           "agentName": "プログラム",
           "status": "ready",
-          "attempt": 23,
-          "completedAt": "2026-07-15T00:44:00+09:00"
+          "attempt": 24,
+          "completedAt": "2026-07-15T01:08:00+09:00"
         },
         {
           "id": "program_validation",
@@ -200,6 +200,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 16,
+          "taskId": "program_build",
+          "taskLabel": "program build",
+          "agentId": "",
+          "status": "completed",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": "program_build"
+        },
         {
           "iteration": 16,
           "taskId": "",
