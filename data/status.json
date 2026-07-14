@@ -1,6 +1,5 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-14T17:59:00+09:00",
   "sourceUpdatedAt": "2026-07-14T17:59:00+09:00",
   "workflowId": "jrpg_product_workflow_20260712T224706JST",
   "runId": "run_20260712T224706JST_jrpg",
@@ -13,6 +12,13 @@
   "currentAgent": "program_agent",
   "tasks": [
     {
+      "taskId": "asset_creation",
+      "agentId": "asset_agent",
+      "status": "completed",
+      "attempt": 15,
+      "updatedAt": null
+    },
+    {
       "taskId": "manager_direction",
       "agentId": "manager_agent",
       "status": "completed",
@@ -20,18 +26,11 @@
       "updatedAt": null
     },
     {
-      "taskId": "requirements_definition",
-      "agentId": "requirements_agent",
+      "taskId": "manager_review",
+      "agentId": "manager_agent",
       "status": "completed",
-      "attempt": 15,
-      "updatedAt": "2026-07-14T13:05:26+09:00"
-    },
-    {
-      "taskId": "asset_creation",
-      "agentId": "asset_agent",
-      "status": "completed",
-      "attempt": 15,
-      "updatedAt": "2026-07-14T13:15:37+09:00"
+      "attempt": 22,
+      "updatedAt": "2026-07-14T17:58:30+09:00"
     },
     {
       "taskId": "program_build",
@@ -48,11 +47,12 @@
       "updatedAt": null
     },
     {
-      "taskId": "manager_review",
-      "agentId": "manager_agent",
+      "taskId": "requirements_definition",
+      "agentId": "requirements_agent",
       "status": "completed",
-      "attempt": 22,
-      "updatedAt": "2026-07-14T17:58:30+09:00"
+      "attempt": 15,
+      "updatedAt": null
     }
-  ]
+  ],
+  "generatedAt": "2026-07-14T10:21:01.671Z"
 }
