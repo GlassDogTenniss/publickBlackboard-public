@@ -3,71 +3,156 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="description" content="publicBlackboard workflow status">
-  <title>publicBlackboard Status</title>
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="publicBlackboard public workflow map">
+  <title>publicBlackboard Workflow Map</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="topbar">
     <div>
       <p class="eyebrow">publicBlackboard</p>
-      <h1>Workflow Status</h1>
+      <h1>Workflow Map</h1>
     </div>
-    <button id="reloadButton" type="button">再読込</button>
+    <div class="topbar-actions">
+      <label class="run-picker">
+        <span>表示するrun</span>
+        <select id="runSelect" aria-label="表示するrun"></select>
+      </label>
+      <button id="reloadButton" type="button">再読込</button>
+    </div>
   </header>
 
   <main>
-    <section id="errorPanel" class="error-panel" hidden></section>
-
-    <section class="summary-grid" aria-label="workflow summary">
-      <article class="summary-card">
-        <span>状態</span>
-        <strong id="workflowStatus">読込中</strong>
-      </article>
-      <article class="summary-card">
-        <span>現在のtask</span>
-        <strong id="currentTask">—</strong>
-        <small id="currentAgent">—</small>
-      </article>
-      <article class="summary-card">
-        <span>iteration</span>
-        <strong id="iteration">—</strong>
-      </article>
-      <article class="summary-card">
-        <span>最終更新</span>
-        <strong id="updatedAt">—</strong>
-        <small id="freshness">—</small>
-      </article>
+    <section id="emptyState" class="empty-state" hidden>
+      <h2>表示できるrunがありません</h2>
+      <p>公開ステータスが生成されると、ここにWorkflow Mapが表示されます。</p>
     </section>
 
-    <section class="panel">
-      <div class="panel-heading">
+    <section id="dashboard" hidden>
+      <div class="headline-row">
         <div>
-          <p class="eyebrow">Tasks</p>
-          <h2>進行状況</h2>
+          <div class="title-line">
+            <h2 id="workflowTitle"></h2>
+            <span id="workflowStatus" class="status-pill"></span>
+          </div>
+          <p id="workflowTheme" class="workflow-theme"></p>
         </div>
-        <span id="runId" class="run-id"></span>
+        <div class="freshness">
+          <span>データ生成</span>
+          <strong id="generatedAt"></strong>
+        </div>
       </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>task</th>
-              <th>担当</th>
-              <th>状態</th>
-              <th>attempt</th>
-              <th>更新</th>
-            </tr>
-          </thead>
-          <tbody id="taskTableBody"></tbody>
-        </table>
-      </div>
+
+      <section id="statusAlert" class="status-alert" hidden aria-live="assertive"></section>
+
+      <section class="summary-grid" aria-label="workflow summary">
+        <article class="summary-card">
+          <span>現在のtask</span>
+          <strong id="currentTask"></strong>
+          <small id="currentAgent"></small>
+        </article>
+        <article class="summary-card">
+          <span>進捗</span>
+          <strong id="progressValue"></strong>
+          <div class="progress-track"><i id="progressBar"></i></div>
+        </article>
+        <article class="summary-card">
+          <span>反復</span>
+          <strong id="iterationValue"></strong>
+          <small id="nextAction"></small>
+        </article>
+        <article class="summary-card">
+          <span>最終更新</span>
+          <strong id="updatedAt"></strong>
+          <small id="runId"></small>
+        </article>
+      </section>
+
+      <section class="graph-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Agent graph</p>
+            <h2>作業の流れ</h2>
+          </div>
+          <div class="graph-actions">
+            <span class="legend"><i class="legend-active"></i>稼働中</span>
+            <span class="legend"><i class="legend-waiting"></i>待機中</span>
+            <span class="legend"><i class="legend-completed"></i>完了</span>
+            <button id="resetLayoutButton" type="button">配置を戻す</button>
+          </div>
+        </div>
+        <p class="graph-help">カードはドラッグして配置できます。線は配置に追従します。</p>
+        <div id="graphViewport" class="graph-viewport">
+          <div id="graphStage" class="graph-stage">
+            <svg id="edgeLayer" class="edge-layer" aria-hidden="true">
+              <defs>
+                <marker id="arrowDefault" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L8,4 L0,8 z"></path>
+                </marker>
+              </defs>
+            </svg>
+            <div id="nodeLayer" class="node-layer"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-grid">
+        <article class="detail-card">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Selected agent</p>
+              <h2 id="selectedAgentTitle">agentを選択</h2>
+            </div>
+          </div>
+          <div id="selectedAgentDetail" class="selected-agent-detail">
+            グラフのカードをクリックすると詳細を表示します。
+          </div>
+        </article>
+
+        <article class="detail-card">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Recent activity</p>
+              <h2>直近の引き継ぎ</h2>
+            </div>
+          </div>
+          <ol id="historyList" class="history-list"></ol>
+        </article>
+      </section>
+
+      <section class="detail-card task-section">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Tasks</p>
+            <h2>task一覧</h2>
+          </div>
+          <div id="sourceLinks" class="source-links">
+            <a id="statusLink" target="_blank" rel="noreferrer">公開status.json</a>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>状態</th>
+                <th>task</th>
+                <th>agent</th>
+                <th>送信予定</th>
+                <th>送信済み</th>
+                <th>更新</th>
+                <th>成果物</th>
+              </tr>
+            </thead>
+            <tbody id="taskTableBody"></tbody>
+          </table>
+        </div>
+      </section>
     </section>
   </main>
 
   <footer>
-    公開用に抽出した状態だけを表示しています。private repositoryの本文・成果物・tokenは含みません。
+    公開可能なWorkflow制御情報だけを表示しています。private repositoryの本文、成果物、evidence、tokenは含みません。
   </footer>
 
   <script src="./app.js" defer></script>
