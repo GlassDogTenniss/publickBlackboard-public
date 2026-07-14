@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light">
   <meta name="description" content="publicBlackboard public workflow map">
   <title>publicBlackboard Workflow Map</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=20260714-2">
 </head>
 <body>
   <header class="topbar">
@@ -105,9 +105,7 @@
               <h2 id="selectedAgentTitle">agentを選択</h2>
             </div>
           </div>
-          <div id="selectedAgentDetail" class="selected-agent-detail">
-            グラフのカードをクリックすると詳細を表示します。
-          </div>
+          <div id="selectedAgentDetail" class="selected-agent-detail">グラフのカードをクリックすると詳細を表示します。</div>
         </article>
 
         <article class="detail-card">
@@ -127,7 +125,7 @@
             <p class="eyebrow">Tasks</p>
             <h2>task一覧</h2>
           </div>
-          <div id="sourceLinks" class="source-links">
+          <div class="source-links">
             <a id="statusLink" target="_blank" rel="noreferrer">公開status.json</a>
           </div>
         </div>
@@ -151,10 +149,7 @@
     </section>
   </main>
 
-  <footer>
-    公開可能なWorkflow制御情報だけを表示しています。private repositoryの本文、成果物、evidence、tokenは含みません。
-  </footer>
-
-  <script src="./app.js" defer></script>
+  <footer>公開用に安全化したWorkflow snapshotだけを表示しています。private repositoryの本文・成果物・tokenは含みません。</footer>
+  <script src="./app.js?v=20260714-2" defer></script>
 </body>
 </html>
