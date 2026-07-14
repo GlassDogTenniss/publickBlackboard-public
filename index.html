@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="publicBlackboard workflow status">
+  <title>publicBlackboard Status</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">publicBlackboard</p>
+      <h1>Workflow Status</h1>
+    </div>
+    <button id="reloadButton" type="button">再読込</button>
+  </header>
+
+  <main>
+    <section id="errorPanel" class="error-panel" hidden></section>
+
+    <section class="summary-grid" aria-label="workflow summary">
+      <article class="summary-card">
+        <span>状態</span>
+        <strong id="workflowStatus">読込中</strong>
+      </article>
+      <article class="summary-card">
+        <span>現在のtask</span>
+        <strong id="currentTask">—</strong>
+        <small id="currentAgent">—</small>
+      </article>
+      <article class="summary-card">
+        <span>iteration</span>
+        <strong id="iteration">—</strong>
+      </article>
+      <article class="summary-card">
+        <span>最終更新</span>
+        <strong id="updatedAt">—</strong>
+        <small id="freshness">—</small>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">Tasks</p>
+          <h2>進行状況</h2>
+        </div>
+        <span id="runId" class="run-id"></span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>task</th>
+              <th>担当</th>
+              <th>状態</th>
+              <th>attempt</th>
+              <th>更新</th>
+            </tr>
+          </thead>
+          <tbody id="taskTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    公開用に抽出した状態だけを表示しています。private repositoryの本文・成果物・tokenは含みません。
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
