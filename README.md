@@ -15,15 +15,32 @@ Chrome拡張
 公開Dashboardがpublic dataを読み込む
 ```
 
+## Dashboard UI
+
+private repositoryの`dashboard/index.html`で作成したWorkflow Mapと同じ構成です。
+
+- Workflow概要と進捗カード
+- agent graph
+- ドラッグ可能なagentカード
+- selected agent詳細
+- 直近の引き継ぎ
+- task一覧と送信回数表示
+- 30秒ごとの自動更新
+- スマートフォン向けresponsive layout
+
+成果物欄は公開版では`非公開`と表示します。
+
 ## 公開するもの
 
-- Workflow全体のstatus
-- runId
-- iteration
-- current task / current agent
+- Workflow title、theme、status
+- runId、iteration、current task / current agent
 - taskごとのstatus、担当agent、attempt、更新時刻
+- agent名、役割、担当task、進捗
+- task間の接続
+- 引き継ぎ履歴の制御情報
+- status contract検査結果
 
-private repositoryのstate全文、handoff、成果物本文、evidence、内部path、GitHub tokenは公開しません。
+private repositoryのstate全文、task instruction、handoff本文、成果物本文、evidence、内部path、commit SHA、blob SHA、GitHub tokenは公開しません。
 
 ## ファイル
 
@@ -63,7 +80,7 @@ Pages deploymentを利用できない場合は、development用のraw.githack UR
 https://raw.githack.com/GlassDogTenniss/publickBlackboard-public/main/index.html
 ```
 
-初回はraw.githackの確認画面が表示されます。HTML、CSS、JavaScriptはraw.githackから読み込み、状態JSONは`raw.githubusercontent.com`から直接再取得します。
+HTML、CSS、JavaScriptはraw.githackから読み込み、状態JSONは`raw.githubusercontent.com`から直接再取得します。
 
 ## 公開用token
 
