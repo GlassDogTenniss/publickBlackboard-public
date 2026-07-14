@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-14T14:46:15.097Z",
+  "generatedAt": "2026-07-14T14:51:45.052Z",
   "sourceUpdatedAt": "2026-07-14T22:01:00+09:00",
   "runs": [
     {
@@ -36,7 +36,7 @@
         {
           "agentId": "manager_agent",
           "name": "マネージャー",
-          "role": "方向性決定、キャラクターデザイン方針の監督、商品水準レビュー",
+          "role": "作品の理想、体験価値、表現方針、優先順位、商品水準の決定と評価",
           "status": "active",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
@@ -49,7 +49,7 @@
         {
           "agentId": "requirements_agent",
           "name": "要件定義",
-          "role": "要求と受け入れ条件の具体化",
+          "role": "マネージャーの理想を制作可能な仕様、統合条件、作業分解、受け入れ条件へ具体化",
           "status": "completed",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
