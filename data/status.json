@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-14T12:36:59.375Z",
-  "sourceUpdatedAt": "2026-07-14T18:12:00+09:00",
+  "generatedAt": "2026-07-14T12:45:59.348Z",
+  "sourceUpdatedAt": "2026-07-14T21:39:27+09:00",
   "runs": [
     {
       "id": "run_20260712T224706JST_jrpg",
@@ -9,12 +9,12 @@
       "theme": "マネージャー、要件定義、アセット、実装、独立検証、レビューを順番に実行し、一般販売可能な2D JRPGを反復制作する",
       "status": "in_progress",
       "createdAt": "2026-07-12T22:47:06+09:00",
-      "updatedAt": "2026-07-14T18:12:00+09:00",
-      "currentTaskId": "program_validation",
-      "currentTaskLabel": "program validation",
-      "currentAgentId": "validation_agent",
-      "currentAgentName": "プログラム検証",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
+      "updatedAt": "2026-07-14T21:39:27+09:00",
+      "currentTaskId": "manager_review",
+      "currentTaskLabel": "manager review",
+      "currentAgentId": "manager_agent",
+      "currentAgentName": "マネージャー",
+      "nextActionToken": "BLACKBOARD_NEXT_MANAGER_REVIEW",
       "iteration": {
         "current": 15,
         "max": 100
@@ -37,14 +37,14 @@
           "agentId": "manager_agent",
           "name": "マネージャー",
           "role": "方向性決定、キャラクターデザイン方針の監督、商品水準レビュー",
-          "status": "completed",
+          "status": "active",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
-          "activityStatus": "completed",
+          "activityStatus": "ready",
           "activityInstruction": "",
-          "completedAt": "2026-07-14T17:58:30+09:00",
+          "completedAt": null,
           "taskCount": 2,
-          "completedCount": 2
+          "completedCount": 1
         },
         {
           "agentId": "requirements_agent",
@@ -89,14 +89,14 @@
           "agentId": "validation_agent",
           "name": "プログラム検証",
           "role": "固定candidateの独立検証",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-14T21:39:27+09:00",
           "taskCount": 1,
-          "completedCount": 0
+          "completedCount": 1
         }
       ],
       "tasks": [
@@ -141,18 +141,18 @@
           "label": "program validation",
           "agentId": "validation_agent",
           "agentName": "プログラム検証",
-          "status": "ready",
+          "status": "completed",
           "attempt": 21,
-          "completedAt": "2026-07-14T18:12:00+09:00"
+          "completedAt": "2026-07-14T21:39:27+09:00"
         },
         {
           "id": "manager_review",
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "マネージャー",
-          "status": "completed",
-          "attempt": 22,
-          "completedAt": "2026-07-14T17:58:30+09:00"
+          "status": "ready",
+          "attempt": 23,
+          "completedAt": "2026-07-14T21:39:27+09:00"
         }
       ],
       "edges": [
@@ -202,6 +202,26 @@
       "history": [
         {
           "iteration": 15,
+          "taskId": "manager_review",
+          "taskLabel": "manager review",
+          "agentId": "",
+          "status": "completed",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": "manager_review"
+        },
+        {
+          "iteration": 15,
+          "taskId": "",
+          "taskLabel": "未設定",
+          "agentId": "",
+          "status": "completed",
+          "completedAt": null,
+          "verdict": "inconclusive",
+          "nextTask": "manager_review"
+        },
+        {
+          "iteration": 15,
           "taskId": "",
           "taskLabel": "未設定",
           "agentId": "",
@@ -239,36 +259,6 @@
           "completedAt": null,
           "verdict": "fail",
           "nextTask": "manager_review"
-        },
-        {
-          "iteration": 15,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": "program_validation"
-        },
-        {
-          "iteration": 15,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": "program_build"
-        },
-        {
-          "iteration": 15,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "rework_same_iteration",
-          "nextTask": "program_build"
         }
       ]
     }
