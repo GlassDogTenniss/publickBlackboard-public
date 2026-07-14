@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-14T17:33:18.641Z",
-  "sourceUpdatedAt": "2026-07-15T02:30:29+09:00",
+  "generatedAt": "2026-07-14T18:00:18.686Z",
+  "sourceUpdatedAt": "2026-07-15T02:59:00+09:00",
   "runs": [
     {
       "id": "run_20260712T224706JST_jrpg",
@@ -9,20 +9,20 @@
       "theme": "マネージャー、要件定義、アセット、実装、独立検証、レビューを固定順序で一つずつ実行し、一般販売可能な2D JRPGを反復制作する",
       "status": "in_progress",
       "createdAt": "2026-07-12T22:47:06+09:00",
-      "updatedAt": "2026-07-15T02:30:29+09:00",
-      "currentTaskId": "program_build",
-      "currentTaskLabel": "program build",
-      "currentAgentId": "program_agent",
-      "currentAgentName": "プログラム",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
+      "updatedAt": "2026-07-15T02:59:00+09:00",
+      "currentTaskId": "program_validation",
+      "currentTaskLabel": "program validation",
+      "currentAgentId": "validation_agent",
+      "currentAgentName": "プログラム検証",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
       "iteration": {
         "current": 17,
         "max": 100
       },
       "progress": {
-        "completed": 3,
+        "completed": 4,
         "total": 6,
-        "percentage": 50
+        "percentage": 67
       },
       "completion": {
         "done": false
@@ -76,23 +76,23 @@
           "agentId": "program_agent",
           "name": "プログラム",
           "role": "実装・統合とcandidate固定",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-15T02:58:00+09:00",
           "taskCount": 1,
-          "completedCount": 0
+          "completedCount": 1
         },
         {
           "agentId": "validation_agent",
           "name": "プログラム検証",
           "role": "固定candidateの独立検証",
-          "status": "waiting",
+          "status": "active",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -132,18 +132,18 @@
           "label": "program build",
           "agentId": "program_agent",
           "agentName": "プログラム",
-          "status": "ready",
+          "status": "completed",
           "attempt": 25,
-          "completedAt": "2026-07-15T02:30:29+09:00"
+          "completedAt": "2026-07-15T02:58:00+09:00"
         },
         {
           "id": "program_validation",
           "label": "program validation",
           "agentId": "validation_agent",
           "agentName": "プログラム検証",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 25,
-          "completedAt": null
+          "completedAt": "2026-07-15T02:59:00+09:00"
         },
         {
           "id": "manager_review",
