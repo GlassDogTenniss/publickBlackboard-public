@@ -2,6 +2,7 @@
 
 const $ = selector => document.querySelector(selector);
 const REFRESH_INTERVAL_MS = 30_000;
+const STATUS_URL = 'https://raw.githubusercontent.com/GlassDogTenniss/publickBlackboard-public/main/data/status.json';
 let loading = false;
 
 function escapeHtml(value) {
@@ -82,7 +83,7 @@ async function loadStatus() {
   button.disabled = true;
   button.textContent = '読込中…';
   try {
-    const response = await fetch(`./data/status.json?ts=${Date.now()}`, { cache: 'no-store' });
+    const response = await fetch(`${STATUS_URL}?ts=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     render(await response.json());
   } catch (error) {
