@@ -19,18 +19,17 @@ index.html
 app.js
 styles.css
 data/status.json
+.github/workflows/pages.yml
 ```
 
-ページは`data/status.json`を30秒ごとに再取得します。private repository側のGitHub Actionsがstate更新時に安全化したJSONをこのrepositoryへpushします。
+ページは`data/status.json`を30秒ごとに再取得します。private repository側の`Publish sanitized workflow status`がstate更新時に安全化したJSONをこのrepositoryへpushします。
 
 ## GitHub Pages
 
-Repository settingsのPagesで次を設定します。
+`.github/workflows/pages.yml`がGitHub Pagesへdeployします。Repository settingsのPagesで次を設定します。
 
 ```text
-Source: Deploy from a branch
-Branch: main
-Folder: / (root)
+Source: GitHub Actions
 ```
 
 公開URLは通常、次の形式になります。
