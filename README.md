@@ -12,7 +12,7 @@ Chrome拡張
   ↓ 公開項目だけを抽出
   publickBlackboard-public/data/status.jsonへ直接commit
   ↓
-GitHub Pagesがmainブランチのrootを公開
+公開Dashboardがpublic dataを読み込む
 ```
 
 ## 公開するもの
@@ -35,11 +35,11 @@ data/status.json
 .nojekyll
 ```
 
-ページは`data/status.json`を30秒ごとに再取得します。Chrome拡張はprivate stateのsnapshotが更新された場合だけ、内容を比較して`data/status.json`を更新します。
+ページは公開repositoryの`data/status.json`を30秒ごとに再取得します。Chrome拡張はprivate stateのsnapshotが変わった場合だけ、内容を比較して`data/status.json`を更新します。
 
 ## GitHub Pages
 
-Repository settingsのPagesで次を設定します。
+通常はRepository settingsのPagesで次を設定します。
 
 ```text
 Source: Deploy from a branch
@@ -47,11 +47,23 @@ Branch: main
 Folder: / (root)
 ```
 
-公開URLは通常、次の形式になります。
+Pages URL:
 
 ```text
 https://glassdogtenniss.github.io/publickBlackboard-public/
 ```
+
+GitHub Pagesはbranch公開を選んだ場合も内部ではGitHub Actions deploymentを使います。アカウント側でActions jobが停止されている間はPagesが404のままになることがあります。
+
+## Actionsを使わない閲覧URL
+
+Pages deploymentを利用できない場合は、development用のraw.githack URLで同じHTMLを開けます。
+
+```text
+https://raw.githack.com/GlassDogTenniss/publickBlackboard-public/main/index.html
+```
+
+初回はraw.githackの確認画面が表示されます。HTML、CSS、JavaScriptはraw.githackから読み込み、状態JSONは`raw.githubusercontent.com`から直接再取得します。
 
 ## 公開用token
 
