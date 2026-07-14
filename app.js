@@ -42,6 +42,7 @@ function statusLabel(value) {
 
 function render(data) {
   const iteration = data.iteration || {};
+  const sourceTime = data.sourceUpdatedAt || data.generatedAt || '';
   $('#workflowStatus').textContent = statusLabel(data.status);
   $('#workflowStatus').className = `status-pill status-${data.status || 'unknown'}`;
   $('#currentTask').textContent = data.currentTask || '—';
@@ -49,8 +50,9 @@ function render(data) {
   $('#iteration').textContent = iteration.current != null
     ? `${iteration.current}${iteration.max != null ? ` / ${iteration.max}` : ''}`
     : '—';
-  $('#updatedAt').textContent = formatDate(data.sourceUpdatedAt || data.generatedAt);
-  $('#freshness').textContent = relativeAge(data.sourceUpdatedAt || data.generatedAt);
+  $('#updatedAt').textContent = formatDate(sourceTime);
+  $('#updatedAt').dataset.value = sourceTime;
+  $('#freshness').textContent = relativeAge(sourceTime);
   $('#runId').textContent = data.runId || '';
 
   const tasks = Array.isArray(data.tasks) ? data.tasks : [];
