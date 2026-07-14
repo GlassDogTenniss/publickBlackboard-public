@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-14T12:50:59.269Z",
-  "sourceUpdatedAt": "2026-07-14T21:56:00+09:00",
+  "generatedAt": "2026-07-14T13:03:29.298Z",
+  "sourceUpdatedAt": "2026-07-14T22:01:00+09:00",
   "runs": [
     {
       "id": "run_20260712T224706JST_jrpg",
@@ -9,42 +9,51 @@
       "theme": "マネージャー、要件定義、アセット、実装、独立検証、レビューを順番に実行し、一般販売可能な2D JRPGを反復制作する",
       "status": "in_progress",
       "createdAt": "2026-07-12T22:47:06+09:00",
-      "updatedAt": "2026-07-14T21:56:00+09:00",
-      "currentTaskId": "program_build",
-      "currentTaskLabel": "program build",
-      "currentAgentId": "program_agent",
-      "currentAgentName": "プログラム",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
+      "updatedAt": "2026-07-14T22:01:00+09:00",
+      "currentTaskId": "manager_review",
+      "currentTaskLabel": "manager review",
+      "currentAgentId": "manager_agent",
+      "currentAgentName": "マネージャー",
+      "nextActionToken": "BLACKBOARD_NEXT_MANAGER_REVIEW",
       "iteration": {
         "current": 15,
         "max": 100
       },
       "progress": {
-        "completed": 4,
+        "completed": 3,
         "total": 6,
-        "percentage": 67
+        "percentage": 50
       },
       "completion": {
         "done": false
       },
       "statusValidation": {
-        "valid": true,
+        "valid": false,
         "contractPath": "blackboard/status-contract.json",
-        "errors": []
+        "errors": [
+          {
+            "path": "state.history[4].status",
+            "value": "ready",
+            "allowed": [
+              "completed",
+              "failed"
+            ]
+          }
+        ]
       },
       "agents": [
         {
           "agentId": "manager_agent",
           "name": "マネージャー",
           "role": "方向性決定、キャラクターデザイン方針の監督、商品水準レビュー",
-          "status": "completed",
+          "status": "active",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
-          "activityStatus": "completed",
+          "activityStatus": "ready",
           "activityInstruction": "",
-          "completedAt": "2026-07-14T21:55:00+09:00",
+          "completedAt": null,
           "taskCount": 2,
-          "completedCount": 2
+          "completedCount": 1
         },
         {
           "agentId": "requirements_agent",
@@ -76,12 +85,12 @@
           "agentId": "program_agent",
           "name": "プログラム",
           "role": "実装・統合とcandidate固定",
-          "status": "active",
+          "status": "error",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "ready",
+          "activityStatus": "failed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-14T21:59:31+09:00",
           "taskCount": 1,
           "completedCount": 0
         },
@@ -132,9 +141,9 @@
           "label": "program build",
           "agentId": "program_agent",
           "agentName": "プログラム",
-          "status": "ready",
+          "status": "failed",
           "attempt": 22,
-          "completedAt": "2026-07-14T21:56:00+09:00"
+          "completedAt": "2026-07-14T21:59:31+09:00"
         },
         {
           "id": "program_validation",
@@ -150,9 +159,9 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "マネージャー",
-          "status": "completed",
-          "attempt": 23,
-          "completedAt": "2026-07-14T21:55:00+09:00"
+          "status": "ready",
+          "attempt": 24,
+          "completedAt": "2026-07-14T22:01:00+09:00"
         }
       ],
       "edges": [
@@ -202,6 +211,26 @@
       "history": [
         {
           "iteration": 15,
+          "taskId": "",
+          "taskLabel": "未設定",
+          "agentId": "",
+          "status": "ready",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": "manager_review"
+        },
+        {
+          "iteration": 15,
+          "taskId": "",
+          "taskLabel": "未設定",
+          "agentId": "",
+          "status": "failed",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": "manager_review"
+        },
+        {
+          "iteration": 15,
           "taskId": "program_build",
           "taskLabel": "program build",
           "agentId": "",
@@ -229,56 +258,6 @@
           "completedAt": null,
           "verdict": "inconclusive",
           "nextTask": "manager_review"
-        },
-        {
-          "iteration": 15,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": "program_validation"
-        },
-        {
-          "iteration": 15,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": "program_build"
-        },
-        {
-          "iteration": 15,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "rework_same_iteration",
-          "nextTask": "program_build"
-        },
-        {
-          "iteration": 15,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "fail",
-          "nextTask": "manager_review"
-        },
-        {
-          "iteration": 15,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "completed",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": "program_validation"
         }
       ]
     }
