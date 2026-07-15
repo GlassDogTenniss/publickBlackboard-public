@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-15T13:01:30.835Z",
-  "sourceUpdatedAt": "2026-07-15T21:54:00+09:00",
+  "generatedAt": "2026-07-15T13:04:12.882Z",
+  "sourceUpdatedAt": "2026-07-15T13:00:00+09:00",
   "runs": [
     {
       "id": "run_20260712T224706JST_jrpg",
@@ -9,20 +9,20 @@
       "theme": "マネージャー、要件定義、アセット、実装、独立検証、レビューを固定順序で一つずつ実行し、一般販売可能な2D JRPGを反復制作する",
       "status": "in_progress",
       "createdAt": "2026-07-12T22:47:06+09:00",
-      "updatedAt": "2026-07-15T21:54:00+09:00",
-      "currentTaskId": "program_validation",
-      "currentTaskLabel": "program validation",
-      "currentAgentId": "validation_agent",
-      "currentAgentName": "プログラム検証",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
+      "updatedAt": "2026-07-15T13:00:00+09:00",
+      "currentTaskId": "program_build",
+      "currentTaskLabel": "program build",
+      "currentAgentId": "program_agent",
+      "currentAgentName": "プログラム",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
       "iteration": {
         "current": 21,
         "max": 100
       },
       "progress": {
-        "completed": 4,
+        "completed": 3,
         "total": 6,
-        "percentage": 67
+        "percentage": 50
       },
       "completion": {
         "done": false
@@ -76,23 +76,23 @@
           "agentId": "program_agent",
           "name": "プログラム",
           "role": "実装・統合とcandidate固定",
-          "status": "completed",
+          "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "completed",
+          "activityStatus": "ready",
           "activityInstruction": "",
-          "completedAt": "2026-07-15T21:52:00+09:00",
+          "completedAt": null,
           "taskCount": 1,
-          "completedCount": 1
+          "completedCount": 0
         },
         {
           "agentId": "validation_agent",
           "name": "プログラム検証",
           "role": "固定candidateの独立検証",
-          "status": "active",
+          "status": "waiting",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "ready",
+          "activityStatus": "waiting",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -132,18 +132,18 @@
           "label": "program build",
           "agentId": "program_agent",
           "agentName": "プログラム",
-          "status": "completed",
+          "status": "ready",
           "attempt": 29,
-          "completedAt": "2026-07-15T21:52:00+09:00"
+          "completedAt": "2026-07-15T13:00:00+09:00"
         },
         {
           "id": "program_validation",
           "label": "program validation",
           "agentId": "validation_agent",
           "agentName": "プログラム検証",
-          "status": "ready",
+          "status": "waiting",
           "attempt": 29,
-          "completedAt": "2026-07-15T21:54:00+09:00"
+          "completedAt": null
         },
         {
           "id": "manager_review",
@@ -199,48 +199,7 @@
           "kind": "loop"
         }
       ],
-      "history": [
-        {
-          "iteration": 21,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_agent",
-          "status": "completed",
-          "completedAt": "2026-07-15T21:52:00+09:00",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 21,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "completed",
-          "completedAt": "2026-07-15T13:00:00+09:00",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 21,
-          "taskId": "requirements_definition",
-          "taskLabel": "requirements definition",
-          "agentId": "requirements_agent",
-          "status": "completed",
-          "completedAt": "2026-07-15T12:38:00+09:00",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 21,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-15T12:33:00+09:00",
-          "verdict": "",
-          "nextTask": ""
-        }
-      ]
+      "history": []
     }
   ]
 }
