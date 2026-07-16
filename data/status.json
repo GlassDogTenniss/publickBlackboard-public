@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-16T16:34:46.789Z",
+  "generatedAt": "2026-07-16T16:35:02.996Z",
   "sourceUpdatedAt": "2026-07-16T16:32:15.000Z",
   "runs": [
     {
@@ -45,7 +45,14 @@
           "completedAt": null,
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:2:manager_direction:2",
+            "startedAt": "2026-07-16T16:35:01.404Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -155,7 +162,14 @@
           "status": "ready",
           "attempt": 2,
           "completedAt": "2026-07-16T16:32:15.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:2:manager_direction:2",
+            "startedAt": "2026-07-16T16:35:01.404Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "requirements_definition",
@@ -348,7 +362,7 @@
           "startedAt": "2026-07-16T15:14:44.522Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-16T16:34:30.307Z",
+          "updatedAt": "2026-07-16T16:35:01.582Z",
           "counts": {
             "total": 3,
             "terminal": 0,
