@@ -83,7 +83,7 @@
             <button id="resetLayoutButton" type="button">配置を戻す</button>
           </div>
         </div>
-        <p class="graph-help">「生成中」はChrome拡張がChatGPTタブの生成シグナルを直近90秒以内に確認した場合だけ表示します。</p>
+        <p class="graph-help">「生成中」はChrome拡張がChatGPTタブの生成シグナルを直近90秒以内に確認した場合だけ表示します。作業時間はprompt送信成功からGitHub上のtask完了までを計測します。</p>
         <div id="graphViewport" class="graph-viewport">
           <div id="graphStage" class="graph-stage">
             <svg id="edgeLayer" class="edge-layer" aria-hidden="true">
@@ -139,7 +139,7 @@
                 <th>agent</th>
                 <th>送信予定</th>
                 <th>送信済み</th>
-                <th>更新</th>
+                <th>作業時間</th>
                 <th>成果物</th>
               </tr>
             </thead>
@@ -152,6 +152,6 @@
 
   <footer>公開用に安全化したWorkflow snapshotだけを表示しています。private repositoryの本文・成果物・tokenは含みません。</footer>
   <script src="./app.js?v=20260716-1" defer></script>
-  <script src="./runtime-status-labels.js?v=20260716-1" defer></script>
+  <script src="./runtime-status-labels.js?v=20260716-2" defer></script>
 </body>
 </html>
