@@ -8,6 +8,7 @@
   <title>publicBlackboard Workflow Map</title>
   <link rel="stylesheet" href="./styles.css?v=20260716-1">
   <link rel="stylesheet" href="./runtime-status.css?v=20260716-1">
+  <link rel="stylesheet" href="./parallel-dashboard.css?v=20260716-1">
 </head>
 <body>
   <header class="topbar">
@@ -98,6 +99,17 @@
         </div>
       </section>
 
+      <section id="parallelSection" class="parallel-section" hidden>
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Parallel program workers</p>
+            <h2>並列ワーカー</h2>
+          </div>
+          <strong id="parallelSummary" class="parallel-summary"></strong>
+        </div>
+        <div id="parallelGroups" class="parallel-groups"></div>
+      </section>
+
       <section class="detail-grid">
         <article class="detail-card">
           <div class="section-heading compact">
@@ -153,5 +165,6 @@
   <footer>公開用に安全化したWorkflow snapshotだけを表示しています。private repositoryの本文・成果物・tokenは含みません。</footer>
   <script src="./app.js?v=20260716-1" defer></script>
   <script src="./runtime-status-labels.js?v=20260716-2" defer></script>
+  <script src="./parallel-dashboard.js?v=20260716-1" defer></script>
 </body>
 </html>
