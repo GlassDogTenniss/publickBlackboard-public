@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-16T15:58:30.229Z",
+  "generatedAt": "2026-07-16T15:58:33.420Z",
   "sourceUpdatedAt": "2026-07-16T15:14:46.000Z",
   "runs": [
     {
@@ -114,7 +114,7 @@
           "agentId": "program_tester_agent",
           "name": "プログラムテスタ",
           "role": "統合candidateを独立検証し、修正せず証拠と判定材料を残す",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
           "activityStatus": "ready",
@@ -122,7 +122,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:1:program_validation:1",
+            "startedAt": "2026-07-16T15:58:31.273Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_worker_1",
@@ -237,7 +244,14 @@
           "status": "ready",
           "attempt": 1,
           "completedAt": "2026-07-16T15:14:46.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:1:program_validation:1",
+            "startedAt": "2026-07-16T15:58:31.273Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "manager_review",
@@ -360,14 +374,14 @@
           "startedAt": "2026-07-16T15:14:44.522Z",
           "completedAt": "2026-07-16T15:14:46.000Z",
           "durationMs": 1478,
-          "updatedAt": "2026-07-16T15:57:58.629Z",
+          "updatedAt": "2026-07-16T15:58:31.503Z",
           "counts": {
             "total": 3,
-            "terminal": 3,
-            "completed": 3,
+            "terminal": 0,
+            "completed": 0,
             "failed": 0,
             "active": 0,
-            "dispatched": 0,
+            "dispatched": 3,
             "ready": 0
           },
           "integration": {
@@ -384,8 +398,8 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
+              "status": "dispatched",
+              "formalStatus": "dispatched",
               "runtimePhase": "idle",
               "observerState": "IDLE",
               "runtimeFresh": true,
@@ -401,8 +415,8 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
+              "status": "dispatched",
+              "formalStatus": "dispatched",
               "runtimePhase": "stale",
               "observerState": "IDLE",
               "runtimeFresh": false,
@@ -418,8 +432,8 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
+              "status": "dispatched",
+              "formalStatus": "dispatched",
               "runtimePhase": "stale",
               "observerState": "IDLE",
               "runtimeFresh": false,
