@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-16T16:39:30.485Z",
+  "generatedAt": "2026-07-16T16:39:33.433Z",
   "sourceUpdatedAt": "2026-07-16T16:35:47.000Z",
   "runs": [
     {
@@ -58,7 +58,7 @@
           "agentId": "requirements_agent",
           "name": "要件定義",
           "role": "マネージャの企画を素材仕様、実装要求、作業境界、受け入れ条件へ変換する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
           "activityStatus": "ready",
@@ -66,7 +66,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:2:requirements_definition:2",
+            "startedAt": "2026-07-16T16:39:31.474Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "asset_agent",
@@ -179,7 +186,14 @@
           "status": "ready",
           "attempt": 2,
           "completedAt": "2026-07-16T16:35:47.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:2:requirements_definition:2",
+            "startedAt": "2026-07-16T16:39:31.474Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "asset_creation",
@@ -382,7 +396,7 @@
           "startedAt": "2026-07-16T15:14:44.522Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-16T16:38:58.585Z",
+          "updatedAt": "2026-07-16T16:39:31.725Z",
           "counts": {
             "total": 3,
             "terminal": 0,
