@@ -2,3 +2,13 @@
 .agent-node[data-status="blocked"] .agent-header {
   background: var(--waiting);
 }
+
+.agent-timing {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.agent-timing[data-running="true"] {
+  color: var(--active-strong);
+  font-weight: 850;
+}
