@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-16T20:09:41.079Z",
+  "generatedAt": "2026-07-16T20:09:53.255Z",
   "sourceUpdatedAt": "2026-07-16T17:11:29.000Z",
   "runs": [
     {
@@ -474,7 +474,7 @@
           "startedAt": "2026-07-16T15:14:44.522Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-16T20:09:38.275Z",
+          "updatedAt": "2026-07-16T20:09:51.774Z",
           "counts": {
             "total": 3,
             "terminal": 0,
@@ -517,8 +517,8 @@
               "attempt": 1,
               "status": "active",
               "formalStatus": "dispatched",
-              "runtimePhase": "settling",
-              "observerState": "SETTLING",
+              "runtimePhase": "generating",
+              "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-16T15:14:44.522Z",
               "completedAt": "2026-07-16T15:00:45.000Z",
@@ -558,7 +558,7 @@
           "startedAt": "2026-07-16T19:30:28.819Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-16T20:09:38.275Z",
+          "updatedAt": "2026-07-16T20:09:51.774Z",
           "counts": {
             "total": 3,
             "terminal": 1,
@@ -601,8 +601,8 @@
               "attempt": 1,
               "status": "ready",
               "formalStatus": "ready",
-              "runtimePhase": "settling",
-              "observerState": "SETTLING",
+              "runtimePhase": "generating",
+              "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": null,
               "completedAt": null,
