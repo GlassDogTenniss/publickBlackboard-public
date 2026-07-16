@@ -6,7 +6,8 @@
   <meta name="color-scheme" content="light">
   <meta name="description" content="publicBlackboard public workflow map">
   <title>publicBlackboard Workflow Map</title>
-  <link rel="stylesheet" href="./styles.css?v=20260714-2">
+  <link rel="stylesheet" href="./styles.css?v=20260716-1">
+  <link rel="stylesheet" href="./runtime-status.css?v=20260716-1">
 </head>
 <body>
   <header class="topbar">
@@ -76,13 +77,13 @@
             <h2>作業の流れ</h2>
           </div>
           <div class="graph-actions">
-            <span class="legend"><i class="legend-active"></i>稼働中</span>
-            <span class="legend"><i class="legend-waiting"></i>待機中</span>
+            <span class="legend"><i class="legend-active"></i>生成中</span>
+            <span class="legend"><i class="legend-waiting"></i>実行待ち・待機</span>
             <span class="legend"><i class="legend-completed"></i>完了</span>
             <button id="resetLayoutButton" type="button">配置を戻す</button>
           </div>
         </div>
-        <p class="graph-help">カードはドラッグして配置できます。線は配置に追従します。</p>
+        <p class="graph-help">「生成中」はChrome拡張がChatGPTタブの生成シグナルを直近90秒以内に確認した場合だけ表示します。</p>
         <div id="graphViewport" class="graph-viewport">
           <div id="graphStage" class="graph-stage">
             <svg id="edgeLayer" class="edge-layer" aria-hidden="true">
@@ -150,6 +151,7 @@
   </main>
 
   <footer>公開用に安全化したWorkflow snapshotだけを表示しています。private repositoryの本文・成果物・tokenは含みません。</footer>
-  <script src="./app.js?v=20260714-2" defer></script>
+  <script src="./app.js?v=20260716-1" defer></script>
+  <script src="./runtime-status-labels.js?v=20260716-1" defer></script>
 </body>
 </html>
