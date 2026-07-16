@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-16T14:35:21.137Z",
-  "sourceUpdatedAt": "2026-07-16T14:18:39.000Z",
+  "generatedAt": "2026-07-16T14:36:40.402Z",
+  "sourceUpdatedAt": "2026-07-16T14:34:25.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,7 +9,7 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-16T14:18:39.000Z",
+      "updatedAt": "2026-07-16T14:34:25.000Z",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_manager_agent",
@@ -28,9 +28,29 @@
         "done": false
       },
       "statusValidation": {
-        "valid": true,
+        "valid": false,
         "contractPath": "blackboard/status-contract.json",
-        "errors": []
+        "errors": [
+          {
+            "path": "state.agentStatuses.program_manager_agent.status",
+            "value": "in_progress",
+            "allowed": [
+              "waiting",
+              "ready",
+              "active",
+              "completed",
+              "error"
+            ]
+          },
+          {
+            "path": "state.history[3].status",
+            "value": "in_progress",
+            "allowed": [
+              "completed",
+              "failed"
+            ]
+          }
+        ]
       },
       "agents": [
         {
@@ -96,12 +116,19 @@
           "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "ready",
+          "activityStatus": "in_progress",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:1:program_build:1",
+            "startedAt": "2026-07-16T14:34:25.000Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_tester_agent",
@@ -210,10 +237,17 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "ready",
+          "status": "in_progress",
           "attempt": 1,
-          "completedAt": "2026-07-16T14:18:39.000Z",
-          "timing": null
+          "completedAt": "2026-07-16T14:34:25.000Z",
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:1:program_build:1",
+            "startedAt": "2026-07-16T14:34:25.000Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "program_validation",
@@ -283,6 +317,16 @@
       "history": [
         {
           "iteration": 1,
+          "taskId": "program_build",
+          "taskLabel": "program build",
+          "agentId": "program_manager_agent",
+          "status": "in_progress",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 1,
           "taskId": "asset_creation",
           "taskLabel": "asset creation",
           "agentId": "asset_agent",
@@ -312,7 +356,92 @@
           "nextTask": "requirements_definition"
         }
       ],
-      "parallelGroups": []
+      "parallelGroups": [
+        {
+          "groupId": "program_i1_a1",
+          "revision": 1,
+          "parentTaskId": "program_build",
+          "parentTaskStatus": "in_progress",
+          "phase": "workers",
+          "coordinatorAgentId": "program_manager_agent",
+          "maxConcurrency": 3,
+          "timeoutMinutes": 30,
+          "status": "waiting",
+          "startedAt": null,
+          "completedAt": null,
+          "durationMs": null,
+          "updatedAt": null,
+          "counts": {
+            "total": 3,
+            "terminal": 0,
+            "completed": 0,
+            "failed": 0,
+            "active": 0,
+            "dispatched": 0,
+            "ready": 0
+          },
+          "integration": {
+            "status": "waiting",
+            "dispatchedAt": null,
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
+            "runtimeFresh": true
+          },
+          "workers": [
+            {
+              "workerId": "worker_1",
+              "label": "worker_1",
+              "agentId": "program_worker_1",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "waiting",
+              "formalStatus": "waiting",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_2",
+              "label": "worker_2",
+              "agentId": "program_worker_2",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "waiting",
+              "formalStatus": "waiting",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_3",
+              "label": "worker_3",
+              "agentId": "program_worker_3",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "waiting",
+              "formalStatus": "waiting",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
