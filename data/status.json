@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-16T21:19:26.708Z",
+  "generatedAt": "2026-07-16T21:19:56.895Z",
   "sourceUpdatedAt": "2026-07-16T17:11:29.000Z",
   "runs": [
     {
@@ -474,7 +474,7 @@
           "startedAt": "2026-07-16T15:14:44.522Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-16T21:18:58.870Z",
+          "updatedAt": "2026-07-16T21:19:29.103Z",
           "counts": {
             "total": 3,
             "terminal": 0,
@@ -558,15 +558,15 @@
           "startedAt": "2026-07-16T19:30:28.819Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-16T20:55:12.318Z",
+          "updatedAt": "2026-07-16T21:18:56.031Z",
           "counts": {
             "total": 3,
-            "terminal": 1,
-            "completed": 1,
+            "terminal": 2,
+            "completed": 2,
             "failed": 0,
             "active": 0,
             "dispatched": 0,
-            "ready": 2
+            "ready": 1
           },
           "integration": {
             "status": "waiting",
@@ -599,13 +599,13 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "ready",
-              "formalStatus": "ready",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "stale",
               "observerState": "ACTIVE",
               "runtimeFresh": false,
               "startedAt": null,
-              "completedAt": null,
+              "completedAt": "2026-07-16T21:12:07.000Z",
               "durationMs": null,
               "running": false,
               "timeoutAt": null
