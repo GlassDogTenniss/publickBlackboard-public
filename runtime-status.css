@@ -1,0 +1,4 @@
+.agent-node[data-status="ready"] .agent-header,
+.agent-node[data-status="blocked"] .agent-header {
+  background: var(--waiting);
+}
