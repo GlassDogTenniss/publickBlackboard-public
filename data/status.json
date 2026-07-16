@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-16T14:46:26.373Z",
-  "sourceUpdatedAt": "2026-07-16T14:34:25.000Z",
+  "generatedAt": "2026-07-16T14:46:50.999Z",
+  "sourceUpdatedAt": "2026-07-16T14:43:12.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,7 +9,7 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-16T14:34:25.000Z",
+      "updatedAt": "2026-07-16T14:43:12.000Z",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_manager_agent",
@@ -28,29 +28,9 @@
         "done": false
       },
       "statusValidation": {
-        "valid": false,
+        "valid": true,
         "contractPath": "blackboard/status-contract.json",
-        "errors": [
-          {
-            "path": "state.agentStatuses.program_manager_agent.status",
-            "value": "in_progress",
-            "allowed": [
-              "waiting",
-              "ready",
-              "active",
-              "completed",
-              "error"
-            ]
-          },
-          {
-            "path": "state.history[3].status",
-            "value": "in_progress",
-            "allowed": [
-              "completed",
-              "failed"
-            ]
-          }
-        ]
+        "errors": []
       },
       "agents": [
         {
@@ -320,7 +300,7 @@
           "taskId": "program_build",
           "taskLabel": "program build",
           "agentId": "program_manager_agent",
-          "status": "in_progress",
+          "status": "",
           "completedAt": null,
           "verdict": "",
           "nextTask": ""
@@ -413,8 +393,8 @@
               "attempt": 1,
               "status": "ready",
               "formalStatus": "ready",
-              "runtimePhase": "generating",
-              "observerState": "ACTIVE",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
               "runtimeFresh": true,
               "startedAt": null,
               "completedAt": null,
