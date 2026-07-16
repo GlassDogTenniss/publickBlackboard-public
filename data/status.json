@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-16T13:05:16.567Z",
+  "generatedAt": "2026-07-16T13:07:46.472Z",
   "sourceUpdatedAt": "2026-07-16T21:03:28+09:00",
   "runs": [
     {
@@ -63,7 +63,7 @@
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "ready",
