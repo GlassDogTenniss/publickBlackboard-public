@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0.0",
-  "generatedAt": "2026-07-16T08:19:00.500Z",
-  "sourceUpdatedAt": "2026-07-16T14:43:00+09:00",
+  "generatedAt": "2026-07-16T08:23:29.537Z",
+  "sourceUpdatedAt": "2026-07-15T13:00:00+09:00",
   "runs": [
     {
       "id": "run_20260712T224706JST_jrpg",
@@ -9,14 +9,14 @@
       "theme": "マネージャー、要件定義、アセット、実装、独立検証、レビューを固定順序で一つずつ実行し、一般販売可能な2D JRPGを反復制作する",
       "status": "in_progress",
       "createdAt": "2026-07-12T22:47:06+09:00",
-      "updatedAt": "2026-07-16T14:43:00+09:00",
+      "updatedAt": "2026-07-15T13:00:00+09:00",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_agent",
       "currentAgentName": "プログラム",
       "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
       "iteration": {
-        "current": 23,
+        "current": 21,
         "max": 100
       },
       "progress": {
@@ -42,7 +42,7 @@
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": "2026-07-16T10:24:00+09:00",
+          "completedAt": "2026-07-15T12:33:00+09:00",
           "taskCount": 2,
           "completedCount": 1
         },
@@ -55,7 +55,7 @@
           "activityTaskLabel": "requirements definition",
           "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": "2026-07-16T10:28:00+09:00",
+          "completedAt": "2026-07-15T12:38:00+09:00",
           "taskCount": 1,
           "completedCount": 1
         },
@@ -68,7 +68,7 @@
           "activityTaskLabel": "asset creation",
           "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": "2026-07-16T14:42:00+09:00",
+          "completedAt": "2026-07-15T13:00:00+09:00",
           "taskCount": 1,
           "completedCount": 1
         },
@@ -106,8 +106,8 @@
           "agentId": "manager_agent",
           "agentName": "マネージャー",
           "status": "completed",
-          "attempt": 23,
-          "completedAt": "2026-07-16T10:24:00+09:00"
+          "attempt": 21,
+          "completedAt": "2026-07-15T12:33:00+09:00"
         },
         {
           "id": "requirements_definition",
@@ -115,8 +115,8 @@
           "agentId": "requirements_agent",
           "agentName": "要件定義",
           "status": "completed",
-          "attempt": 23,
-          "completedAt": "2026-07-16T10:28:00+09:00"
+          "attempt": 21,
+          "completedAt": "2026-07-15T12:38:00+09:00"
         },
         {
           "id": "asset_creation",
@@ -124,8 +124,8 @@
           "agentId": "asset_agent",
           "agentName": "アセット",
           "status": "completed",
-          "attempt": 24,
-          "completedAt": "2026-07-16T14:42:00+09:00"
+          "attempt": 21,
+          "completedAt": "2026-07-15T13:00:00+09:00"
         },
         {
           "id": "program_build",
@@ -133,8 +133,8 @@
           "agentId": "program_agent",
           "agentName": "プログラム",
           "status": "ready",
-          "attempt": 31,
-          "completedAt": "2026-07-16T14:43:00+09:00"
+          "attempt": 29,
+          "completedAt": "2026-07-15T13:00:00+09:00"
         },
         {
           "id": "program_validation",
@@ -142,7 +142,7 @@
           "agentId": "validation_agent",
           "agentName": "プログラム検証",
           "status": "waiting",
-          "attempt": 31,
+          "attempt": 29,
           "completedAt": null
         },
         {
@@ -151,7 +151,7 @@
           "agentId": "manager_agent",
           "agentName": "マネージャー",
           "status": "waiting",
-          "attempt": 32,
+          "attempt": 30,
           "completedAt": null
         }
       ],
