@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T08:56:00.409Z",
+  "generatedAt": "2026-07-17T08:56:30.671Z",
   "sourceUpdatedAt": "2026-07-17T08:39:00.000Z",
   "runs": [
     {
@@ -121,7 +121,7 @@
           "agentId": "program_tester_agent",
           "name": "プログラムテスタ",
           "role": "統合candidateを独立検証し、修正せず証拠と判定材料を残す",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
           "activityStatus": "ready",
@@ -388,7 +388,7 @@
           "startedAt": "2026-07-17T08:39:29.184Z",
           "completedAt": "2026-07-17T08:39:00.000Z",
           "durationMs": 0,
-          "updatedAt": "2026-07-17T08:55:58.610Z",
+          "updatedAt": "2026-07-17T08:56:29.073Z",
           "counts": {
             "total": 3,
             "terminal": 1,
@@ -414,9 +414,9 @@
               "attempt": 1,
               "status": "dispatched",
               "formalStatus": "dispatched",
-              "runtimePhase": "idle",
+              "runtimePhase": "stale",
               "observerState": "IDLE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-17T08:39:29.184Z",
               "completedAt": "2026-07-17T08:35:09.000Z",
               "durationMs": 0,
