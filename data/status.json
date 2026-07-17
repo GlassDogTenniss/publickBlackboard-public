@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T00:25:16.937Z",
+  "generatedAt": "2026-07-17T00:25:22.689Z",
   "sourceUpdatedAt": "2026-07-16T17:11:29.000Z",
   "runs": [
     {
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "in_progress",
@@ -470,7 +470,7 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "integration_dispatched",
+          "status": "integrating",
           "startedAt": "2026-07-16T19:30:28.819Z",
           "completedAt": null,
           "durationMs": null,
@@ -485,11 +485,11 @@
             "ready": 0
           },
           "integration": {
-            "status": "dispatched",
+            "status": "active",
             "dispatchedAt": "2026-07-16T23:51:29.477Z",
-            "runtimePhase": "stale",
+            "runtimePhase": "generating",
             "observerState": "ACTIVE",
-            "runtimeFresh": false
+            "runtimeFresh": true
           },
           "workers": [
             {
@@ -554,7 +554,7 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "integration_dispatched",
+          "status": "integrating",
           "startedAt": "2026-07-16T15:14:44.522Z",
           "completedAt": null,
           "durationMs": null,
@@ -569,11 +569,11 @@
             "ready": 0
           },
           "integration": {
-            "status": "dispatched",
+            "status": "active",
             "dispatchedAt": "2026-07-16T15:33:59.048Z",
-            "runtimePhase": "stale",
+            "runtimePhase": "generating",
             "observerState": "ACTIVE",
-            "runtimeFresh": false
+            "runtimeFresh": true
           },
           "workers": [
             {
