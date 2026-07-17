@@ -48,17 +48,27 @@
       active: ['生成中', 'parallel-active'],
       running: ['並列実行中', 'parallel-active'],
       integrating: ['統合中', 'parallel-active'],
-      submitted: ['送信済み', 'parallel-sent'],
-      dispatched: ['送信済み', 'parallel-sent'],
-      integration_dispatched: ['統合送信済み', 'parallel-sent'],
+      response_started: ['応答開始', 'parallel-active'],
+      submitted_confirmed: ['配送確認済み', 'parallel-sent'],
+      submitted: ['配送確認済み', 'parallel-sent'],
+      dispatched: ['配送確認済み', 'parallel-sent'],
+      integration_dispatched: ['統合配送済み', 'parallel-sent'],
+      submit_requested: ['送信処理中', 'parallel-ready'],
+      prepared: ['送信準備済み', 'parallel-ready'],
       ready: ['実行待ち', 'parallel-ready'],
       integration_ready: ['統合待ち', 'parallel-ready'],
+      target_busy: ['対象タブ処理中', 'parallel-waiting'],
+      target_not_ready: ['対象タブ準備待ち', 'parallel-waiting'],
       waiting: ['待機中', 'parallel-waiting'],
       completed: ['完了', 'parallel-completed'],
       failed: ['失敗', 'parallel-failed'],
       timeout: ['時間切れ', 'parallel-timeout'],
       target_missing: ['タブ未登録', 'parallel-failed'],
-      prepare_failed: ['送信準備失敗', 'parallel-failed']
+      prepare_failed: ['送信準備失敗', 'parallel-failed'],
+      draft_present: ['別の入力あり', 'parallel-failed'],
+      draft_mismatch: ['入力不一致', 'parallel-failed'],
+      submission_unknown: ['配送確認不能', 'parallel-failed'],
+      error: ['配送エラー', 'parallel-failed']
     };
     return map[status] || [status || '不明', 'parallel-waiting'];
   }
@@ -130,7 +140,7 @@
     const detail = createElement('div', 'parallel-integration-detail');
     detail.append(
       createElement('span', '', `担当: ${text(group?.coordinatorAgentId || '未設定')}`),
-      createElement('span', '', integration.dispatchedAt ? `送信: ${formatDate(integration.dispatchedAt)}` : '全worker終了待ち'),
+      createElement('span', '', integration.dispatchedAt ? `配送確認: ${formatDate(integration.dispatchedAt)}` : '全worker終了待ち'),
       createElement('span', '', `観測: ${text(integration.runtimePhase || integration.observerState || '未観測')}`)
     );
     if (integration.lastError) detail.append(createElement('p', 'parallel-error', text(integration.lastError)));
@@ -158,7 +168,7 @@
     metrics.append(
       makeMetric('終了', `${terminal} / ${total}`, `${Number(counts.completed || 0)}完了・${Number(counts.failed || 0)}失敗`),
       makeMetric('同時実行', `${Number(counts.active || 0)}生成中`, `上限 ${Number(group?.maxConcurrency || 1)}`),
-      makeMetric('グループ時間', durationView(group), group?.startedAt ? `開始 ${formatDate(group.startedAt)}` : 'worker送信待ち'),
+      makeMetric('グループ時間', durationView(group), group?.startedAt ? `開始 ${formatDate(group.startedAt)}` : 'worker配送待ち'),
       makeMetric('段階', text(group?.phase || 'workers'), `coordinator ${text(group?.coordinatorAgentId || '未設定')}`)
     );
 
