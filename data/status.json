@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T13:19:45.041Z",
+  "generatedAt": "2026-07-17T13:19:58.325Z",
   "sourceUpdatedAt": "2026-07-17T09:25:58.000Z",
   "runs": [
     {
@@ -45,14 +45,7 @@
           "completedAt": "2026-07-17T09:06:00.000Z",
           "taskCount": 2,
           "completedCount": 2,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:manager_direction:5",
-            "startedAt": "2026-07-17T09:04:02.030Z",
-            "finishedAt": "2026-07-17T09:06:00.000Z",
-            "durationMs": 117970,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
@@ -66,14 +59,7 @@
           "completedAt": "2026-07-17T09:14:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:requirements_definition:5",
-            "startedAt": "2026-07-17T09:08:32.114Z",
-            "finishedAt": "2026-07-17T09:14:00.000Z",
-            "durationMs": 327886,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "asset_agent",
@@ -87,20 +73,13 @@
           "completedAt": "2026-07-17T09:22:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:asset_creation:5",
-            "startedAt": "2026-07-17T09:18:32.591Z",
-            "finishedAt": "2026-07-17T09:22:00.000Z",
-            "durationMs": 207409,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "in_progress",
@@ -110,7 +89,7 @@
           "completedCount": 0,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:program_build:5",
-            "startedAt": "2026-07-17T09:26:05.924Z",
+            "startedAt": "2026-07-17T09:25:58.000Z",
             "finishedAt": null,
             "durationMs": null,
             "running": true,
@@ -135,7 +114,7 @@
           "agentId": "program_worker_1",
           "name": "プログラム-ワーカー1",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "ready",
+          "status": "waiting",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -149,7 +128,7 @@
           "agentId": "program_worker_2",
           "name": "プログラム-ワーカー2",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "ready",
+          "status": "waiting",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -163,7 +142,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "ready",
+          "status": "waiting",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -183,14 +162,7 @@
           "status": "completed",
           "attempt": 5,
           "completedAt": "2026-07-17T09:06:00.000Z",
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:manager_direction:5",
-            "startedAt": "2026-07-17T09:04:02.030Z",
-            "finishedAt": "2026-07-17T09:06:00.000Z",
-            "durationMs": 117970,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "timing": null
         },
         {
           "id": "requirements_definition",
@@ -200,14 +172,7 @@
           "status": "completed",
           "attempt": 5,
           "completedAt": "2026-07-17T09:14:00.000Z",
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:requirements_definition:5",
-            "startedAt": "2026-07-17T09:08:32.114Z",
-            "finishedAt": "2026-07-17T09:14:00.000Z",
-            "durationMs": 327886,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "timing": null
         },
         {
           "id": "asset_creation",
@@ -217,14 +182,7 @@
           "status": "completed",
           "attempt": 5,
           "completedAt": "2026-07-17T09:22:00.000Z",
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:asset_creation:5",
-            "startedAt": "2026-07-17T09:18:32.591Z",
-            "finishedAt": "2026-07-17T09:22:00.000Z",
-            "durationMs": 207409,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "timing": null
         },
         {
           "id": "program_build",
@@ -236,7 +194,7 @@
           "completedAt": "2026-07-17T09:25:58.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:5:program_build:5",
-            "startedAt": "2026-07-17T09:26:05.924Z",
+            "startedAt": "2026-07-17T09:25:58.000Z",
             "finishedAt": null,
             "durationMs": null,
             "running": true,
