@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T04:28:47.287Z",
+  "generatedAt": "2026-07-17T04:29:30.189Z",
   "sourceUpdatedAt": "2026-07-17T00:50:59.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
           "activityStatus": "ready",
@@ -488,9 +488,9 @@
           "integration": {
             "status": "completed",
             "dispatchedAt": "2026-07-16T23:51:29.477Z",
-            "runtimePhase": "idle",
+            "runtimePhase": "stale",
             "observerState": "IDLE",
-            "runtimeFresh": true
+            "runtimeFresh": false
           },
           "workers": [
             {
@@ -501,9 +501,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "idle",
+              "runtimePhase": "stale",
               "observerState": "IDLE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": null,
               "completedAt": "2026-07-16T20:05:32.000Z",
               "durationMs": null,
@@ -572,9 +572,9 @@
           "integration": {
             "status": "completed",
             "dispatchedAt": "2026-07-16T15:33:59.048Z",
-            "runtimePhase": "idle",
+            "runtimePhase": "stale",
             "observerState": "IDLE",
-            "runtimeFresh": true
+            "runtimeFresh": false
           },
           "workers": [
             {
@@ -585,9 +585,9 @@
               "attempt": 1,
               "status": "dispatched",
               "formalStatus": "dispatched",
-              "runtimePhase": "idle",
+              "runtimePhase": "stale",
               "observerState": "IDLE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-16T15:14:44.522Z",
               "completedAt": "2026-07-16T15:00:44.000Z",
               "durationMs": 0,
