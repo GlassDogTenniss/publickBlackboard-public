@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T04:50:31.233Z",
+  "generatedAt": "2026-07-17T04:50:35.960Z",
   "sourceUpdatedAt": "2026-07-17T04:44:30.000Z",
   "runs": [
     {
@@ -79,7 +79,7 @@
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "ready",
@@ -87,7 +87,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:3:asset_creation:3",
+            "startedAt": "2026-07-17T04:50:32.343Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_manager_agent",
@@ -203,7 +210,14 @@
           "status": "ready",
           "attempt": 3,
           "completedAt": "2026-07-17T04:44:30.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:3:asset_creation:3",
+            "startedAt": "2026-07-17T04:50:32.343Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "program_build",
