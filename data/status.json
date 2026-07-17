@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T04:37:47.259Z",
-  "sourceUpdatedAt": "2026-07-17T04:28:00.000Z",
+  "generatedAt": "2026-07-17T04:38:00.696Z",
+  "sourceUpdatedAt": "2026-07-17T04:33:30.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-17T04:28:00.000Z",
-      "currentTaskId": "manager_direction",
-      "currentTaskLabel": "manager direction",
-      "currentAgentId": "manager_agent",
-      "currentAgentName": "全体マネージャ",
-      "nextActionToken": "BLACKBOARD_NEXT_MANAGER_DIRECTION",
+      "updatedAt": "2026-07-17T04:33:30.000Z",
+      "currentTaskId": "requirements_definition",
+      "currentTaskLabel": "requirements definition",
+      "currentAgentId": "requirements_agent",
+      "currentAgentName": "要件定義",
+      "nextActionToken": "BLACKBOARD_NEXT_REQUIREMENTS_DEFINITION",
       "iteration": {
         "current": 3,
         "max": 100
       },
       "progress": {
-        "completed": 1,
+        "completed": 2,
         "total": 6,
-        "percentage": 17
+        "percentage": 33
       },
       "completion": {
         "done": false
@@ -37,31 +37,31 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-17T04:33:30.000Z",
           "taskCount": 2,
-          "completedCount": 1,
+          "completedCount": 2,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:3:manager_direction:3",
             "startedAt": "2026-07-17T04:32:31.677Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-17T04:33:30.000Z",
+            "durationMs": 58323,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "requirements_agent",
           "name": "要件定義",
           "role": "マネージャの企画を素材仕様、実装要求、作業境界、受け入れ条件へ変換する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
-          "activityStatus": "blocked",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -159,16 +159,16 @@
           "label": "manager direction",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "ready",
+          "status": "completed",
           "attempt": 3,
-          "completedAt": "2026-07-17T04:28:00.000Z",
+          "completedAt": "2026-07-17T04:33:30.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:3:manager_direction:3",
             "startedAt": "2026-07-17T04:32:31.677Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-17T04:33:30.000Z",
+            "durationMs": 58323,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -176,9 +176,9 @@
           "label": "requirements definition",
           "agentId": "requirements_agent",
           "agentName": "要件定義",
-          "status": "blocked",
-          "attempt": 2,
-          "completedAt": null,
+          "status": "ready",
+          "attempt": 3,
+          "completedAt": "2026-07-17T04:33:30.000Z",
           "timing": null
         },
         {
@@ -267,6 +267,26 @@
         }
       ],
       "history": [
+        {
+          "iteration": 3,
+          "taskId": "requirements_definition",
+          "taskLabel": "requirements definition",
+          "agentId": "requirements_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 3,
+          "taskId": "manager_direction",
+          "taskLabel": "manager direction",
+          "agentId": "manager_agent",
+          "status": "completed",
+          "completedAt": "2026-07-17T04:33:30.000Z",
+          "verdict": "",
+          "nextTask": "requirements_definition"
+        },
         {
           "iteration": 3,
           "taskId": "manager_direction",
@@ -406,26 +426,6 @@
           "completedAt": null,
           "verdict": "",
           "nextTask": ""
-        },
-        {
-          "iteration": 1,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-16T16:28:45.000Z",
-          "verdict": "",
-          "nextTask": "manager_direction"
-        },
-        {
-          "iteration": 1,
-          "taskId": "program_validation",
-          "taskLabel": "program validation",
-          "agentId": "program_tester_agent",
-          "status": "completed",
-          "completedAt": "2026-07-16T16:24:57.000Z",
-          "verdict": "fail",
-          "nextTask": "manager_review"
         }
       ],
       "parallelGroups": [
