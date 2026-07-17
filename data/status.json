@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T11:05:44.235Z",
+  "generatedAt": "2026-07-17T11:05:47.482Z",
   "sourceUpdatedAt": "2026-07-17T09:25:58.000Z",
   "runs": [
     {
@@ -394,14 +394,14 @@
           "startedAt": "2026-07-17T10:48:28.871Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-17T11:05:42.644Z",
+          "updatedAt": "2026-07-17T11:05:42.901Z",
           "counts": {
             "total": 3,
-            "terminal": 0,
-            "completed": 0,
+            "terminal": 2,
+            "completed": 2,
             "failed": 0,
             "active": 0,
-            "dispatched": 3,
+            "dispatched": 1,
             "ready": 0
           },
           "integration": {
@@ -418,8 +418,8 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "dispatched",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "stale",
               "observerState": "IDLE",
               "runtimeFresh": false,
@@ -435,15 +435,15 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "dispatched",
-              "formalStatus": "dispatched",
-              "runtimePhase": "stale",
+              "status": "completed",
+              "formalStatus": "completed",
+              "runtimePhase": "idle",
               "observerState": "IDLE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": "2026-07-17T10:50:37.844Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-17T11:05:06.000Z",
+              "durationMs": 868156,
+              "running": false,
               "timeoutAt": "2026-07-17T11:20:37.844Z"
             },
             {
