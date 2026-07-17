@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T00:29:46.957Z",
+  "generatedAt": "2026-07-17T00:30:00.160Z",
   "sourceUpdatedAt": "2026-07-16T23:50:30.000Z",
   "runs": [
     {
@@ -345,16 +345,6 @@
         },
         {
           "iteration": 2,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 2,
           "taskId": "asset_creation",
           "taskLabel": "asset creation",
           "agentId": "asset_agent",
@@ -362,16 +352,6 @@
           "completedAt": "2026-07-16T17:08:00.000Z",
           "verdict": "",
           "nextTask": "program_build"
-        },
-        {
-          "iteration": 2,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
         },
         {
           "iteration": 2,
@@ -385,16 +365,6 @@
         },
         {
           "iteration": 2,
-          "taskId": "requirements_definition",
-          "taskLabel": "requirements definition",
-          "agentId": "requirements_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 2,
           "taskId": "manager_direction",
           "taskLabel": "manager direction",
           "agentId": "manager_agent",
@@ -402,16 +372,6 @@
           "completedAt": "2026-07-16T16:35:47.000Z",
           "verdict": "",
           "nextTask": "requirements_definition"
-        },
-        {
-          "iteration": 2,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
         },
         {
           "iteration": 1,
@@ -490,7 +450,7 @@
           "revision": 1,
           "parentTaskId": "program_build",
           "parentTaskStatus": "completed",
-          "phase": "integration_completed",
+          "phase": "workers",
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
@@ -574,7 +534,7 @@
           "revision": 1,
           "parentTaskId": "program_build",
           "parentTaskStatus": "completed",
-          "phase": "integration_completed",
+          "phase": "workers",
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
