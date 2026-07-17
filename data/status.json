@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T06:23:30.707Z",
+  "generatedAt": "2026-07-17T06:23:34.022Z",
   "sourceUpdatedAt": "2026-07-17T05:39:29.000Z",
   "runs": [
     {
@@ -129,7 +129,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:3:program_validation:3",
+            "startedAt": "2026-07-17T06:23:31.956Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_worker_1",
@@ -251,7 +258,14 @@
           "status": "ready",
           "attempt": 3,
           "completedAt": "2026-07-17T05:39:29.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:3:program_validation:3",
+            "startedAt": "2026-07-17T06:23:31.956Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "manager_review",
@@ -374,14 +388,14 @@
           "startedAt": "2026-07-17T05:16:58.785Z",
           "completedAt": "2026-07-17T05:39:29.000Z",
           "durationMs": 1350215,
-          "updatedAt": "2026-07-17T06:22:59.246Z",
+          "updatedAt": "2026-07-17T06:23:32.337Z",
           "counts": {
             "total": 3,
-            "terminal": 3,
-            "completed": 3,
+            "terminal": 0,
+            "completed": 0,
             "failed": 0,
             "active": 0,
-            "dispatched": 0,
+            "dispatched": 3,
             "ready": 0
           },
           "integration": {
@@ -398,8 +412,8 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
+              "status": "dispatched",
+              "formalStatus": "dispatched",
               "runtimePhase": "stale",
               "observerState": "ACTIVE",
               "runtimeFresh": false,
@@ -415,8 +429,8 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
+              "status": "dispatched",
+              "formalStatus": "dispatched",
               "runtimePhase": "idle",
               "observerState": "IDLE",
               "runtimeFresh": true,
@@ -432,8 +446,8 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
+              "status": "dispatched",
+              "formalStatus": "dispatched",
               "runtimePhase": "stale",
               "observerState": "ACTIVE",
               "runtimeFresh": false,
