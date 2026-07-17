@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="publicBlackboard public workflow map">
-  <title>publicBlackboard Workflow Map</title>
+  <title>publicBlackboard Workflow Status</title>
   <link rel="stylesheet" href="./styles.css?v=20260716-1">
   <link rel="stylesheet" href="./runtime-status.css?v=20260716-1">
   <link rel="stylesheet" href="./parallel-dashboard.css?v=20260716-1">
@@ -14,7 +13,7 @@
   <header class="topbar">
     <div>
       <p class="eyebrow">publicBlackboard</p>
-      <h1>Workflow Map</h1>
+      <h1>Workflow Status</h1>
     </div>
     <div class="topbar-actions">
       <label class="run-picker">
@@ -28,7 +27,7 @@
   <main>
     <section id="emptyState" class="empty-state" hidden>
       <h2>表示できるrunがありません</h2>
-      <p>公開ステータスが生成されると、ここにWorkflow Mapが表示されます。</p>
+      <p>公開ステータスがまだ生成されていません。</p>
     </section>
 
     <section id="dashboard" hidden>
@@ -84,7 +83,7 @@
             <button id="resetLayoutButton" type="button">配置を戻す</button>
           </div>
         </div>
-        <p class="graph-help">「生成中」はChrome拡張がChatGPTタブの生成シグナルを直近90秒以内に確認した場合だけ表示します。作業時間はprompt送信成功からGitHub上のtask完了までを計測します。</p>
+        <p class="graph-help">「生成中」はChatGPTタブから直近90秒以内に生成シグナルを受信した場合だけ表示します。</p>
         <div id="graphViewport" class="graph-viewport">
           <div id="graphStage" class="graph-stage">
             <svg id="edgeLayer" class="edge-layer" aria-hidden="true">
@@ -139,7 +138,7 @@
             <h2>task一覧</h2>
           </div>
           <div class="source-links">
-            <a id="statusLink" target="_blank" rel="noreferrer">公開status.json</a>
+            <a id="statusLink" href="./data/status.json" target="_blank" rel="noreferrer">status.json</a>
           </div>
         </div>
         <div class="table-wrap">
@@ -149,10 +148,7 @@
                 <th>状態</th>
                 <th>task</th>
                 <th>agent</th>
-                <th>送信予定</th>
-                <th>送信済み</th>
-                <th>作業時間</th>
-                <th>成果物</th>
+                <th>完了</th>
               </tr>
             </thead>
             <tbody id="taskTableBody"></tbody>
@@ -165,6 +161,6 @@
   <footer>公開用に安全化したWorkflow snapshotだけを表示しています。private repositoryの本文・成果物・tokenは含みません。</footer>
   <script src="./app.js?v=20260716-1" defer></script>
   <script src="./runtime-status-labels.js?v=20260716-2" defer></script>
-  <script src="./parallel-dashboard.js?v=20260716-1" defer></script>
+  <script src="./parallel-dashboard.js?v=20260718-1" defer></script>
 </body>
 </html>
