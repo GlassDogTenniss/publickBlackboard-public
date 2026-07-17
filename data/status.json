@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T04:52:30.297Z",
+  "generatedAt": "2026-07-17T04:52:47.291Z",
   "sourceUpdatedAt": "2026-07-17T04:44:30.000Z",
   "runs": [
     {
@@ -483,9 +483,9 @@
           "integration": {
             "status": "dispatched",
             "dispatchedAt": "2026-07-16T23:51:29.477Z",
-            "runtimePhase": "stale",
+            "runtimePhase": "idle",
             "observerState": "IDLE",
-            "runtimeFresh": false
+            "runtimeFresh": true
           },
           "workers": [
             {
@@ -530,9 +530,9 @@
               "attempt": 2,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "stale",
+              "runtimePhase": "idle",
               "observerState": "IDLE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": null,
               "completedAt": "2026-07-16T21:23:00.000Z",
               "durationMs": null,
@@ -567,9 +567,9 @@
           "integration": {
             "status": "dispatched",
             "dispatchedAt": "2026-07-16T15:33:59.048Z",
-            "runtimePhase": "stale",
+            "runtimePhase": "idle",
             "observerState": "IDLE",
-            "runtimeFresh": false
+            "runtimeFresh": true
           },
           "workers": [
             {
@@ -614,9 +614,9 @@
               "attempt": 1,
               "status": "dispatched",
               "formalStatus": "dispatched",
-              "runtimePhase": "stale",
+              "runtimePhase": "idle",
               "observerState": "IDLE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": "2026-07-16T15:14:44.522Z",
               "completedAt": "2026-07-16T14:54:06.000Z",
               "durationMs": 0,
