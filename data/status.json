@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.2.0",
-  "generatedAt": "2026-07-17T05:39:01.737Z",
+  "generatedAt": "2026-07-17T05:39:31.449Z",
   "sourceUpdatedAt": "2026-07-17T05:06:28.000Z",
   "runs": [
     {
@@ -364,22 +364,22 @@
           "startedAt": "2026-07-17T05:16:58.785Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-17T05:38:59.292Z",
+          "updatedAt": "2026-07-17T05:39:28.587Z",
           "counts": {
             "total": 3,
-            "terminal": 2,
-            "completed": 2,
+            "terminal": 0,
+            "completed": 0,
             "failed": 0,
-            "active": 0,
-            "dispatched": 1,
+            "active": 1,
+            "dispatched": 3,
             "ready": 0
           },
           "integration": {
             "status": "waiting",
             "dispatchedAt": null,
-            "runtimePhase": "stale",
+            "runtimePhase": "idle",
             "observerState": "IDLE",
-            "runtimeFresh": false
+            "runtimeFresh": true
           },
           "workers": [
             {
@@ -388,11 +388,11 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
-              "runtimePhase": "generating",
+              "status": "dispatched",
+              "formalStatus": "dispatched",
+              "runtimePhase": "stale",
               "observerState": "ACTIVE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-17T05:16:58.785Z",
               "completedAt": "2026-07-17T05:32:12.000Z",
               "durationMs": 913215,
@@ -405,8 +405,8 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
+              "status": "active",
+              "formalStatus": "dispatched",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
