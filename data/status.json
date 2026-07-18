@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-18T04:59:12.071Z",
-  "sourceUpdatedAt": "2026-07-17T18:42:00.000Z",
+  "generatedAt": "2026-07-18T04:59:37.245Z",
+  "sourceUpdatedAt": "2026-07-18T01:45:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,12 +9,12 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-17T18:42:00.000Z",
-      "currentTaskId": "manager_direction",
-      "currentTaskLabel": "manager direction",
-      "currentAgentId": "manager_agent",
-      "currentAgentName": "全体マネージャ",
-      "nextActionToken": "BLACKBOARD_NEXT_MANAGER_DIRECTION",
+      "updatedAt": "2026-07-18T01:45:00.000Z",
+      "currentTaskId": "requirements_definition",
+      "currentTaskLabel": "requirements definition",
+      "currentAgentId": "requirements_agent",
+      "currentAgentName": "要件定義",
+      "nextActionToken": "BLACKBOARD_NEXT_REQUIREMENTS_DEFINITION",
       "iteration": {
         "current": 7,
         "max": 100
@@ -37,31 +37,24 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "ready",
+          "status": "completed",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-18T01:45:00.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:7:manager_direction:7",
-            "startedAt": "2026-07-18T01:42:44.250Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
           "name": "要件定義",
           "role": "マネージャの企画を素材仕様、実装要求、作業境界、受け入れ条件へ変換する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
-          "activityStatus": "blocked",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -159,25 +152,18 @@
           "label": "manager direction",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "ready",
+          "status": "completed",
           "attempt": 7,
-          "completedAt": null,
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:7:manager_direction:7",
-            "startedAt": "2026-07-18T01:42:44.250Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "completedAt": "2026-07-18T01:45:00.000Z",
+          "timing": null
         },
         {
           "id": "requirements_definition",
           "label": "requirements definition",
           "agentId": "requirements_agent",
           "agentName": "要件定義",
-          "status": "blocked",
-          "attempt": 6,
+          "status": "ready",
+          "attempt": 7,
           "completedAt": null,
           "timing": null
         },
@@ -216,9 +202,9 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "completed",
+          "status": "blocked",
           "attempt": 6,
-          "completedAt": "2026-07-17T18:42:00.000Z",
+          "completedAt": null,
           "timing": null
         }
       ],
@@ -269,126 +255,6 @@
       "history": [
         {
           "iteration": 7,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 6,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-17T18:42:00.000Z",
-          "verdict": "",
-          "nextTask": "manager_direction"
-        },
-        {
-          "iteration": 6,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-17T18:38:24.000Z",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 6,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 6,
-          "taskId": "program_validation",
-          "taskLabel": "program validation",
-          "agentId": "program_tester_agent",
-          "status": "completed",
-          "completedAt": "2026-07-17T18:33:00.000Z",
-          "verdict": "fail",
-          "nextTask": "manager_review"
-        },
-        {
-          "iteration": 6,
-          "taskId": "program_validation",
-          "taskLabel": "program validation",
-          "agentId": "program_tester_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 6,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "failed",
-          "completedAt": "2026-07-17T18:17:30.000Z",
-          "verdict": "",
-          "nextTask": "program_validation"
-        },
-        {
-          "iteration": 6,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "failed",
-          "completedAt": "2026-07-17T18:17:30.000Z",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 6,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 6,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "completed",
-          "completedAt": "2026-07-17T18:16:00.000Z",
-          "verdict": "",
-          "nextTask": "program_build"
-        },
-        {
-          "iteration": 6,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 6,
-          "taskId": "requirements_definition",
-          "taskLabel": "requirements definition",
-          "agentId": "requirements_agent",
-          "status": "completed",
-          "completedAt": "2026-07-17T18:10:00.000Z",
-          "verdict": "",
-          "nextTask": "asset_creation"
-        },
-        {
-          "iteration": 6,
           "taskId": "requirements_definition",
           "taskLabel": "requirements definition",
           "agentId": "requirements_agent",
@@ -398,34 +264,14 @@
           "nextTask": ""
         },
         {
-          "iteration": 6,
+          "iteration": 7,
           "taskId": "manager_direction",
           "taskLabel": "manager direction",
           "agentId": "manager_agent",
           "status": "completed",
-          "completedAt": "2026-07-17T17:53:41.000Z",
+          "completedAt": "2026-07-18T01:45:00.000Z",
           "verdict": "",
           "nextTask": "requirements_definition"
-        },
-        {
-          "iteration": 6,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 5,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-17T17:46:11.000Z",
-          "verdict": "",
-          "nextTask": "manager_direction"
         }
       ],
       "parallelGroups": []
