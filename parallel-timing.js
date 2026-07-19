@@ -38,6 +38,23 @@
       || null;
   }
 
+  function integrationTiming(group) {
+    const startedAt = group?.integration?.dispatchedAt || group?.startedAt || null;
+    const completedAt = ['completed', 'failed'].includes(text(group?.parentTaskStatus).toLowerCase())
+      ? group?.completedAt || null
+      : null;
+    return duration(startedAt, completedAt);
+  }
+
+  function replaceDetailTiming(view) {
+    const terms = [...document.querySelectorAll('#selectedAgentDetail dt')];
+    const term = terms.find(item => text(item.textContent) === '作業時間');
+    const detail = term?.nextElementSibling;
+    if (!detail) return;
+    detail.textContent = view.label || '未開始';
+    detail.title = view.title;
+  }
+
   function update() {
     if (typeof currentRun !== 'function') return;
     const run = currentRun();
@@ -60,14 +77,14 @@
     const joinId = `parallel_join_${text(group?.groupId)}`;
     const join = document.querySelector(`.agent-node[data-agent-id="${CSS.escape(joinId)}"]`);
     const joinProgress = join?.querySelector('.agent-progress');
+    const joinView = integrationTiming(group);
     if (joinProgress) {
       const spans = joinProgress.querySelectorAll('span');
       const target = spans[1] || joinProgress.appendChild(document.createElement('span'));
-      const view = duration(group?.startedAt, group?.completedAt);
       target.className = 'agent-timing';
-      target.textContent = view.label;
-      target.title = view.title;
-      target.dataset.running = view.running ? 'true' : 'false';
+      target.textContent = joinView.label;
+      target.title = joinView.title;
+      target.dataset.running = joinView.running ? 'true' : 'false';
     }
 
     const selected = document.querySelector('.agent-node.selected.parallel-worker-node, .agent-node.selected.parallel-join-node');
@@ -77,6 +94,7 @@
         term.remove();
         detail?.remove();
       }
+      if (selected.classList.contains('parallel-join-node')) replaceDetailTiming(joinView);
     }
   }
 
