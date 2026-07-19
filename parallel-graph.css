@@ -1,0 +1,45 @@
+.agent-node.parallel-worker-node {
+  width: 240px;
+  border-color: #4f7a89;
+}
+
+.agent-node.parallel-worker-node::before {
+  content: "WORKER";
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+  color: rgba(31, 78, 96, 0.5);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.agent-node.parallel-join-node {
+  border: 2px dashed #426c7c;
+  background: #f7fbfc;
+}
+
+.agent-node.parallel-join-node::before {
+  content: "JOIN";
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+  color: rgba(31, 78, 96, 0.55);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.edge-layer path.edge-parallel {
+  stroke: #3f7184;
+  stroke-dasharray: 5 4;
+}
+
+.edge-layer path.edge-parallel-next {
+  stroke: #235e76;
+}
+
+.edge-layer path.edge-error {
+  stroke: var(--error-strong);
+  opacity: 1;
+}
