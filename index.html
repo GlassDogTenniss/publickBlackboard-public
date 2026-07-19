@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>publicBlackboard Workflow Status</title>
-  <link rel="stylesheet" href="./styles.css?v=20260716-1">
-  <link rel="stylesheet" href="./runtime-status.css?v=20260716-1">
-  <link rel="stylesheet" href="./parallel-dashboard.css?v=20260716-1">
+  <link rel="stylesheet" href="./styles.css?v=20260719-2">
+  <link rel="stylesheet" href="./runtime-status.css?v=20260719-2">
+  <link rel="stylesheet" href="./parallel-dashboard.css?v=20260719-2">
+  <link rel="stylesheet" href="./parallel-graph.css?v=20260719-1">
 </head>
 <body>
   <header class="topbar">
@@ -83,7 +84,7 @@
             <button id="resetLayoutButton" type="button">配置を戻す</button>
           </div>
         </div>
-        <p class="graph-help">「生成中」はChatGPTタブから直近90秒以内に生成シグナルを受信した場合だけ表示します。</p>
+        <p class="graph-help">通常taskと並列workerのfork/joinを表示します。</p>
         <div id="graphViewport" class="graph-viewport">
           <div id="graphStage" class="graph-stage">
             <svg id="edgeLayer" class="edge-layer" aria-hidden="true">
@@ -148,7 +149,10 @@
                 <th>状態</th>
                 <th>task</th>
                 <th>agent</th>
-                <th>完了</th>
+                <th>送信予定</th>
+                <th>送信済み</th>
+                <th>作業時間</th>
+                <th>成果物</th>
               </tr>
             </thead>
             <tbody id="taskTableBody"></tbody>
@@ -159,8 +163,9 @@
   </main>
 
   <footer>公開用に安全化したWorkflow snapshotだけを表示しています。private repositoryの本文・成果物・tokenは含みません。</footer>
-  <script src="./app.js?v=20260716-1" defer></script>
-  <script src="./runtime-status-labels.js?v=20260716-2" defer></script>
-  <script src="./parallel-dashboard.js?v=20260718-1" defer></script>
+  <script src="./app.js?v=20260719-2" defer></script>
+  <script src="./runtime-status-labels.js?v=20260719-2" defer></script>
+  <script src="./parallel-graph.js?v=20260719-1" defer></script>
+  <script src="./parallel-dashboard.js?v=20260719-2" defer></script>
 </body>
 </html>
