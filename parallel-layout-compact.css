@@ -1,0 +1,48 @@
+.parallel-cluster-frame {
+  position: absolute;
+  z-index: 0;
+  box-sizing: border-box;
+  border: 2px solid rgba(55, 105, 126, 0.38);
+  border-radius: 18px;
+  background: rgba(224, 241, 247, 0.18);
+  pointer-events: none;
+}
+
+.parallel-cluster-frame > span {
+  position: absolute;
+  top: -13px;
+  left: 18px;
+  padding: 3px 9px;
+  border: 1px solid rgba(55, 105, 126, 0.35);
+  border-radius: 999px;
+  background: #f8fcfd;
+  color: #315f71;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+.node-layer .agent-node { z-index: 2; }
+
+.edge-layer path.edge-parallel-fork,
+.edge-layer path.edge-parallel-join,
+.edge-layer path.edge-parallel-next {
+  opacity: 0.9;
+  stroke: #2e667d;
+  stroke-width: 2.8;
+  stroke-dasharray: none;
+}
+
+.edge-layer path.edge-parallel-fork.edge-muted,
+.edge-layer path.edge-parallel-join.edge-muted,
+.edge-layer path.edge-parallel-next.edge-muted { opacity: 0.58; }
+
+.edge-layer path.edge-parallel-fork.edge-completed,
+.edge-layer path.edge-parallel-join.edge-completed,
+.edge-layer path.edge-parallel-next.edge-completed {
+  opacity: 0.82;
+  stroke-dasharray: none;
+}
+
+.task-graph-worker .agent-header { border-left: 5px solid #3d7489; }
+.task-graph-join { border-width: 2px; border-style: dashed; }
