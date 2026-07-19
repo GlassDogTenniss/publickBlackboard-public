@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-19T15:19:43.571Z",
-  "sourceUpdatedAt": "2026-07-19T15:13:00.000Z",
+  "generatedAt": "2026-07-19T15:21:14.210Z",
+  "sourceUpdatedAt": "2026-07-19T15:16:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-19T15:13:00.000Z",
-      "currentTaskId": "asset_creation",
-      "currentTaskLabel": "asset creation",
-      "currentAgentId": "asset_agent",
-      "currentAgentName": "アセット",
-      "nextActionToken": "BLACKBOARD_NEXT_ASSET_CREATION",
+      "updatedAt": "2026-07-19T15:16:00.000Z",
+      "currentTaskId": "program_build",
+      "currentTaskLabel": "program build",
+      "currentAgentId": "program_manager_agent",
+      "currentAgentName": "プログラマ-マネージャ",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
       "iteration": {
         "current": 16,
         "max": 100
       },
       "progress": {
-        "completed": 4,
+        "completed": 5,
         "total": 6,
-        "percentage": 67
+        "percentage": 83
       },
       "completion": {
         "done": false
@@ -79,33 +79,33 @@
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "ready",
+          "status": "completed",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-19T15:16:00.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:16:asset_creation:16",
             "startedAt": "2026-07-19T15:14:19.551Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-19T15:16:00.000Z",
+            "durationMs": 100449,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "error",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "failed",
+          "activityStatus": "ready",
           "activityInstruction": "",
-          "completedAt": "2026-07-19T14:28:00.000Z",
+          "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
           "activityTiming": null
@@ -207,16 +207,16 @@
           "label": "asset creation",
           "agentId": "asset_agent",
           "agentName": "アセット",
-          "status": "ready",
+          "status": "completed",
           "attempt": 16,
-          "completedAt": null,
+          "completedAt": "2026-07-19T15:16:00.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:16:asset_creation:16",
             "startedAt": "2026-07-19T15:14:19.551Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-19T15:16:00.000Z",
+            "durationMs": 100449,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -224,9 +224,9 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "failed",
-          "attempt": 15,
-          "completedAt": "2026-07-19T14:28:00.000Z",
+          "status": "ready",
+          "attempt": 16,
+          "completedAt": null,
           "timing": null
         },
         {
@@ -297,63 +297,23 @@
       "history": [
         {
           "iteration": 16,
+          "taskId": "program_build",
+          "taskLabel": "program build",
+          "agentId": "program_manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 16,
           "taskId": "asset_creation",
           "taskLabel": "asset creation",
           "agentId": "asset_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 16,
-          "taskId": "requirements_definition",
-          "taskLabel": "requirements definition",
-          "agentId": "requirements_agent",
           "status": "completed",
-          "completedAt": "2026-07-19T15:13:00.000Z",
+          "completedAt": "2026-07-19T15:16:00.000Z",
           "verdict": "",
-          "nextTask": "asset_creation"
-        },
-        {
-          "iteration": 16,
-          "taskId": "requirements_definition",
-          "taskLabel": "requirements definition",
-          "agentId": "requirements_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 16,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-19T14:58:00.000Z",
-          "verdict": "",
-          "nextTask": "requirements_definition"
-        },
-        {
-          "iteration": 16,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 15,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-19T14:56:00.000Z",
-          "verdict": "",
-          "nextTask": "manager_direction"
+          "nextTask": "program_build"
         }
       ],
       "parallelGroups": []
