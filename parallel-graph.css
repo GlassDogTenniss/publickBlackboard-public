@@ -1,45 +1,62 @@
-.agent-node.parallel-worker-node {
-  width: 240px;
+.agent-node.task-graph-node {
+  width: 250px;
+}
+
+.agent-node.task-graph-node .agent-task {
+  text-transform: none;
+}
+
+.agent-node.task-graph-worker {
   border-color: #4f7a89;
 }
 
-.agent-node.parallel-worker-node::before {
-  content: "WORKER";
+.agent-node.task-graph-worker::before,
+.agent-node.task-graph-join::before {
   position: absolute;
   right: 9px;
   bottom: 7px;
-  color: rgba(31, 78, 96, 0.5);
+  color: rgba(31, 78, 96, 0.52);
   font-size: 9px;
   font-weight: 900;
   letter-spacing: 0.12em;
 }
 
-.agent-node.parallel-join-node {
+.agent-node.task-graph-worker::before {
+  content: "WORKER TASK";
+}
+
+.agent-node.task-graph-join {
   border: 2px dashed #426c7c;
   background: #f7fbfc;
 }
 
-.agent-node.parallel-join-node::before {
-  content: "JOIN";
-  position: absolute;
-  right: 9px;
-  bottom: 7px;
-  color: rgba(31, 78, 96, 0.55);
-  font-size: 9px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
+.agent-node.task-graph-join::before {
+  content: "JOIN TASK";
 }
 
-.edge-layer path.edge-parallel {
+.edge-layer path.edge-parallel-fork,
+.edge-layer path.edge-parallel-join {
   stroke: #3f7184;
+  stroke-width: 2.2;
   stroke-dasharray: 5 4;
+  opacity: 1;
+  marker-end: url(#arrowDefault);
 }
 
 .edge-layer path.edge-parallel-next {
   stroke: #235e76;
+  stroke-width: 2.4;
+  opacity: 1;
+  marker-end: url(#arrowDefault);
 }
 
 .edge-layer path.edge-error {
   stroke: var(--error-strong);
   opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .graph-help {
+    max-width: 720px;
+  }
 }
