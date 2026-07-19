@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>publicBlackboard Workflow Status</title>
+  <title>publicBlackboard Workflow Map</title>
   <link rel="stylesheet" href="./styles.css?v=20260719-2">
   <link rel="stylesheet" href="./runtime-status.css?v=20260719-2">
   <link rel="stylesheet" href="./parallel-dashboard.css?v=20260719-2">
-  <link rel="stylesheet" href="./parallel-graph.css?v=20260719-1">
+  <link rel="stylesheet" href="./parallel-graph.css?v=20260719-3">
 </head>
 <body>
   <header class="topbar">
     <div>
       <p class="eyebrow">publicBlackboard</p>
-      <h1>Workflow Status</h1>
+      <h1>Workflow Map</h1>
     </div>
     <div class="topbar-actions">
       <label class="run-picker">
@@ -28,7 +28,7 @@
   <main>
     <section id="emptyState" class="empty-state" hidden>
       <h2>表示できるrunがありません</h2>
-      <p>公開ステータスがまだ生成されていません。</p>
+      <p>公開status.jsonが生成されると表示されます。</p>
     </section>
 
     <section id="dashboard" hidden>
@@ -74,7 +74,7 @@
       <section class="graph-panel">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Agent graph</p>
+            <p class="eyebrow">Task graph</p>
             <h2>作業の流れ</h2>
           </div>
           <div class="graph-actions">
@@ -84,7 +84,7 @@
             <button id="resetLayoutButton" type="button">配置を戻す</button>
           </div>
         </div>
-        <p class="graph-help">通常taskと並列workerのfork/joinを表示します。</p>
+        <p class="graph-help">task単位で通常フローと並列workerのfork/joinを表示します。</p>
         <div id="graphViewport" class="graph-viewport">
           <div id="graphStage" class="graph-stage">
             <svg id="edgeLayer" class="edge-layer" aria-hidden="true">
@@ -114,11 +114,11 @@
         <article class="detail-card">
           <div class="section-heading compact">
             <div>
-              <p class="eyebrow">Selected agent</p>
-              <h2 id="selectedAgentTitle">agentを選択</h2>
+              <p class="eyebrow">Selected task</p>
+              <h2 id="selectedAgentTitle">taskを選択</h2>
             </div>
           </div>
-          <div id="selectedAgentDetail" class="selected-agent-detail">グラフのカードをクリックすると詳細を表示します。</div>
+          <div id="selectedAgentDetail" class="selected-agent-detail">グラフのカードをクリックするとtask詳細を表示します。</div>
         </article>
 
         <article class="detail-card">
@@ -165,8 +165,8 @@
   <footer>公開用に安全化したWorkflow snapshotだけを表示しています。private repositoryの本文・成果物・tokenは含みません。</footer>
   <script src="./app.js?v=20260719-2" defer></script>
   <script src="./runtime-status-labels.js?v=20260719-2" defer></script>
-  <script src="./parallel-graph.js?v=20260719-1" defer></script>
-  <script src="./parallel-timing.js?v=20260719-1" defer></script>
+  <script src="./parallel-graph.js?v=20260719-3" defer></script>
+  <script src="./parallel-timing.js?v=20260719-3" defer></script>
   <script src="./parallel-dashboard.js?v=20260719-2" defer></script>
 </body>
 </html>
