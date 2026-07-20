@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-20T18:53:44.919Z",
+  "generatedAt": "2026-07-20T18:56:19.346Z",
   "sourceUpdatedAt": "2026-07-20T18:47:10.000Z",
   "runs": [
     {
@@ -58,7 +58,7 @@
           "agentId": "requirements_agent",
           "name": "要件定義",
           "role": "マネージャの企画を素材仕様、実装要求、作業境界、受け入れ条件へ変換する",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
           "activityStatus": "ready",
