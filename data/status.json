@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T08:53:45.789Z",
+  "generatedAt": "2026-07-21T08:54:18.489Z",
   "sourceUpdatedAt": "2026-07-21T08:43:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
           "activityStatus": "ready",
@@ -45,7 +45,14 @@
           "completedAt": null,
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:32:manager_review:32",
+            "startedAt": "2026-07-21T08:54:15.351Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -268,7 +275,14 @@
           "status": "ready",
           "attempt": 32,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:32:manager_review:32",
+            "startedAt": "2026-07-21T08:54:15.351Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         }
       ],
       "edges": [
@@ -411,9 +425,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "idle",
+              "runtimePhase": "stale",
               "observerState": "IDLE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-21T07:36:24.284Z",
               "completedAt": "2026-07-21T07:41:01.000Z",
               "durationMs": 276716,
