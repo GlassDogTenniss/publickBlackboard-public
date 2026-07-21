@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T13:16:47.186Z",
+  "generatedAt": "2026-07-21T13:16:49.037Z",
   "sourceUpdatedAt": "2026-07-21T12:48:00.000Z",
   "runs": [
     {
@@ -329,7 +329,7 @@
             "terminal": 1,
             "completed": 1,
             "failed": 0,
-            "active": 1,
+            "active": 2,
             "dispatched": 2,
             "ready": 0
           },
@@ -381,11 +381,11 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "dispatched",
+              "status": "active",
               "formalStatus": "dispatched",
-              "runtimePhase": "stale",
+              "runtimePhase": "generating",
               "observerState": "ACTIVE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": "2026-07-21T13:10:56.289Z",
               "completedAt": null,
               "durationMs": null,
