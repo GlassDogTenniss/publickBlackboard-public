@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T05:06:13.656Z",
+  "generatedAt": "2026-07-21T05:06:36.187Z",
   "sourceUpdatedAt": "2026-07-21T04:58:00.000Z",
   "runs": [
     {
@@ -323,7 +323,7 @@
           "startedAt": "2026-07-21T04:58:38.296Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-21T05:06:12.087Z",
+          "updatedAt": "2026-07-21T05:06:34.807Z",
           "counts": {
             "total": 3,
             "terminal": 3,
@@ -383,9 +383,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "idle",
+              "runtimePhase": "stale",
               "observerState": "IDLE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-21T04:58:44.904Z",
               "completedAt": "2026-07-21T05:02:16.000Z",
               "durationMs": 211096,
