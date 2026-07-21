@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T04:05:28.604Z",
+  "generatedAt": "2026-07-21T04:05:37.394Z",
   "sourceUpdatedAt": "2026-07-21T03:54:00.000Z",
   "runs": [
     {
@@ -360,23 +360,23 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "running",
+          "status": "integration_dispatched",
           "startedAt": "2026-07-21T04:00:39.990Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-21T04:03:38.830Z",
+          "updatedAt": "2026-07-21T04:05:36.037Z",
           "counts": {
             "total": 3,
-            "terminal": 2,
-            "completed": 2,
+            "terminal": 3,
+            "completed": 3,
             "failed": 0,
-            "active": 1,
-            "dispatched": 1,
+            "active": 0,
+            "dispatched": 0,
             "ready": 0
           },
           "integration": {
-            "status": "waiting",
-            "dispatchedAt": null,
+            "status": "dispatched",
+            "dispatchedAt": "2026-07-21T04:05:36.000Z",
             "runtimePhase": "settling",
             "observerState": "SETTLING",
             "runtimeFresh": true
@@ -422,15 +422,15 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-21T04:00:50.402Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-21T04:03:46.000Z",
+              "durationMs": 175598,
+              "running": false,
               "timeoutAt": "2026-07-21T04:30:50.402Z"
             }
           ]
