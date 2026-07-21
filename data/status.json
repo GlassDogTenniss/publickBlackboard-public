@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T01:12:35.622Z",
+  "generatedAt": "2026-07-21T01:12:45.426Z",
   "sourceUpdatedAt": "2026-07-21T01:10:14.000Z",
   "runs": [
     {
@@ -399,9 +399,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "stale",
+              "runtimePhase": "idle",
               "observerState": "IDLE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": "2026-07-21T00:59:08.531Z",
               "completedAt": "2026-07-21T01:02:37.000Z",
               "durationMs": 208469,
