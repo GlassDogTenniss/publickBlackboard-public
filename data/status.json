@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T10:59:43.916Z",
+  "generatedAt": "2026-07-21T10:59:46.027Z",
   "sourceUpdatedAt": "2026-07-21T11:00:00.000Z",
   "runs": [
     {
@@ -308,38 +308,7 @@
           "kind": "loop"
         }
       ],
-      "history": [
-        {
-          "iteration": 0,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 34,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 34,
-          "taskId": "",
-          "taskLabel": "未設定",
-          "agentId": "",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        }
-      ],
+      "history": [],
       "parallelGroups": [
         {
           "groupId": "program_i34_a35",
