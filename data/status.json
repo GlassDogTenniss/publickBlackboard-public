@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T05:02:36.087Z",
+  "generatedAt": "2026-07-21T05:03:06.658Z",
   "sourceUpdatedAt": "2026-07-21T04:58:00.000Z",
   "runs": [
     {
@@ -323,14 +323,14 @@
           "startedAt": "2026-07-21T04:58:38.296Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-21T05:02:05.351Z",
+          "updatedAt": "2026-07-21T05:03:05.247Z",
           "counts": {
             "total": 3,
-            "terminal": 0,
-            "completed": 0,
+            "terminal": 2,
+            "completed": 2,
             "failed": 0,
-            "active": 3,
-            "dispatched": 3,
+            "active": 1,
+            "dispatched": 1,
             "ready": 0
           },
           "integration": {
@@ -347,15 +347,15 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-21T04:58:38.296Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-21T05:05:30.000Z",
+              "durationMs": 411704,
+              "running": false,
               "timeoutAt": "2026-07-21T05:28:38.296Z"
             },
             {
@@ -381,15 +381,15 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-21T04:58:44.904Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-21T05:02:16.000Z",
+              "durationMs": 211096,
+              "running": false,
               "timeoutAt": "2026-07-21T05:28:44.904Z"
             }
           ]
