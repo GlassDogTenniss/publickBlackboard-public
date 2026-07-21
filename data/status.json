@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T13:17:37.778Z",
+  "generatedAt": "2026-07-21T13:18:21.074Z",
   "sourceUpdatedAt": "2026-07-21T12:48:00.000Z",
   "runs": [
     {
@@ -329,7 +329,7 @@
             "terminal": 1,
             "completed": 1,
             "failed": 0,
-            "active": 2,
+            "active": 1,
             "dispatched": 2,
             "ready": 0
           },
@@ -349,9 +349,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "generating",
+              "runtimePhase": "stale",
               "observerState": "ACTIVE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-21T13:10:44.991Z",
               "completedAt": "2026-07-21T13:15:30.000Z",
               "durationMs": 285009,
@@ -381,11 +381,11 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
+              "status": "dispatched",
               "formalStatus": "dispatched",
-              "runtimePhase": "generating",
+              "runtimePhase": "stale",
               "observerState": "ACTIVE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-21T13:10:56.289Z",
               "completedAt": null,
               "durationMs": null,
