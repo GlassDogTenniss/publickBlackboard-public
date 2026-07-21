@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-21T16:43:35.748Z",
+  "generatedAt": "2026-07-21T16:44:13.881Z",
   "sourceUpdatedAt": "2026-07-21T16:38:18.000Z",
   "runs": [
     {
@@ -66,7 +66,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:37:requirements_definition:37",
+            "startedAt": "2026-07-21T16:44:12.140Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "asset_agent",
@@ -179,7 +186,14 @@
           "status": "ready",
           "attempt": 37,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:37:requirements_definition:37",
+            "startedAt": "2026-07-21T16:44:12.140Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "asset_creation",
