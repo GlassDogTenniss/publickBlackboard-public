@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-22T03:29:58.097Z",
+  "generatedAt": "2026-07-22T03:30:09.250Z",
   "sourceUpdatedAt": "2026-07-22T03:10:34.000Z",
   "runs": [
     {
@@ -319,18 +319,18 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "waiting",
-          "startedAt": null,
+          "status": "running",
+          "startedAt": "2026-07-22T03:29:55.965Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": null,
+          "updatedAt": "2026-07-22T03:30:07.744Z",
           "counts": {
             "total": 3,
             "terminal": 0,
             "completed": 0,
             "failed": 0,
-            "active": 0,
-            "dispatched": 0,
+            "active": 2,
+            "dispatched": 2,
             "ready": 0
           },
           "integration": {
@@ -347,16 +347,16 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "waiting",
-              "formalStatus": "waiting",
+              "status": "active",
+              "formalStatus": "dispatched",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
-              "startedAt": null,
+              "startedAt": "2026-07-22T03:29:55.965Z",
               "completedAt": null,
               "durationMs": null,
-              "running": false,
-              "timeoutAt": null
+              "running": true,
+              "timeoutAt": "2026-07-22T03:59:55.965Z"
             },
             {
               "workerId": "worker_2",
@@ -364,16 +364,16 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "waiting",
-              "formalStatus": "waiting",
-              "runtimePhase": "idle",
-              "observerState": "IDLE",
+              "status": "active",
+              "formalStatus": "dispatched",
+              "runtimePhase": "generating",
+              "observerState": "ACTIVE",
               "runtimeFresh": true,
-              "startedAt": null,
+              "startedAt": "2026-07-22T03:30:04.565Z",
               "completedAt": null,
               "durationMs": null,
-              "running": false,
-              "timeoutAt": null
+              "running": true,
+              "timeoutAt": "2026-07-22T04:00:04.565Z"
             },
             {
               "workerId": "worker_3",
@@ -381,8 +381,8 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "waiting",
-              "formalStatus": "waiting",
+              "status": "draft_present",
+              "formalStatus": "draft_present",
               "runtimePhase": "idle",
               "observerState": "IDLE",
               "runtimeFresh": true,
