@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-22T02:46:35.843Z",
+  "generatedAt": "2026-07-22T02:47:18.263Z",
   "sourceUpdatedAt": "2026-07-22T02:40:11.000Z",
   "runs": [
     {
@@ -58,7 +58,7 @@
           "agentId": "requirements_agent",
           "name": "要件定義",
           "role": "マネージャの企画を素材仕様、実装要求、作業境界、受け入れ条件へ変換する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
           "activityStatus": "ready",
@@ -66,7 +66,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:requirements_definition:39",
+            "startedAt": "2026-07-22T02:47:15.731Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "asset_agent",
@@ -179,7 +186,14 @@
           "status": "ready",
           "attempt": 39,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:requirements_definition:39",
+            "startedAt": "2026-07-22T02:47:15.731Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "asset_creation",
