@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-22T01:56:46.480Z",
+  "generatedAt": "2026-07-22T01:56:58.396Z",
   "sourceUpdatedAt": "2026-07-22T01:22:34.000Z",
   "runs": [
     {
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "in_progress",
@@ -319,25 +319,25 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "running",
+          "status": "integrating",
           "startedAt": "2026-07-22T01:37:11.060Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-22T01:48:06.499Z",
+          "updatedAt": "2026-07-22T01:56:56.761Z",
           "counts": {
             "total": 3,
-            "terminal": 2,
+            "terminal": 3,
             "completed": 0,
-            "failed": 2,
+            "failed": 3,
             "active": 0,
-            "dispatched": 1,
+            "dispatched": 0,
             "ready": 0
           },
           "integration": {
-            "status": "waiting",
-            "dispatchedAt": null,
-            "runtimePhase": "idle",
-            "observerState": "IDLE",
+            "status": "active",
+            "dispatchedAt": "2026-07-22T01:56:56.699Z",
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
             "runtimeFresh": true
           },
           "workers": [
@@ -347,15 +347,15 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "dispatched",
-              "formalStatus": "dispatched",
+              "status": "failed",
+              "formalStatus": "failed",
               "runtimePhase": "idle",
               "observerState": "IDLE",
               "runtimeFresh": true,
               "startedAt": "2026-07-22T01:37:11.060Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-22T01:48:35.000Z",
+              "durationMs": 683940,
+              "running": false,
               "timeoutAt": "2026-07-22T02:07:11.060Z"
             },
             {
