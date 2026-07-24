@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T15:54:31.855Z",
+  "generatedAt": "2026-07-24T15:54:44.513Z",
   "sourceUpdatedAt": "2026-07-24T15:32:41.000Z",
   "runs": [
     {
@@ -363,7 +363,7 @@
           "startedAt": "2026-07-24T15:46:18.001Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-24T15:54:11.031Z",
+          "updatedAt": "2026-07-24T15:54:42.596Z",
           "counts": {
             "total": 3,
             "terminal": 3,
@@ -376,8 +376,8 @@
           "integration": {
             "status": "dispatched",
             "dispatchedAt": "2026-07-24T15:53:17.926Z",
-            "runtimePhase": "settling",
-            "observerState": "SETTLING",
+            "runtimePhase": "idle",
+            "observerState": "IDLE",
             "runtimeFresh": true
           },
           "workers": [
