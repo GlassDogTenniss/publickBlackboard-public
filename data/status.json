@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T11:50:46.252Z",
+  "generatedAt": "2026-07-24T11:50:52.359Z",
   "sourceUpdatedAt": "2026-07-24T11:42:16.000Z",
   "runs": [
     {
@@ -45,7 +45,14 @@
           "completedAt": "2026-07-22T02:40:11.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:manager_direction:39",
+            "startedAt": "2026-07-22T02:40:21.682Z",
+            "finishedAt": "2026-07-22T02:40:21.682Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -59,7 +66,14 @@
           "completedAt": "2026-07-22T03:01:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:requirements_definition:39",
+            "startedAt": "2026-07-22T02:47:15.731Z",
+            "finishedAt": "2026-07-22T03:01:00.000Z",
+            "durationMs": 824269,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "asset_agent",
@@ -73,7 +87,14 @@
           "completedAt": "2026-07-22T03:05:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:asset_creation:39",
+            "startedAt": "2026-07-22T03:02:42.134Z",
+            "finishedAt": "2026-07-22T03:05:00.000Z",
+            "durationMs": 137866,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "program_manager_agent",
@@ -89,9 +110,9 @@
           "completedCount": 0,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:program_build:40",
-            "startedAt": "2026-07-22T03:10:34.000Z",
+            "startedAt": "2026-07-22T03:11:20.823Z",
             "finishedAt": "2026-07-24T11:42:16.000Z",
-            "durationMs": 203502000,
+            "durationMs": 203455177,
             "running": false,
             "completionStatus": "failed"
           }
@@ -108,7 +129,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:program_validation:39",
+            "startedAt": "2026-07-24T11:45:45.971Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_worker_1",
@@ -162,7 +190,14 @@
           "status": "completed",
           "attempt": 39,
           "completedAt": "2026-07-22T02:40:11.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:manager_direction:39",
+            "startedAt": "2026-07-22T02:40:21.682Z",
+            "finishedAt": "2026-07-22T02:40:21.682Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "requirements_definition",
@@ -172,7 +207,14 @@
           "status": "completed",
           "attempt": 39,
           "completedAt": "2026-07-22T03:01:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:requirements_definition:39",
+            "startedAt": "2026-07-22T02:47:15.731Z",
+            "finishedAt": "2026-07-22T03:01:00.000Z",
+            "durationMs": 824269,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "asset_creation",
@@ -182,7 +224,14 @@
           "status": "completed",
           "attempt": 39,
           "completedAt": "2026-07-22T03:05:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:asset_creation:39",
+            "startedAt": "2026-07-22T03:02:42.134Z",
+            "finishedAt": "2026-07-22T03:05:00.000Z",
+            "durationMs": 137866,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "program_build",
@@ -194,9 +243,9 @@
           "completedAt": "2026-07-24T11:42:16.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:program_build:40",
-            "startedAt": "2026-07-22T03:10:34.000Z",
+            "startedAt": "2026-07-22T03:11:20.823Z",
             "finishedAt": "2026-07-24T11:42:16.000Z",
-            "durationMs": 203502000,
+            "durationMs": 203455177,
             "running": false,
             "completionStatus": "failed"
           }
@@ -209,7 +258,14 @@
           "status": "ready",
           "attempt": 39,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:39:program_validation:39",
+            "startedAt": "2026-07-24T11:45:45.971Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "manager_review",
@@ -267,16 +323,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 39,
-          "taskId": "program_validation",
-          "taskLabel": "program validation",
-          "agentId": "program_tester_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 39,
           "taskId": "program_build",
