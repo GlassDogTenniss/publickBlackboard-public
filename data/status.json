@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T23:10:48.719Z",
+  "generatedAt": "2026-07-24T23:11:22.899Z",
   "sourceUpdatedAt": "2026-07-24T22:44:00.000Z",
   "runs": [
     {
@@ -361,9 +361,9 @@
           "integration": {
             "status": "failed",
             "dispatchedAt": "2026-07-24T22:34:19.116Z",
-            "runtimePhase": "idle",
+            "runtimePhase": "stale",
             "observerState": "IDLE",
-            "runtimeFresh": true
+            "runtimeFresh": false
           },
           "workers": [
             {
