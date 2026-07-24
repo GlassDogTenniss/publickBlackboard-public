@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T12:56:56.573Z",
+  "generatedAt": "2026-07-24T12:57:19.976Z",
   "sourceUpdatedAt": "2026-07-24T12:42:42.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "waiting",
+          "status": "completed",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
@@ -107,7 +107,7 @@
           "agentId": "program_worker_1",
           "name": "プログラム-ワーカー1",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -121,7 +121,7 @@
           "agentId": "program_worker_2",
           "name": "プログラム-ワーカー2",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -135,7 +135,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -255,16 +255,6 @@
       "history": [
         {
           "iteration": 40,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 40,
           "taskId": "asset_creation",
           "taskLabel": "asset creation",
           "agentId": "asset_agent",
@@ -304,7 +294,92 @@
           "nextTask": ""
         }
       ],
-      "parallelGroups": []
+      "parallelGroups": [
+        {
+          "groupId": "program_i40_a41",
+          "revision": 1,
+          "parentTaskId": "program_build",
+          "parentTaskStatus": "in_progress",
+          "phase": "workers",
+          "coordinatorAgentId": "program_manager_agent",
+          "maxConcurrency": 3,
+          "timeoutMinutes": 30,
+          "status": "running",
+          "startedAt": "2026-07-24T12:54:52.771Z",
+          "completedAt": null,
+          "durationMs": null,
+          "updatedAt": "2026-07-24T12:56:21.725Z",
+          "counts": {
+            "total": 3,
+            "terminal": 0,
+            "completed": 0,
+            "failed": 0,
+            "active": 3,
+            "dispatched": 3,
+            "ready": 0
+          },
+          "integration": {
+            "status": "waiting",
+            "dispatchedAt": null,
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
+            "runtimeFresh": true
+          },
+          "workers": [
+            {
+              "workerId": "worker_1",
+              "label": "プログラム-ワーカー1",
+              "agentId": "program_worker_1",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "active",
+              "formalStatus": "dispatched",
+              "runtimePhase": "generating",
+              "observerState": "ACTIVE",
+              "runtimeFresh": true,
+              "startedAt": "2026-07-24T12:54:52.771Z",
+              "completedAt": null,
+              "durationMs": null,
+              "running": true,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_2",
+              "label": "プログラム-ワーカー2",
+              "agentId": "program_worker_2",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "active",
+              "formalStatus": "dispatched",
+              "runtimePhase": "generating",
+              "observerState": "ACTIVE",
+              "runtimeFresh": true,
+              "startedAt": "2026-07-24T12:55:00.933Z",
+              "completedAt": null,
+              "durationMs": null,
+              "running": true,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_3",
+              "label": "プログラム-ワーカー3",
+              "agentId": "program_worker_3",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "active",
+              "formalStatus": "dispatched",
+              "runtimePhase": "generating",
+              "observerState": "ACTIVE",
+              "runtimeFresh": true,
+              "startedAt": "2026-07-24T12:55:10.780Z",
+              "completedAt": null,
+              "durationMs": null,
+              "running": true,
+              "timeoutAt": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
