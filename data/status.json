@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T15:52:59.539Z",
+  "generatedAt": "2026-07-24T15:53:19.547Z",
   "sourceUpdatedAt": "2026-07-24T15:32:41.000Z",
   "runs": [
     {
@@ -359,11 +359,11 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "integration_ready",
+          "status": "integration_dispatched",
           "startedAt": "2026-07-24T15:46:18.001Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-24T15:50:53.580Z",
+          "updatedAt": "2026-07-24T15:53:11.194Z",
           "counts": {
             "total": 3,
             "terminal": 3,
@@ -374,8 +374,8 @@
             "ready": 0
           },
           "integration": {
-            "status": "integration_delivery_error",
-            "dispatchedAt": null,
+            "status": "dispatched",
+            "dispatchedAt": "2026-07-24T15:53:17.926Z",
             "runtimePhase": "idle",
             "observerState": "IDLE",
             "runtimeFresh": true
@@ -423,9 +423,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "idle",
+              "runtimePhase": "stale",
               "observerState": "IDLE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-24T15:46:29.184Z",
               "completedAt": "2026-07-24T15:49:25.000Z",
               "durationMs": 175816,
