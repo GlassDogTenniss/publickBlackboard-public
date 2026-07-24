@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T12:53:50.306Z",
-  "sourceUpdatedAt": "2026-07-24T12:38:00.000Z",
+  "generatedAt": "2026-07-24T12:54:44.747Z",
+  "sourceUpdatedAt": "2026-07-24T12:42:42.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,7 +9,7 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-24T12:38:00.000Z",
+      "updatedAt": "2026-07-24T12:42:42.000Z",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_manager_agent",
@@ -20,9 +20,9 @@
         "max": 100
       },
       "progress": {
-        "completed": 5,
+        "completed": 3,
         "total": 6,
-        "percentage": 83
+        "percentage": 50
       },
       "completion": {
         "done": false
@@ -44,7 +44,7 @@
           "activityInstruction": "",
           "completedAt": "2026-07-24T12:13:54.000Z",
           "taskCount": 2,
-          "completedCount": 2,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:40:manager_direction:40",
             "startedAt": "2026-07-24T12:14:07.025Z",
@@ -103,7 +103,7 @@
           "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "ready",
+          "activityStatus": "in_progress",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -121,21 +121,21 @@
           "agentId": "program_tester_agent",
           "name": "プログラムテスタ",
           "role": "統合candidateを独立検証し、修正せず証拠と判定材料を残す",
-          "status": "completed",
+          "status": "waiting",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "completed",
+          "activityStatus": "blocked",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
-          "completedCount": 1,
+          "completedCount": 0,
           "activityTiming": null
         },
         {
           "agentId": "program_worker_1",
           "name": "プログラム-ワーカー1",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -149,7 +149,7 @@
           "agentId": "program_worker_2",
           "name": "プログラム-ワーカー2",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -163,7 +163,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -231,7 +231,7 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "ready",
+          "status": "in_progress",
           "attempt": 41,
           "completedAt": null,
           "timing": {
@@ -248,8 +248,8 @@
           "label": "program validation",
           "agentId": "program_tester_agent",
           "agentName": "プログラムテスタ",
-          "status": "completed",
-          "attempt": 39,
+          "status": "blocked",
+          "attempt": 40,
           "completedAt": null,
           "timing": null
         },
@@ -258,8 +258,8 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "completed",
-          "attempt": 39,
+          "status": "blocked",
+          "attempt": 40,
           "completedAt": null,
           "timing": null
         }
@@ -350,7 +350,92 @@
           "nextTask": ""
         }
       ],
-      "parallelGroups": []
+      "parallelGroups": [
+        {
+          "groupId": "program_i40_a41",
+          "revision": 1,
+          "parentTaskId": "program_build",
+          "parentTaskStatus": "in_progress",
+          "phase": "workers",
+          "coordinatorAgentId": "program_manager_agent",
+          "maxConcurrency": 3,
+          "timeoutMinutes": 30,
+          "status": "waiting",
+          "startedAt": null,
+          "completedAt": null,
+          "durationMs": null,
+          "updatedAt": null,
+          "counts": {
+            "total": 3,
+            "terminal": 0,
+            "completed": 0,
+            "failed": 0,
+            "active": 0,
+            "dispatched": 0,
+            "ready": 0
+          },
+          "integration": {
+            "status": "waiting",
+            "dispatchedAt": null,
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
+            "runtimeFresh": true
+          },
+          "workers": [
+            {
+              "workerId": "worker_1",
+              "label": "プログラム-ワーカー1",
+              "agentId": "program_worker_1",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "waiting",
+              "formalStatus": "waiting",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_2",
+              "label": "プログラム-ワーカー2",
+              "agentId": "program_worker_2",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "waiting",
+              "formalStatus": "waiting",
+              "runtimePhase": "stale",
+              "observerState": "IDLE",
+              "runtimeFresh": false,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_3",
+              "label": "プログラム-ワーカー3",
+              "agentId": "program_worker_3",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "waiting",
+              "formalStatus": "waiting",
+              "runtimePhase": "stale",
+              "observerState": "IDLE",
+              "runtimeFresh": false,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
