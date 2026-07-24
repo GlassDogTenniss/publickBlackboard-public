@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T11:28:53.809Z",
+  "generatedAt": "2026-07-24T11:28:56.312Z",
   "sourceUpdatedAt": "2026-07-22T03:10:34.000Z",
   "runs": [
     {
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "in_progress",
@@ -319,7 +319,7 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "integration_dispatched",
+          "status": "integrating",
           "startedAt": "2026-07-22T03:29:55.965Z",
           "completedAt": null,
           "durationMs": null,
@@ -334,10 +334,10 @@
             "ready": 0
           },
           "integration": {
-            "status": "dispatched",
+            "status": "active",
             "dispatchedAt": "2026-07-24T11:28:51.277Z",
-            "runtimePhase": "settling",
-            "observerState": "SETTLING",
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
             "runtimeFresh": true
           },
           "workers": [
@@ -349,8 +349,8 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "settling",
-              "observerState": "SETTLING",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
               "runtimeFresh": true,
               "startedAt": "2026-07-22T03:29:55.965Z",
               "completedAt": "2026-07-22T03:32:53.000Z",
@@ -383,8 +383,8 @@
               "attempt": 1,
               "status": "timeout",
               "formalStatus": "timeout",
-              "runtimePhase": "settling",
-              "observerState": "SETTLING",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
               "runtimeFresh": true,
               "startedAt": null,
               "completedAt": "2026-07-24T11:28:42.400Z",
