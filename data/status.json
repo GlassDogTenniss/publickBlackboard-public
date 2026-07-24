@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T19:37:28.665Z",
+  "generatedAt": "2026-07-24T19:37:49.559Z",
   "sourceUpdatedAt": "2026-07-24T19:13:00.000Z",
   "runs": [
     {
@@ -364,22 +364,22 @@
           "startedAt": "2026-07-24T19:22:50.431Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-24T19:37:14.539Z",
+          "updatedAt": "2026-07-24T19:37:47.570Z",
           "counts": {
             "total": 3,
-            "terminal": 0,
-            "completed": 0,
+            "terminal": 2,
+            "completed": 2,
             "failed": 0,
-            "active": 3,
-            "dispatched": 3,
+            "active": 1,
+            "dispatched": 1,
             "ready": 0
           },
           "integration": {
             "status": "waiting",
             "dispatchedAt": null,
-            "runtimePhase": "stale",
+            "runtimePhase": "idle",
             "observerState": "IDLE",
-            "runtimeFresh": false
+            "runtimeFresh": true
           },
           "workers": [
             {
@@ -388,15 +388,15 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-24T19:22:50.431Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-24T19:37:00.000Z",
+              "durationMs": 849569,
+              "running": false,
               "timeoutAt": null
             },
             {
@@ -405,15 +405,15 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-24T19:23:00.113Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-24T19:36:57.000Z",
+              "durationMs": 836887,
+              "running": false,
               "timeoutAt": null
             },
             {
