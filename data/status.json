@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T15:51:13.911Z",
+  "generatedAt": "2026-07-24T15:51:40.158Z",
   "sourceUpdatedAt": "2026-07-24T15:32:41.000Z",
   "runs": [
     {
@@ -54,7 +54,14 @@
           "completedAt": "2026-07-24T15:05:23.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:manager_direction:41",
+            "startedAt": "2026-07-24T15:05:35.986Z",
+            "finishedAt": "2026-07-24T15:05:35.986Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -68,7 +75,14 @@
           "completedAt": "2026-07-24T15:16:18.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:requirements_definition:41",
+            "startedAt": "2026-07-24T15:10:52.668Z",
+            "finishedAt": "2026-07-24T15:16:18.000Z",
+            "durationMs": 325332,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "asset_agent",
@@ -82,7 +96,14 @@
           "completedAt": "2026-07-24T15:24:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:asset_creation:41",
+            "startedAt": "2026-07-24T15:22:50.775Z",
+            "finishedAt": "2026-07-24T15:24:00.000Z",
+            "durationMs": 69225,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "program_manager_agent",
@@ -96,7 +117,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:program_build:42",
+            "startedAt": "2026-07-24T15:32:50.906Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_tester_agent",
@@ -164,7 +192,14 @@
           "status": "completed",
           "attempt": 41,
           "completedAt": "2026-07-24T15:05:23.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:manager_direction:41",
+            "startedAt": "2026-07-24T15:05:35.986Z",
+            "finishedAt": "2026-07-24T15:05:35.986Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "requirements_definition",
@@ -174,7 +209,14 @@
           "status": "completed",
           "attempt": 41,
           "completedAt": "2026-07-24T15:16:18.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:requirements_definition:41",
+            "startedAt": "2026-07-24T15:10:52.668Z",
+            "finishedAt": "2026-07-24T15:16:18.000Z",
+            "durationMs": 325332,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "asset_creation",
@@ -184,7 +226,14 @@
           "status": "completed",
           "attempt": 41,
           "completedAt": "2026-07-24T15:24:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:asset_creation:41",
+            "startedAt": "2026-07-24T15:22:50.775Z",
+            "finishedAt": "2026-07-24T15:24:00.000Z",
+            "durationMs": 69225,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "program_build",
@@ -194,7 +243,14 @@
           "status": "in_progress",
           "attempt": 42,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:41:program_build:42",
+            "startedAt": "2026-07-24T15:32:50.906Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "program_validation",
@@ -320,9 +376,9 @@
           "integration": {
             "status": "waiting",
             "dispatchedAt": null,
-            "runtimePhase": "generating",
+            "runtimePhase": "stale",
             "observerState": "ACTIVE",
-            "runtimeFresh": true
+            "runtimeFresh": false
           },
           "workers": [
             {
