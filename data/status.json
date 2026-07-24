@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-24T12:52:49.350Z",
+  "generatedAt": "2026-07-24T12:52:53.276Z",
   "sourceUpdatedAt": "2026-07-24T12:38:00.000Z",
   "runs": [
     {
@@ -309,16 +309,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 40,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 40,
           "taskId": "asset_creation",
