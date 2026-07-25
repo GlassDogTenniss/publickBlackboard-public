@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-25T05:44:28.412Z",
+  "generatedAt": "2026-07-25T05:44:31.211Z",
   "sourceUpdatedAt": "2026-07-25T05:02:00.000Z",
   "runs": [
     {
@@ -320,58 +320,7 @@
           "kind": "loop"
         }
       ],
-      "history": [
-        {
-          "iteration": 0,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 0,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 0,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "",
-          "completedAt": "2026-07-25T04:42:00.000Z",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 0,
-          "taskId": "requirements_definition",
-          "taskLabel": "requirements definition",
-          "agentId": "requirements_agent",
-          "status": "",
-          "completedAt": "2026-07-25T04:35:00.000Z",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 0,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": "2026-07-25T04:14:43.000Z",
-          "verdict": "",
-          "nextTask": ""
-        }
-      ],
+      "history": [],
       "parallelGroups": [
         {
           "groupId": "program_i47_a48",
@@ -386,7 +335,7 @@
           "startedAt": "2026-07-25T05:13:32.715Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-25T05:43:26.545Z",
+          "updatedAt": "2026-07-25T05:44:15.810Z",
           "counts": {
             "total": 3,
             "terminal": 2,
