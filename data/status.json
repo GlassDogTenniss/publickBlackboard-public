@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-25T03:05:15.626Z",
+  "generatedAt": "2026-07-25T03:05:21.756Z",
   "sourceUpdatedAt": "2026-07-25T02:25:00.000Z",
   "runs": [
     {
@@ -360,23 +360,23 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "running",
+          "status": "integration_dispatched",
           "startedAt": "2026-07-25T02:41:48.558Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-25T03:04:41.261Z",
+          "updatedAt": "2026-07-25T03:05:13.012Z",
           "counts": {
             "total": 3,
-            "terminal": 2,
-            "completed": 2,
+            "terminal": 3,
+            "completed": 3,
             "failed": 0,
-            "active": 1,
-            "dispatched": 1,
+            "active": 0,
+            "dispatched": 0,
             "ready": 0
           },
           "integration": {
-            "status": "waiting",
-            "dispatchedAt": null,
+            "status": "dispatched",
+            "dispatchedAt": "2026-07-25T03:05:20.078Z",
             "runtimePhase": "idle",
             "observerState": "IDLE",
             "runtimeFresh": true
@@ -422,15 +422,15 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-25T02:42:08.356Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-25T03:06:30.000Z",
+              "durationMs": 1461644,
+              "running": false,
               "timeoutAt": null
             }
           ]
