@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-25T04:03:49.009Z",
-  "sourceUpdatedAt": "2026-07-25T03:25:00.000Z",
+  "generatedAt": "2026-07-25T04:05:18.336Z",
+  "sourceUpdatedAt": "2026-07-25T03:59:24.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,12 +9,12 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-25T03:25:00.000Z",
-      "currentTaskId": "program_validation",
-      "currentTaskLabel": "program validation",
-      "currentAgentId": "program_tester_agent",
-      "currentAgentName": "プログラムテスタ",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
+      "updatedAt": "2026-07-25T03:59:24.000Z",
+      "currentTaskId": "manager_review",
+      "currentTaskLabel": "manager review",
+      "currentAgentId": "manager_agent",
+      "currentAgentName": "全体マネージャ",
+      "nextActionToken": "BLACKBOARD_NEXT_MANAGER_REVIEW",
       "iteration": {
         "current": 46,
         "max": 100
@@ -37,22 +37,15 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "waiting",
-          "activityTaskId": "manager_direction",
-          "activityTaskLabel": "manager direction",
-          "activityStatus": "completed",
+          "status": "active",
+          "activityTaskId": "manager_review",
+          "activityTaskLabel": "manager review",
+          "activityStatus": "ready",
           "activityInstruction": "",
-          "completedAt": "2026-07-25T01:45:21.000Z",
+          "completedAt": null,
           "taskCount": 2,
-          "completedCount": 2,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:46:manager_direction:46",
-            "startedAt": "2026-07-25T01:45:31.163Z",
-            "finishedAt": "2026-07-25T01:45:31.163Z",
-            "durationMs": 0,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "completedCount": 1,
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
@@ -100,7 +93,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "completed",
+          "status": "error",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "failed",
@@ -121,28 +114,28 @@
           "agentId": "program_tester_agent",
           "name": "プログラムテスタ",
           "role": "統合candidateを独立検証し、修正せず証拠と判定材料を残す",
-          "status": "ready",
+          "status": "completed",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-25T03:59:24.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:46:program_validation:46",
             "startedAt": "2026-07-25T03:41:00.360Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-25T03:59:24.000Z",
+            "durationMs": 1103640,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "program_worker_1",
           "name": "プログラム-ワーカー1",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "completed",
+          "status": "waiting",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -156,7 +149,7 @@
           "agentId": "program_worker_2",
           "name": "プログラム-ワーカー2",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "completed",
+          "status": "waiting",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -170,7 +163,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "completed",
+          "status": "waiting",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -255,16 +248,16 @@
           "label": "program validation",
           "agentId": "program_tester_agent",
           "agentName": "プログラムテスタ",
-          "status": "ready",
+          "status": "completed",
           "attempt": 46,
-          "completedAt": null,
+          "completedAt": "2026-07-25T03:59:24.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:46:program_validation:46",
             "startedAt": "2026-07-25T03:41:00.360Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-25T03:59:24.000Z",
+            "durationMs": 1103640,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -272,9 +265,9 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "completed",
-          "attempt": 45,
-          "completedAt": "2026-07-25T01:36:42.000Z",
+          "status": "ready",
+          "attempt": 46,
+          "completedAt": null,
           "timing": null
         }
       ],
@@ -325,6 +318,26 @@
       "history": [
         {
           "iteration": 46,
+          "taskId": "manager_review",
+          "taskLabel": "manager review",
+          "agentId": "manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 46,
+          "taskId": "program_validation",
+          "taskLabel": "program validation",
+          "agentId": "program_tester_agent",
+          "status": "completed",
+          "completedAt": "2026-07-25T03:59:24.000Z",
+          "verdict": "fail",
+          "nextTask": "manager_review"
+        },
+        {
+          "iteration": 46,
           "taskId": "program_build",
           "taskLabel": "program build",
           "agentId": "program_manager_agent",
@@ -332,134 +345,9 @@
           "completedAt": "2026-07-25T03:25:00.000Z",
           "verdict": "",
           "nextTask": "program_validation"
-        },
-        {
-          "iteration": 46,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "completed",
-          "completedAt": "2026-07-25T02:13:00.000Z",
-          "verdict": "",
-          "nextTask": "program_build"
-        },
-        {
-          "iteration": 46,
-          "taskId": "requirements_definition",
-          "taskLabel": "requirements definition",
-          "agentId": "requirements_agent",
-          "status": "completed",
-          "completedAt": "2026-07-25T01:56:41.000Z",
-          "verdict": "",
-          "nextTask": "asset_creation"
-        },
-        {
-          "iteration": 46,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-25T01:45:21.000Z",
-          "verdict": "",
-          "nextTask": "requirements_definition"
-        },
-        {
-          "iteration": 45,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-07-25T01:36:42.000Z",
-          "verdict": "",
-          "nextTask": ""
         }
       ],
-      "parallelGroups": [
-        {
-          "groupId": "program_i46_a47",
-          "revision": 1,
-          "parentTaskId": "program_build",
-          "parentTaskStatus": "failed",
-          "phase": "workers",
-          "coordinatorAgentId": "program_manager_agent",
-          "maxConcurrency": 3,
-          "timeoutMinutes": 30,
-          "status": "failed",
-          "startedAt": "2026-07-25T02:41:48.558Z",
-          "completedAt": "2026-07-25T03:25:00.000Z",
-          "durationMs": 2591442,
-          "updatedAt": "2026-07-25T03:39:41.313Z",
-          "counts": {
-            "total": 3,
-            "terminal": 3,
-            "completed": 3,
-            "failed": 0,
-            "active": 0,
-            "dispatched": 0,
-            "ready": 0
-          },
-          "integration": {
-            "status": "failed",
-            "dispatchedAt": "2026-07-25T03:05:20.078Z",
-            "runtimePhase": "stale",
-            "observerState": "IDLE",
-            "runtimeFresh": false
-          },
-          "workers": [
-            {
-              "workerId": "worker_1",
-              "label": "プログラム-ワーカー1",
-              "agentId": "program_worker_1",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
-              "runtimePhase": "idle",
-              "observerState": "IDLE",
-              "runtimeFresh": true,
-              "startedAt": "2026-07-25T02:41:48.558Z",
-              "completedAt": "2026-07-25T02:56:05.000Z",
-              "durationMs": 856442,
-              "running": false,
-              "timeoutAt": null
-            },
-            {
-              "workerId": "worker_2",
-              "label": "プログラム-ワーカー2",
-              "agentId": "program_worker_2",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
-              "runtimePhase": "idle",
-              "observerState": "IDLE",
-              "runtimeFresh": true,
-              "startedAt": "2026-07-25T02:41:55.708Z",
-              "completedAt": "2026-07-25T02:54:54.000Z",
-              "durationMs": 778292,
-              "running": false,
-              "timeoutAt": null
-            },
-            {
-              "workerId": "worker_3",
-              "label": "プログラム-ワーカー3",
-              "agentId": "program_worker_3",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "completed",
-              "formalStatus": "completed",
-              "runtimePhase": "idle",
-              "observerState": "IDLE",
-              "runtimeFresh": true,
-              "startedAt": "2026-07-25T02:42:08.356Z",
-              "completedAt": "2026-07-25T03:06:30.000Z",
-              "durationMs": 1461644,
-              "running": false,
-              "timeoutAt": null
-            }
-          ]
-        }
-      ]
+      "parallelGroups": []
     }
   ]
 }
