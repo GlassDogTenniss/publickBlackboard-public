@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-25T07:52:39.170Z",
+  "generatedAt": "2026-07-25T07:53:01.983Z",
   "sourceUpdatedAt": "2026-07-25T07:30:00.000Z",
   "runs": [
     {
@@ -79,7 +79,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "in_progress",
@@ -87,14 +87,7 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:48:program_build:49",
-            "startedAt": "2026-07-25T07:30:00.000Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "activityTiming": null
         },
         {
           "agentId": "program_tester_agent",
@@ -192,14 +185,7 @@
           "status": "in_progress",
           "attempt": 49,
           "completedAt": null,
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:48:program_build:49",
-            "startedAt": "2026-07-25T07:30:00.000Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "timing": null
         },
         {
           "id": "program_validation",
@@ -328,11 +314,11 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "integrating",
+          "status": "integration_dispatched",
           "startedAt": "2026-07-25T07:26:54.067Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-25T07:49:12.292Z",
+          "updatedAt": "2026-07-25T07:52:06.579Z",
           "counts": {
             "total": 3,
             "terminal": 3,
@@ -343,11 +329,11 @@
             "ready": 0
           },
           "integration": {
-            "status": "active",
+            "status": "dispatched",
             "dispatchedAt": "2026-07-25T07:49:32.914Z",
-            "runtimePhase": "generating",
+            "runtimePhase": "stale",
             "observerState": "ACTIVE",
-            "runtimeFresh": true
+            "runtimeFresh": false
           },
           "workers": [
             {
