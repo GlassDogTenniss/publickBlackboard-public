@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-25T05:18:02.785Z",
+  "generatedAt": "2026-07-25T05:19:56.953Z",
   "sourceUpdatedAt": "2026-07-25T05:02:00.000Z",
   "runs": [
     {
@@ -320,7 +320,58 @@
           "kind": "loop"
         }
       ],
-      "history": [],
+      "history": [
+        {
+          "iteration": 0,
+          "taskId": "program_build",
+          "taskLabel": "program build",
+          "agentId": "program_manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 0,
+          "taskId": "program_build",
+          "taskLabel": "program build",
+          "agentId": "program_manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 0,
+          "taskId": "asset_creation",
+          "taskLabel": "asset creation",
+          "agentId": "asset_agent",
+          "status": "",
+          "completedAt": "2026-07-25T04:42:00.000Z",
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 0,
+          "taskId": "requirements_definition",
+          "taskLabel": "requirements definition",
+          "agentId": "requirements_agent",
+          "status": "",
+          "completedAt": "2026-07-25T04:35:00.000Z",
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 0,
+          "taskId": "manager_direction",
+          "taskLabel": "manager direction",
+          "agentId": "manager_agent",
+          "status": "",
+          "completedAt": "2026-07-25T04:14:43.000Z",
+          "verdict": "",
+          "nextTask": ""
+        }
+      ],
       "parallelGroups": [
         {
           "groupId": "program_i47_a48",
@@ -341,7 +392,7 @@
             "terminal": 0,
             "completed": 0,
             "failed": 0,
-            "active": 1,
+            "active": 0,
             "dispatched": 3,
             "ready": 0
           },
@@ -376,11 +427,11 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
+              "status": "dispatched",
               "formalStatus": "dispatched",
-              "runtimePhase": "generating",
+              "runtimePhase": "stale",
               "observerState": "ACTIVE",
-              "runtimeFresh": true,
+              "runtimeFresh": false,
               "startedAt": "2026-07-25T05:15:07.170Z",
               "completedAt": null,
               "durationMs": null,
