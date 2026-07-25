@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-25T05:45:03.791Z",
-  "sourceUpdatedAt": "2026-07-25T05:02:00.000Z",
+  "generatedAt": "2026-07-25T05:45:12.958Z",
+  "sourceUpdatedAt": "2026-07-25T05:42:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,7 +9,7 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": "2026-07-16T11:38:53.000Z",
-      "updatedAt": "2026-07-25T05:02:00.000Z",
+      "updatedAt": "2026-07-25T05:42:00.000Z",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_manager_agent",
@@ -28,21 +28,9 @@
         "done": false
       },
       "statusValidation": {
-        "valid": false,
+        "valid": true,
         "contractPath": "blackboard/status-contract.json",
-        "errors": [
-          {
-            "path": "state.agentStatuses.program_manager_agent.status",
-            "value": "in_progress",
-            "allowed": [
-              "waiting",
-              "ready",
-              "active",
-              "completed",
-              "error"
-            ]
-          }
-        ]
+        "errors": []
       },
       "agents": [
         {
