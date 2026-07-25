@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-25T06:34:30.371Z",
+  "generatedAt": "2026-07-25T06:36:44.179Z",
   "sourceUpdatedAt": "2026-07-25T06:26:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
           "activityStatus": "ready",
@@ -361,7 +361,7 @@
           "coordinatorAgentId": "manager_agent",
           "maxConcurrency": 1,
           "timeoutMinutes": 0,
-          "status": "integrating",
+          "status": "integration_dispatched",
           "startedAt": "2026-07-25T05:12:41.217Z",
           "completedAt": null,
           "durationMs": null,
@@ -376,11 +376,11 @@
             "ready": 0
           },
           "integration": {
-            "status": "active",
+            "status": "dispatched",
             "dispatchedAt": "2026-07-25T05:47:54.306Z",
-            "runtimePhase": "generating",
+            "runtimePhase": "stale",
             "observerState": "ACTIVE",
-            "runtimeFresh": true
+            "runtimeFresh": false
           },
           "workers": []
         }
