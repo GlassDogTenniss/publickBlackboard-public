@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-26T03:06:49.265Z",
+  "generatedAt": "2026-07-26T03:15:07.974Z",
   "sourceUpdatedAt": "2026-07-25T08:40:42.000Z",
   "runs": [
     {
@@ -45,14 +45,7 @@
           "completedAt": null,
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:49:manager_direction:49",
-            "startedAt": "2026-07-25T08:50:28.323Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
@@ -162,14 +155,7 @@
           "status": "ready",
           "attempt": 49,
           "completedAt": null,
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:49:manager_direction:49",
-            "startedAt": "2026-07-25T08:50:28.323Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "timing": null
         },
         {
           "id": "requirements_definition",
@@ -267,6 +253,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 49,
+          "taskId": "manager_direction",
+          "taskLabel": "manager direction",
+          "agentId": "manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
         {
           "iteration": 48,
           "taskId": "manager_review",
