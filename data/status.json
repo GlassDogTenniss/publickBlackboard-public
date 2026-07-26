@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-26T20:18:29.924Z",
+  "generatedAt": "2026-07-26T20:18:50.395Z",
   "sourceUpdatedAt": "2026-07-26T05:38:00.000Z",
   "runs": [
     {
@@ -350,9 +350,9 @@
           "integration": {
             "status": "failed",
             "dispatchedAt": "2026-07-26T05:12:02.950Z",
-            "runtimePhase": "stale",
+            "runtimePhase": "idle",
             "observerState": "IDLE",
-            "runtimeFresh": false
+            "runtimeFresh": true
           },
           "workers": [
             {
@@ -380,9 +380,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "stale",
+              "runtimePhase": "idle",
               "observerState": "IDLE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": "2026-07-26T04:42:04.598Z",
               "completedAt": "2026-07-26T04:58:00.000Z",
               "durationMs": 955402,
