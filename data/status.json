@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T15:39:36.825Z",
+  "generatedAt": "2026-07-27T15:40:08.345Z",
   "sourceUpdatedAt": "2026-07-27T15:15:00.000Z",
   "runs": [
     {
@@ -360,23 +360,23 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "waiting",
+          "status": "integration_dispatched",
           "startedAt": "2026-07-27T15:24:40.064Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-27T15:39:34.025Z",
+          "updatedAt": "2026-07-27T15:40:03.498Z",
           "counts": {
             "total": 3,
-            "terminal": 2,
+            "terminal": 3,
             "completed": 2,
-            "failed": 0,
+            "failed": 1,
             "active": 0,
             "dispatched": 0,
             "ready": 0
           },
           "integration": {
-            "status": "waiting",
-            "dispatchedAt": null,
+            "status": "dispatched",
+            "dispatchedAt": "2026-07-27T15:40:06.732Z",
             "runtimePhase": "idle",
             "observerState": "IDLE",
             "runtimeFresh": true
@@ -422,13 +422,13 @@
               "agentId": "program_worker_3",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "draft_present",
-              "formalStatus": "draft_present",
+              "status": "timeout",
+              "formalStatus": "timeout",
               "runtimePhase": "idle",
               "observerState": "IDLE",
               "runtimeFresh": true,
               "startedAt": null,
-              "completedAt": null,
+              "completedAt": "2026-07-27T15:40:03.498Z",
               "durationMs": null,
               "running": false,
               "timeoutAt": null
