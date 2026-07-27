@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T02:21:11.320Z",
+  "generatedAt": "2026-07-27T02:21:18.199Z",
   "sourceUpdatedAt": "2026-07-27T01:18:00.000Z",
   "runs": [
     {
@@ -263,23 +263,23 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 3,
           "timeoutMinutes": 30,
-          "status": "running",
+          "status": "integration_dispatched",
           "startedAt": "2026-07-27T02:10:35.837Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-27T02:20:33.284Z",
+          "updatedAt": "2026-07-27T02:21:03.228Z",
           "counts": {
             "total": 3,
-            "terminal": 2,
-            "completed": 2,
+            "terminal": 3,
+            "completed": 3,
             "failed": 0,
             "active": 0,
-            "dispatched": 1,
+            "dispatched": 0,
             "ready": 0
           },
           "integration": {
-            "status": "waiting",
-            "dispatchedAt": null,
+            "status": "dispatched",
+            "dispatchedAt": "2026-07-27T02:21:16.255Z",
             "runtimePhase": "settling",
             "observerState": "SETTLING",
             "runtimeFresh": true
@@ -308,15 +308,15 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "dispatched",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "settling",
               "observerState": "SETTLING",
               "runtimeFresh": true,
               "startedAt": "2026-07-27T02:10:37.508Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-27T02:20:00.000Z",
+              "durationMs": 562492,
+              "running": false,
               "timeoutAt": null
             },
             {
