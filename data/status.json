@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T21:29:04.670Z",
+  "generatedAt": "2026-07-27T21:29:07.395Z",
   "sourceUpdatedAt": "2026-07-27T21:01:16.000Z",
   "runs": [
     {
@@ -45,7 +45,14 @@
           "completedAt": null,
           "taskCount": 2,
           "completedCount": 2,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:manager_direction:57",
+            "startedAt": "2026-07-27T20:28:37.091Z",
+            "finishedAt": "2026-07-27T20:34:00.000Z",
+            "durationMs": 322909,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -59,7 +66,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:requirements_definition:57",
+            "startedAt": "2026-07-27T20:33:20.188Z",
+            "finishedAt": "2026-07-27T20:46:00.000Z",
+            "durationMs": 759812,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "asset_agent",
@@ -73,7 +87,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:asset_creation:57",
+            "startedAt": "2026-07-27T20:47:44.459Z",
+            "finishedAt": "2026-07-27T20:51:00.000Z",
+            "durationMs": 195541,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "program_manager_agent",
@@ -87,7 +108,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:program_build:57",
+            "startedAt": "2026-07-27T20:53:18.763Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_tester_agent",
@@ -155,7 +183,14 @@
           "status": "completed",
           "attempt": 57,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:manager_direction:57",
+            "startedAt": "2026-07-27T20:28:37.091Z",
+            "finishedAt": "2026-07-27T20:34:00.000Z",
+            "durationMs": 322909,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "requirements_definition",
@@ -165,7 +200,14 @@
           "status": "completed",
           "attempt": 57,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:requirements_definition:57",
+            "startedAt": "2026-07-27T20:33:20.188Z",
+            "finishedAt": "2026-07-27T20:46:00.000Z",
+            "durationMs": 759812,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "asset_creation",
@@ -175,7 +217,14 @@
           "status": "completed",
           "attempt": 57,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:asset_creation:57",
+            "startedAt": "2026-07-27T20:47:44.459Z",
+            "finishedAt": "2026-07-27T20:51:00.000Z",
+            "durationMs": 195541,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "program_build",
@@ -185,7 +234,14 @@
           "status": "in_progress",
           "attempt": 57,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:57:program_build:57",
+            "startedAt": "2026-07-27T20:53:18.763Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "program_validation",
@@ -252,29 +308,93 @@
           "kind": "loop"
         }
       ],
-      "history": [
+      "history": [],
+      "parallelGroups": [
         {
-          "iteration": 57,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
+          "groupId": "program_i57_a58",
+          "revision": 1,
+          "parentTaskId": "program_build",
+          "parentTaskStatus": "in_progress",
+          "phase": "workers",
+          "coordinatorAgentId": "program_manager_agent",
+          "maxConcurrency": 1,
+          "timeoutMinutes": 10,
+          "status": "integrating",
+          "startedAt": "2026-07-27T21:05:10.844Z",
           "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 57,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
+          "durationMs": null,
+          "updatedAt": "2026-07-27T21:29:05.504Z",
+          "counts": {
+            "total": 3,
+            "terminal": 3,
+            "completed": 1,
+            "failed": 2,
+            "active": 0,
+            "dispatched": 0,
+            "ready": 0
+          },
+          "integration": {
+            "status": "active",
+            "dispatchedAt": "2026-07-27T21:28:41.091Z",
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
+            "runtimeFresh": true
+          },
+          "workers": [
+            {
+              "workerId": "worker_3",
+              "label": "プログラム-ワーカー3",
+              "agentId": "program_worker_3",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "timeout",
+              "formalStatus": "timeout",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": null,
+              "completedAt": "2026-07-27T21:28:33.669Z",
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_1",
+              "label": "プログラム-ワーカー1",
+              "agentId": "program_worker_1",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "failed",
+              "formalStatus": "failed",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": "2026-07-27T21:05:10.844Z",
+              "completedAt": "2026-07-27T21:08:20.000Z",
+              "durationMs": 189156,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_2",
+              "label": "プログラム-ワーカー2",
+              "agentId": "program_worker_2",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "completed",
+              "formalStatus": "completed",
+              "runtimePhase": "stale",
+              "observerState": "IDLE",
+              "runtimeFresh": false,
+              "startedAt": "2026-07-27T21:09:38.805Z",
+              "completedAt": "2026-07-27T21:13:30.000Z",
+              "durationMs": 231195,
+              "running": false,
+              "timeoutAt": null
+            }
+          ]
         }
-      ],
-      "parallelGroups": []
+      ]
     }
   ]
 }
