@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T18:44:09.929Z",
+  "generatedAt": "2026-07-27T18:44:12.880Z",
   "sourceUpdatedAt": "2026-07-27T18:38:00.000Z",
   "runs": [
     {
@@ -323,15 +323,15 @@
           "startedAt": "2026-07-27T18:40:07.436Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-27T18:43:33.372Z",
+          "updatedAt": "2026-07-27T18:44:03.295Z",
           "counts": {
             "total": 3,
-            "terminal": 0,
-            "completed": 0,
+            "terminal": 1,
+            "completed": 1,
             "failed": 0,
             "active": 1,
             "dispatched": 1,
-            "ready": 1
+            "ready": 0
           },
           "integration": {
             "status": "waiting",
@@ -364,15 +364,15 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
-              "runtimePhase": "generating",
-              "observerState": "ACTIVE",
+              "status": "completed",
+              "formalStatus": "completed",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
               "runtimeFresh": true,
               "startedAt": "2026-07-27T18:40:07.436Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-27T18:43:05.000Z",
+              "durationMs": 177564,
+              "running": false,
               "timeoutAt": null
             },
             {
@@ -381,15 +381,15 @@
               "agentId": "program_worker_2",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "ready",
-              "formalStatus": "ready",
-              "runtimePhase": "settling",
-              "observerState": "SETTLING",
+              "status": "active",
+              "formalStatus": "dispatched",
+              "runtimePhase": "generating",
+              "observerState": "ACTIVE",
               "runtimeFresh": true,
-              "startedAt": null,
+              "startedAt": "2026-07-27T18:44:10.921Z",
               "completedAt": null,
               "durationMs": null,
-              "running": false,
+              "running": true,
               "timeoutAt": null
             }
           ]
