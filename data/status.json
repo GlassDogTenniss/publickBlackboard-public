@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T02:54:07.610Z",
+  "generatedAt": "2026-07-27T02:54:12.462Z",
   "sourceUpdatedAt": "2026-07-27T02:48:16.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "ready",
@@ -254,16 +254,6 @@
       ],
       "history": [
         {
-          "iteration": 51,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
           "iteration": 50,
           "taskId": "manager_review",
           "taskLabel": "manager review",
@@ -272,16 +262,6 @@
           "completedAt": "2026-07-27T02:48:16.000Z",
           "verdict": "",
           "nextTask": "manager_direction"
-        },
-        {
-          "iteration": 50,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
         },
         {
           "iteration": 50,
@@ -295,16 +275,6 @@
         },
         {
           "iteration": 50,
-          "taskId": "program_validation",
-          "taskLabel": "program validation",
-          "agentId": "program_tester_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 50,
           "taskId": "program_build",
           "taskLabel": "program build",
           "agentId": "program_manager_agent",
@@ -312,36 +282,6 @@
           "completedAt": "2026-07-27T02:32:00.000Z",
           "verdict": "",
           "nextTask": "program_validation"
-        },
-        {
-          "iteration": 50,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 50,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 50,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
         }
       ],
       "parallelGroups": []
