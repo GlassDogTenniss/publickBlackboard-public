@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T00:08:33.217Z",
+  "generatedAt": "2026-07-27T00:08:50.394Z",
   "sourceUpdatedAt": "2026-07-26T06:47:00.000Z",
   "runs": [
     {
@@ -370,9 +370,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "stale",
+              "runtimePhase": "idle",
               "observerState": "IDLE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": "2026-07-26T04:41:47.965Z",
               "completedAt": "2026-07-26T04:53:30.000Z",
               "durationMs": 702035,
@@ -387,9 +387,9 @@
               "attempt": 1,
               "status": "completed",
               "formalStatus": "completed",
-              "runtimePhase": "stale",
+              "runtimePhase": "idle",
               "observerState": "IDLE",
-              "runtimeFresh": false,
+              "runtimeFresh": true,
               "startedAt": "2026-07-26T04:42:04.598Z",
               "completedAt": "2026-07-26T04:58:00.000Z",
               "durationMs": 955402,
