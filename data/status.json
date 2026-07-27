@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T20:15:21.146Z",
+  "generatedAt": "2026-07-27T20:18:35.159Z",
   "sourceUpdatedAt": "2026-07-27T20:12:04.000Z",
   "runs": [
     {
@@ -28,18 +28,9 @@
         "done": false
       },
       "statusValidation": {
-        "valid": false,
+        "valid": true,
         "contractPath": "blackboard/status-contract.json",
-        "errors": [
-          {
-            "path": "state.history[1].status",
-            "value": "ready",
-            "allowed": [
-              "completed",
-              "failed"
-            ]
-          }
-        ]
+        "errors": []
       },
       "agents": [
         {
