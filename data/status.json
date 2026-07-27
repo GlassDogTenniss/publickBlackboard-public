@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T04:09:10.024Z",
+  "generatedAt": "2026-07-27T04:09:19.494Z",
   "sourceUpdatedAt": "2026-07-27T03:25:00.000Z",
   "runs": [
     {
@@ -45,7 +45,14 @@
           "completedAt": "2026-07-27T02:56:00.000Z",
           "taskCount": 2,
           "completedCount": 2,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:51:manager_direction:51",
+            "startedAt": "2026-07-27T02:54:35.970Z",
+            "finishedAt": "2026-07-27T02:56:00.000Z",
+            "durationMs": 84030,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -59,7 +66,14 @@
           "completedAt": "2026-07-27T03:24:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:51:requirements_definition:51",
+            "startedAt": "2026-07-27T03:01:46.832Z",
+            "finishedAt": "2026-07-27T03:24:00.000Z",
+            "durationMs": 1333168,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "asset_agent",
@@ -73,7 +87,14 @@
           "completedAt": "2026-07-27T03:25:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:51:asset_creation:51",
+            "startedAt": "2026-07-27T03:19:37.641Z",
+            "finishedAt": "2026-07-27T03:25:00.000Z",
+            "durationMs": 322359,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "program_manager_agent",
@@ -155,7 +176,14 @@
           "status": "completed",
           "attempt": 51,
           "completedAt": "2026-07-27T02:56:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:51:manager_direction:51",
+            "startedAt": "2026-07-27T02:54:35.970Z",
+            "finishedAt": "2026-07-27T02:56:00.000Z",
+            "durationMs": 84030,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "requirements_definition",
@@ -165,7 +193,14 @@
           "status": "completed",
           "attempt": 51,
           "completedAt": "2026-07-27T03:24:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:51:requirements_definition:51",
+            "startedAt": "2026-07-27T03:01:46.832Z",
+            "finishedAt": "2026-07-27T03:24:00.000Z",
+            "durationMs": 1333168,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "asset_creation",
@@ -175,7 +210,14 @@
           "status": "completed",
           "attempt": 51,
           "completedAt": "2026-07-27T03:25:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:51:asset_creation:51",
+            "startedAt": "2026-07-27T03:19:37.641Z",
+            "finishedAt": "2026-07-27T03:25:00.000Z",
+            "durationMs": 322359,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "program_build",
@@ -253,16 +295,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 51,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 51,
           "taskId": "asset_creation",
