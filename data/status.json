@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T02:43:24.332Z",
+  "generatedAt": "2026-07-27T02:44:07.260Z",
   "sourceUpdatedAt": "2026-07-27T02:33:00.000Z",
   "runs": [
     {
@@ -93,7 +93,7 @@
           "agentId": "program_tester_agent",
           "name": "プログラムテスタ",
           "role": "統合candidateを独立検証し、修正せず証拠と判定材料を残す",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
           "activityStatus": "ready",
@@ -101,14 +101,7 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:50:program_validation:50",
-            "startedAt": "2026-07-27T02:40:47.065Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "activityTiming": null
         },
         {
           "agentId": "program_worker_1",
@@ -202,14 +195,7 @@
           "status": "ready",
           "attempt": 50,
           "completedAt": null,
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:50:program_validation:50",
-            "startedAt": "2026-07-27T02:40:47.065Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "timing": null
         },
         {
           "id": "manager_review",
