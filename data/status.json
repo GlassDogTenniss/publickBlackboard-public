@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-27T02:18:07.075Z",
+  "generatedAt": "2026-07-27T02:18:08.842Z",
   "sourceUpdatedAt": "2026-07-27T01:18:00.000Z",
   "runs": [
     {
@@ -252,28 +252,7 @@
           "kind": "loop"
         }
       ],
-      "history": [
-        {
-          "iteration": 50,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 50,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        }
-      ],
+      "history": [],
       "parallelGroups": [
         {
           "groupId": "program_i50_a51",
@@ -288,7 +267,7 @@
           "startedAt": "2026-07-27T02:10:35.837Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-27T02:17:33.251Z",
+          "updatedAt": "2026-07-27T02:18:04.738Z",
           "counts": {
             "total": 3,
             "terminal": 1,
