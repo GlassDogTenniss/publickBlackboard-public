@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-29T13:58:33.191Z",
-  "sourceUpdatedAt": "2026-07-29T13:06:00.000Z",
+  "generatedAt": "2026-07-29T13:59:35.209Z",
+  "sourceUpdatedAt": "2026-07-29T14:12:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,12 +9,12 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-07-29T13:06:00.000Z",
-      "currentTaskId": "asset_creation",
-      "currentTaskLabel": "asset creation",
-      "currentAgentId": "asset_agent",
-      "currentAgentName": "アセット",
-      "nextActionToken": "BLACKBOARD_NEXT_ASSET_CREATION",
+      "updatedAt": "2026-07-29T14:12:00.000Z",
+      "currentTaskId": "program_build",
+      "currentTaskLabel": "program build",
+      "currentAgentId": "program_manager_agent",
+      "currentAgentName": "プログラマ-マネージャ",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
       "iteration": {
         "current": 62,
         "max": 100
@@ -79,31 +79,31 @@
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "ready",
+          "status": "completed",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
-          "activityStatus": "ready",
+          "activityStatus": "failed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-07-29T14:08:00.000Z",
           "taskCount": 1,
           "completedCount": 0,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:62:asset_creation:62",
             "startedAt": "2026-07-29T13:22:15.000Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-29T14:08:00.000Z",
+            "durationMs": 2745000,
+            "running": false,
+            "completionStatus": "failed"
           }
         },
         {
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -207,16 +207,16 @@
           "label": "asset creation",
           "agentId": "asset_agent",
           "agentName": "アセット",
-          "status": "ready",
+          "status": "failed",
           "attempt": 62,
-          "completedAt": null,
+          "completedAt": "2026-07-29T14:08:00.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:62:asset_creation:62",
             "startedAt": "2026-07-29T13:22:15.000Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-07-29T14:08:00.000Z",
+            "durationMs": 2745000,
+            "running": false,
+            "completionStatus": "failed"
           }
         },
         {
@@ -224,7 +224,7 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 62,
           "completedAt": null,
           "timing": null
@@ -295,6 +295,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 62,
+          "taskId": "asset_creation",
+          "taskLabel": "asset creation",
+          "agentId": "asset_agent",
+          "status": "failed",
+          "completedAt": "2026-07-29T14:08:00.000Z",
+          "verdict": "",
+          "nextTask": "program_build"
+        },
         {
           "iteration": 62,
           "taskId": "requirements_definition",
