@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-29T02:14:57.310Z",
+  "generatedAt": "2026-07-29T02:15:09.235Z",
   "sourceUpdatedAt": "2026-07-27T22:51:00.000Z",
   "runs": [
     {
@@ -163,7 +163,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "ready",
+          "status": "waiting",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -309,92 +309,7 @@
         }
       ],
       "history": [],
-      "parallelGroups": [
-        {
-          "groupId": "program_i58_a59",
-          "revision": 1,
-          "parentTaskId": "program_build",
-          "parentTaskStatus": "in_progress",
-          "phase": "workers",
-          "coordinatorAgentId": "program_manager_agent",
-          "maxConcurrency": 1,
-          "timeoutMinutes": 10,
-          "status": "integrating",
-          "startedAt": "2026-07-27T22:53:33.397Z",
-          "completedAt": null,
-          "durationMs": null,
-          "updatedAt": "2026-07-29T02:14:35.354Z",
-          "counts": {
-            "total": 3,
-            "terminal": 1,
-            "completed": 0,
-            "failed": 1,
-            "active": 0,
-            "dispatched": 0,
-            "ready": 0
-          },
-          "integration": {
-            "status": "active",
-            "dispatchedAt": "2026-07-29T02:07:07.558Z",
-            "runtimePhase": "generating",
-            "observerState": "ACTIVE",
-            "runtimeFresh": true
-          },
-          "workers": [
-            {
-              "workerId": "worker_3",
-              "label": "プログラム-ワーカー3",
-              "agentId": "program_worker_3",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "timeout",
-              "formalStatus": "timeout",
-              "runtimePhase": "stale",
-              "observerState": "IDLE",
-              "runtimeFresh": false,
-              "startedAt": null,
-              "completedAt": "2026-07-27T23:02:03.261Z",
-              "durationMs": null,
-              "running": false,
-              "timeoutAt": null
-            },
-            {
-              "workerId": "worker_1",
-              "label": "プログラム-ワーカー1",
-              "agentId": "program_worker_1",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "waiting",
-              "formalStatus": "waiting",
-              "runtimePhase": "idle",
-              "observerState": "IDLE",
-              "runtimeFresh": true,
-              "startedAt": null,
-              "completedAt": null,
-              "durationMs": null,
-              "running": false,
-              "timeoutAt": null
-            },
-            {
-              "workerId": "worker_2",
-              "label": "プログラム-ワーカー2",
-              "agentId": "program_worker_2",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "waiting",
-              "formalStatus": "waiting",
-              "runtimePhase": "idle",
-              "observerState": "IDLE",
-              "runtimeFresh": true,
-              "startedAt": null,
-              "completedAt": null,
-              "durationMs": null,
-              "running": false,
-              "timeoutAt": null
-            }
-          ]
-        }
-      ]
+      "parallelGroups": []
     }
   ]
 }
