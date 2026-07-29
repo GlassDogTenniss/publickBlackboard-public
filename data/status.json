@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-29T04:56:05.522Z",
+  "generatedAt": "2026-07-29T04:56:36.600Z",
   "sourceUpdatedAt": "2026-07-29T04:44:00.000Z",
   "runs": [
     {
@@ -319,26 +319,26 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 1,
           "timeoutMinutes": 8,
-          "status": "running",
+          "status": "waiting",
           "startedAt": "2026-07-29T04:51:37.987Z",
           "completedAt": null,
           "durationMs": null,
-          "updatedAt": "2026-07-29T04:56:03.678Z",
+          "updatedAt": "2026-07-29T04:56:33.448Z",
           "counts": {
             "total": 3,
-            "terminal": 0,
-            "completed": 0,
+            "terminal": 1,
+            "completed": 1,
             "failed": 0,
-            "active": 1,
-            "dispatched": 1,
+            "active": 0,
+            "dispatched": 0,
             "ready": 0
           },
           "integration": {
-            "status": "waiting",
+            "status": "integration_delivery_error",
             "dispatchedAt": null,
-            "runtimePhase": "stale",
-            "observerState": "ACTIVE",
-            "runtimeFresh": false
+            "runtimePhase": "settling",
+            "observerState": "SETTLING",
+            "runtimeFresh": true
           },
           "workers": [
             {
@@ -347,15 +347,15 @@
               "agentId": "program_worker_1",
               "taskId": "worker_implementation",
               "attempt": 1,
-              "status": "active",
-              "formalStatus": "dispatched",
+              "status": "completed",
+              "formalStatus": "completed",
               "runtimePhase": "generating",
               "observerState": "ACTIVE",
               "runtimeFresh": true,
               "startedAt": "2026-07-29T04:51:37.987Z",
-              "completedAt": null,
-              "durationMs": null,
-              "running": true,
+              "completedAt": "2026-07-29T04:55:24.000Z",
+              "durationMs": 226013,
+              "running": false,
               "timeoutAt": null
             },
             {
