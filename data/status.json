@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-07-29T03:42:12.691Z",
+  "generatedAt": "2026-07-29T03:42:24.862Z",
   "sourceUpdatedAt": "2026-07-29T03:33:00.000Z",
   "runs": [
     {
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "in_progress",
@@ -319,7 +319,7 @@
           "coordinatorAgentId": "program_manager_agent",
           "maxConcurrency": 1,
           "timeoutMinutes": 8,
-          "status": "integration_dispatched",
+          "status": "integrating",
           "startedAt": "2026-07-29T03:38:39.707Z",
           "completedAt": null,
           "durationMs": null,
@@ -334,10 +334,10 @@
             "ready": 0
           },
           "integration": {
-            "status": "dispatched",
+            "status": "active",
             "dispatchedAt": "2026-07-29T03:42:11.166Z",
-            "runtimePhase": "settling",
-            "observerState": "SETTLING",
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
             "runtimeFresh": true
           },
           "workers": [
