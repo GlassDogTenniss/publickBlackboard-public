@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-01T09:50:32.698Z",
+  "generatedAt": "2026-08-01T09:50:35.202Z",
   "sourceUpdatedAt": "2026-08-01T09:47:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "waiting",
+          "status": "completed",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
@@ -45,7 +45,14 @@
           "completedAt": "2026-08-01T09:28:00.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:manager_direction:66",
+            "startedAt": "2026-08-01T09:26:17.270Z",
+            "finishedAt": "2026-08-01T09:28:00.000Z",
+            "durationMs": 102730,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -59,13 +66,20 @@
           "completedAt": "2026-08-01T09:47:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:requirements_definition:66",
+            "startedAt": "2026-08-01T09:31:53.277Z",
+            "finishedAt": "2026-08-01T09:47:00.000Z",
+            "durationMs": 906723,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "ready",
@@ -155,7 +169,14 @@
           "status": "completed",
           "attempt": 66,
           "completedAt": "2026-08-01T09:28:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:manager_direction:66",
+            "startedAt": "2026-08-01T09:26:17.270Z",
+            "finishedAt": "2026-08-01T09:28:00.000Z",
+            "durationMs": 102730,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "requirements_definition",
@@ -165,7 +186,14 @@
           "status": "completed",
           "attempt": 66,
           "completedAt": "2026-08-01T09:47:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:requirements_definition:66",
+            "startedAt": "2026-08-01T09:31:53.277Z",
+            "finishedAt": "2026-08-01T09:47:00.000Z",
+            "durationMs": 906723,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "asset_creation",
@@ -253,16 +281,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 66,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 66,
           "taskId": "requirements_definition",
