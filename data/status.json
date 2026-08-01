@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-01T10:04:05.382Z",
+  "generatedAt": "2026-08-01T10:04:08.566Z",
   "sourceUpdatedAt": "2026-08-01T09:47:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "waiting",
+          "status": "completed",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
@@ -295,16 +295,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 66,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 66,
           "taskId": "requirements_definition",
