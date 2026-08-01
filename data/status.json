@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-01T09:49:56.997Z",
-  "sourceUpdatedAt": "2026-08-01T09:29:00.000Z",
+  "generatedAt": "2026-08-01T09:50:32.698Z",
+  "sourceUpdatedAt": "2026-08-01T09:47:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-01T09:29:00.000Z",
-      "currentTaskId": "requirements_definition",
-      "currentTaskLabel": "requirements definition",
-      "currentAgentId": "requirements_agent",
-      "currentAgentName": "要件定義",
-      "nextActionToken": "BLACKBOARD_NEXT_REQUIREMENTS_DEFINITION",
+      "updatedAt": "2026-08-01T09:47:00.000Z",
+      "currentTaskId": "asset_creation",
+      "currentTaskLabel": "asset creation",
+      "currentAgentId": "asset_agent",
+      "currentAgentName": "アセット",
+      "nextActionToken": "BLACKBOARD_NEXT_ASSET_CREATION",
       "iteration": {
         "current": 66,
         "max": 100
       },
       "progress": {
-        "completed": 1,
+        "completed": 2,
         "total": 6,
-        "percentage": 17
+        "percentage": 33
       },
       "completion": {
         "done": false
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "completed",
+          "status": "waiting",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
@@ -45,44 +45,30 @@
           "completedAt": "2026-08-01T09:28:00.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:manager_direction:66",
-            "startedAt": "2026-08-01T09:26:17.270Z",
-            "finishedAt": "2026-08-01T09:28:00.000Z",
-            "durationMs": 102730,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
           "name": "要件定義",
           "role": "マネージャの企画を素材仕様、実装要求、作業境界、受け入れ条件へ変換する",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-01T09:47:00.000Z",
           "taskCount": 1,
-          "completedCount": 0,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:requirements_definition:66",
-            "startedAt": "2026-08-01T09:31:53.277Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "completedCount": 1,
+          "activityTiming": null
         },
         {
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "waiting",
+          "status": "active",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -169,38 +155,24 @@
           "status": "completed",
           "attempt": 66,
           "completedAt": "2026-08-01T09:28:00.000Z",
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:manager_direction:66",
-            "startedAt": "2026-08-01T09:26:17.270Z",
-            "finishedAt": "2026-08-01T09:28:00.000Z",
-            "durationMs": 102730,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "timing": null
         },
         {
           "id": "requirements_definition",
           "label": "requirements definition",
           "agentId": "requirements_agent",
           "agentName": "要件定義",
-          "status": "ready",
+          "status": "completed",
           "attempt": 66,
-          "completedAt": null,
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:66:requirements_definition:66",
-            "startedAt": "2026-08-01T09:31:53.277Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "completedAt": "2026-08-01T09:47:00.000Z",
+          "timing": null
         },
         {
           "id": "asset_creation",
           "label": "asset creation",
           "agentId": "asset_agent",
           "agentName": "アセット",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 66,
           "completedAt": null,
           "timing": null
@@ -281,6 +253,26 @@
         }
       ],
       "history": [
+        {
+          "iteration": 66,
+          "taskId": "asset_creation",
+          "taskLabel": "asset creation",
+          "agentId": "asset_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 66,
+          "taskId": "requirements_definition",
+          "taskLabel": "requirements definition",
+          "agentId": "requirements_agent",
+          "status": "completed",
+          "completedAt": "2026-08-01T09:47:00.000Z",
+          "verdict": "",
+          "nextTask": "asset_creation"
+        },
         {
           "iteration": 66,
           "taskId": "manager_direction",
