@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-01T11:12:28.963Z",
+  "generatedAt": "2026-08-01T11:14:05.805Z",
   "sourceUpdatedAt": "2026-08-01T10:52:00.000Z",
   "runs": [
     {
@@ -45,14 +45,7 @@
           "completedAt": "2026-08-01T10:51:00.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:67:manager_direction:67",
-            "startedAt": "2026-08-01T10:47:44.651Z",
-            "finishedAt": "2026-08-01T10:51:00.000Z",
-            "durationMs": 195349,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
@@ -66,14 +59,7 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:67:requirements_definition:67",
-            "startedAt": "2026-08-01T10:53:19.161Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "activityTiming": null
         },
         {
           "agentId": "asset_agent",
@@ -169,14 +155,7 @@
           "status": "completed",
           "attempt": 67,
           "completedAt": "2026-08-01T10:51:00.000Z",
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:67:manager_direction:67",
-            "startedAt": "2026-08-01T10:47:44.651Z",
-            "finishedAt": "2026-08-01T10:51:00.000Z",
-            "durationMs": 195349,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "timing": null
         },
         {
           "id": "requirements_definition",
@@ -186,14 +165,7 @@
           "status": "ready",
           "attempt": 67,
           "completedAt": null,
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:67:requirements_definition:67",
-            "startedAt": "2026-08-01T10:53:19.161Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "timing": null
         },
         {
           "id": "asset_creation",
