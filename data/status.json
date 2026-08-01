@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-01T07:58:38.035Z",
+  "generatedAt": "2026-08-01T07:58:47.616Z",
   "sourceUpdatedAt": "2026-08-01T07:29:00.000Z",
   "runs": [
     {
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "ready",
