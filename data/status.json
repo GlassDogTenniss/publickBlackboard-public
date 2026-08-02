@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-02T09:42:52.607Z",
+  "generatedAt": "2026-08-02T09:42:58.282Z",
   "sourceUpdatedAt": "2026-08-02T07:36:00.000Z",
   "runs": [
     {
@@ -253,16 +253,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 79,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 78,
           "taskId": "manager_review",
