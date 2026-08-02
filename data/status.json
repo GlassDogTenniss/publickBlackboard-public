@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-02T03:22:05.178Z",
-  "sourceUpdatedAt": "2026-08-02T03:31:00.000Z",
+  "generatedAt": "2026-08-02T03:23:51.768Z",
+  "sourceUpdatedAt": "2026-08-02T03:33:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,7 +9,7 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-02T03:31:00.000Z",
+      "updatedAt": "2026-08-02T03:33:00.000Z",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_manager_agent",
