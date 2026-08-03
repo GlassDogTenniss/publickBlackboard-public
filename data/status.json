@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-03T05:24:09.321Z",
+  "generatedAt": "2026-08-03T05:24:24.933Z",
   "sourceUpdatedAt": "2026-08-03T02:53:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "completed",
+          "status": "waiting",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
@@ -45,14 +45,7 @@
           "completedAt": "2026-08-03T02:24:00.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:81:manager_direction:81",
-            "startedAt": "2026-08-03T02:24:01.497Z",
-            "finishedAt": "2026-08-03T02:24:01.497Z",
-            "durationMs": 0,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
@@ -66,20 +59,13 @@
           "completedAt": "2026-08-03T02:50:00.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:81:requirements_definition:81",
-            "startedAt": "2026-08-03T02:30:10.736Z",
-            "finishedAt": "2026-08-03T02:50:00.000Z",
-            "durationMs": 1189264,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "ready",
@@ -87,14 +73,7 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:81:asset_creation:81",
-            "startedAt": "2026-08-03T02:44:52.221Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "activityTiming": null
         },
         {
           "agentId": "program_manager_agent",
@@ -176,14 +155,7 @@
           "status": "completed",
           "attempt": 81,
           "completedAt": "2026-08-03T02:24:00.000Z",
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:81:manager_direction:81",
-            "startedAt": "2026-08-03T02:24:01.497Z",
-            "finishedAt": "2026-08-03T02:24:01.497Z",
-            "durationMs": 0,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "timing": null
         },
         {
           "id": "requirements_definition",
@@ -193,14 +165,7 @@
           "status": "completed",
           "attempt": 81,
           "completedAt": "2026-08-03T02:50:00.000Z",
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:81:requirements_definition:81",
-            "startedAt": "2026-08-03T02:30:10.736Z",
-            "finishedAt": "2026-08-03T02:50:00.000Z",
-            "durationMs": 1189264,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "timing": null
         },
         {
           "id": "asset_creation",
@@ -210,14 +175,7 @@
           "status": "ready",
           "attempt": 81,
           "completedAt": null,
-          "timing": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:81:asset_creation:81",
-            "startedAt": "2026-08-03T02:44:52.221Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
-          }
+          "timing": null
         },
         {
           "id": "program_build",
