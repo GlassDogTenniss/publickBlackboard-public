@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-03T01:46:25.779Z",
+  "generatedAt": "2026-08-03T01:51:21.810Z",
   "sourceUpdatedAt": "2026-08-03T01:55:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "completed",
+          "status": "waiting",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
@@ -297,6 +297,16 @@
       "history": [
         {
           "iteration": 80,
+          "taskId": "asset_creation",
+          "taskLabel": "asset creation",
+          "agentId": "asset_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 80,
           "taskId": "requirements_definition",
           "taskLabel": "requirements definition",
           "agentId": "requirements_agent",
@@ -307,6 +317,16 @@
         },
         {
           "iteration": 80,
+          "taskId": "requirements_definition",
+          "taskLabel": "requirements definition",
+          "agentId": "requirements_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
+        {
+          "iteration": 80,
           "taskId": "manager_direction",
           "taskLabel": "manager direction",
           "agentId": "manager_agent",
@@ -314,6 +334,16 @@
           "completedAt": "2026-08-03T01:28:00.000Z",
           "verdict": "",
           "nextTask": "requirements_definition"
+        },
+        {
+          "iteration": 80,
+          "taskId": "manager_direction",
+          "taskLabel": "manager direction",
+          "agentId": "manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
         },
         {
           "iteration": 79,
