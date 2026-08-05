@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-05T12:11:47.734Z",
+  "generatedAt": "2026-08-05T12:11:52.806Z",
   "sourceUpdatedAt": "2026-08-05T12:01:00.000Z",
   "runs": [
     {
@@ -330,16 +330,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 85,
-          "taskId": "manager_review",
-          "taskLabel": "manager review",
-          "agentId": "manager_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 85,
           "taskId": "program_validation",
