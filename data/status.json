@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-05T12:09:54.768Z",
+  "generatedAt": "2026-08-05T12:11:29.277Z",
   "sourceUpdatedAt": "2026-08-05T12:01:00.000Z",
   "runs": [
     {
@@ -79,7 +79,7 @@
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "completed",
+          "status": "error",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "failed",
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "completed",
+          "status": "error",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "failed",
@@ -330,6 +330,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 85,
+          "taskId": "manager_review",
+          "taskLabel": "manager review",
+          "agentId": "manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
         {
           "iteration": 85,
           "taskId": "program_validation",
