@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T11:06:32.255Z",
+  "generatedAt": "2026-08-06T11:07:00.421Z",
   "sourceUpdatedAt": "2026-08-06T10:49:00.000Z",
   "runs": [
     {
@@ -79,7 +79,7 @@
           "agentId": "asset_agent",
           "name": "asset_agent",
           "role": "",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "ready",
