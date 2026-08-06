@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T03:41:52.256Z",
-  "sourceUpdatedAt": "2026-08-06T03:38:00.000Z",
+  "generatedAt": "2026-08-06T03:43:51.916Z",
+  "sourceUpdatedAt": "2026-08-06T03:40:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,7 +9,7 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T03:38:00.000Z",
+      "updatedAt": "2026-08-06T03:40:00.000Z",
       "currentTaskId": "manager_direction",
       "currentTaskLabel": "manager direction",
       "currentAgentId": "manager_agent",
