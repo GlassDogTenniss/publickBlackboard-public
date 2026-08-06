@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T05:48:15.111Z",
+  "generatedAt": "2026-08-06T05:48:27.753Z",
   "sourceUpdatedAt": "2026-08-06T05:44:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "ready",
