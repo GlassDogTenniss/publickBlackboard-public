@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T03:56:32.338Z",
-  "sourceUpdatedAt": "2026-08-06T03:48:00.000Z",
+  "generatedAt": "2026-08-06T04:01:51.894Z",
+  "sourceUpdatedAt": "2026-08-06T03:49:29.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T03:48:00.000Z",
-      "currentTaskId": "requirements_definition",
-      "currentTaskLabel": "requirements definition",
-      "currentAgentId": "requirements_agent",
-      "currentAgentName": "要件定義",
-      "nextActionToken": "BLACKBOARD_NEXT_REQUIREMENTS_DEFINITION",
+      "updatedAt": "2026-08-06T03:49:29.000Z",
+      "currentTaskId": "asset_creation",
+      "currentTaskLabel": "asset creation",
+      "currentAgentId": "asset_agent",
+      "currentAgentName": "アセット",
+      "nextActionToken": "BLACKBOARD_NEXT_ASSET_CREATION",
       "iteration": {
         "current": 90,
         "max": 100
       },
       "progress": {
-        "completed": 2,
+        "completed": 3,
         "total": 6,
-        "percentage": 33
+        "percentage": 50
       },
       "completion": {
         "done": false
@@ -58,31 +58,31 @@
           "agentId": "requirements_agent",
           "name": "要件定義",
           "role": "",
-          "status": "ready",
+          "status": "completed",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-06T03:49:29.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:90:requirements_definition:91",
             "startedAt": "2026-08-06T03:49:44.663Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T03:49:44.663Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -141,16 +141,16 @@
           "label": "requirements definition",
           "agentId": "requirements_agent",
           "agentName": "要件定義",
-          "status": "ready",
+          "status": "completed",
           "attempt": 91,
-          "completedAt": null,
+          "completedAt": "2026-08-06T03:49:29.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:90:requirements_definition:91",
             "startedAt": "2026-08-06T03:49:44.663Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T03:49:44.663Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -158,7 +158,7 @@
           "label": "asset creation",
           "agentId": "asset_agent",
           "agentName": "アセット",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 90,
           "completedAt": null,
           "timing": null
@@ -234,13 +234,13 @@
       "history": [
         {
           "iteration": 90,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
+          "taskId": "requirements_definition",
+          "taskLabel": "requirements definition",
+          "agentId": "requirements_agent",
           "status": "completed",
-          "completedAt": "2026-08-06T03:45:00.000Z",
+          "completedAt": "2026-08-06T03:49:29.000Z",
           "verdict": "",
-          "nextTask": "requirements_definition"
+          "nextTask": "asset_creation"
         }
       ],
       "parallelGroups": []
