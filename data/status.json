@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T10:02:51.760Z",
+  "generatedAt": "2026-08-06T10:03:00.421Z",
   "sourceUpdatedAt": "2026-08-06T09:47:00.000Z",
   "runs": [
     {
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "program_manager_agent",
           "role": "",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "in_progress",
@@ -350,8 +350,8 @@
           "integration": {
             "status": "waiting",
             "dispatchedAt": null,
-            "runtimePhase": "generating",
-            "observerState": "ACTIVE",
+            "runtimePhase": "idle",
+            "observerState": "IDLE",
             "runtimeFresh": true
           },
           "workers": [
