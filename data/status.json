@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T13:49:52.582Z",
+  "generatedAt": "2026-08-06T13:49:54.630Z",
   "sourceUpdatedAt": "2026-08-06T13:37:00.000Z",
   "runs": [
     {
@@ -79,7 +79,7 @@
           "agentId": "asset_agent",
           "name": "asset_agent",
           "role": "",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "ready",
@@ -232,16 +232,6 @@
         }
       ],
       "history": [
-        {
-          "iteration": 97,
-          "taskId": "asset_creation",
-          "taskLabel": "asset creation",
-          "agentId": "asset_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
         {
           "iteration": 97,
           "taskId": "requirements_definition",
