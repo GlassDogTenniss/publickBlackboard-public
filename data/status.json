@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T05:06:00.975Z",
-  "sourceUpdatedAt": "2026-08-06T04:55:58.000Z",
+  "generatedAt": "2026-08-06T05:10:22.447Z",
+  "sourceUpdatedAt": "2026-08-06T05:00:50.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,12 +9,12 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T04:55:58.000Z",
+      "updatedAt": "2026-08-06T05:00:50.000Z",
       "currentTaskId": "program_build",
       "currentTaskLabel": "program build",
       "currentAgentId": "program_manager_agent",
       "currentAgentName": "プログラマ-マネージャ",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
+      "nextActionToken": "BLACKBOARD_WAIT_PROGRAM_WORKERS",
       "iteration": {
         "current": 91,
         "max": 100
@@ -103,7 +103,7 @@
           "status": "active",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "ready",
+          "activityStatus": "in_progress",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -135,7 +135,7 @@
           "agentId": "program_worker_1",
           "name": "プログラム-ワーカー1",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -149,7 +149,7 @@
           "agentId": "program_worker_2",
           "name": "プログラム-ワーカー2",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -163,7 +163,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -231,7 +231,7 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "ready",
+          "status": "in_progress",
           "attempt": 91,
           "completedAt": null,
           "timing": {
@@ -323,7 +323,92 @@
           "nextTask": "asset_creation"
         }
       ],
-      "parallelGroups": []
+      "parallelGroups": [
+        {
+          "groupId": "runtime_activation_i91_a91",
+          "revision": 1,
+          "parentTaskId": "program_build",
+          "parentTaskStatus": "in_progress",
+          "phase": "workers",
+          "coordinatorAgentId": "program_manager_agent",
+          "maxConcurrency": 3,
+          "timeoutMinutes": 30,
+          "status": "ready",
+          "startedAt": null,
+          "completedAt": null,
+          "durationMs": null,
+          "updatedAt": null,
+          "counts": {
+            "total": 3,
+            "terminal": 0,
+            "completed": 0,
+            "failed": 0,
+            "active": 0,
+            "dispatched": 0,
+            "ready": 3
+          },
+          "integration": {
+            "status": "waiting",
+            "dispatchedAt": null,
+            "runtimePhase": "generating",
+            "observerState": "ACTIVE",
+            "runtimeFresh": true
+          },
+          "workers": [
+            {
+              "workerId": "worker_1",
+              "label": "runtime header + predecessor test",
+              "agentId": "program_worker_1",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "ready",
+              "formalStatus": "ready",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_2",
+              "label": "runtime header + scheduler test",
+              "agentId": "program_worker_2",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "ready",
+              "formalStatus": "ready",
+              "runtimePhase": "stale",
+              "observerState": "IDLE",
+              "runtimeFresh": false,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            },
+            {
+              "workerId": "worker_3",
+              "label": "runtime header + authorization test",
+              "agentId": "program_worker_3",
+              "taskId": "worker_implementation",
+              "attempt": 1,
+              "status": "ready",
+              "formalStatus": "ready",
+              "runtimePhase": "idle",
+              "observerState": "IDLE",
+              "runtimeFresh": true,
+              "startedAt": null,
+              "completedAt": null,
+              "durationMs": null,
+              "running": false,
+              "timeoutAt": null
+            }
+          ]
+        }
+      ]
     }
   ]
 }
