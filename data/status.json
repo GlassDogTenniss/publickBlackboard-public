@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T04:18:43.518Z",
-  "sourceUpdatedAt": "2026-08-06T04:12:00.000Z",
+  "generatedAt": "2026-08-06T04:26:21.771Z",
+  "sourceUpdatedAt": "2026-08-06T04:24:06.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T04:12:00.000Z",
-      "currentTaskId": "program_validation",
-      "currentTaskLabel": "program validation",
-      "currentAgentId": "program_tester_agent",
-      "currentAgentName": "プログラムテスタ",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
+      "updatedAt": "2026-08-06T04:24:06.000Z",
+      "currentTaskId": "manager_review",
+      "currentTaskLabel": "manager review",
+      "currentAgentId": "manager_agent",
+      "currentAgentName": "全体マネージャ",
+      "nextActionToken": "BLACKBOARD_NEXT_MANAGER_REVIEW",
       "iteration": {
         "current": 90,
         "max": 100
       },
       "progress": {
-        "completed": 4,
+        "completed": 5,
         "total": 6,
-        "percentage": 67
+        "percentage": 83
       },
       "completion": {
         "done": false
@@ -37,22 +37,15 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "",
-          "status": "completed",
-          "activityTaskId": "manager_direction",
-          "activityTaskLabel": "manager direction",
-          "activityStatus": "completed",
+          "status": "ready",
+          "activityTaskId": "manager_review",
+          "activityTaskLabel": "manager review",
+          "activityStatus": "ready",
           "activityInstruction": "",
-          "completedAt": "2026-08-06T03:45:00.000Z",
+          "completedAt": null,
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:90:manager_direction:90",
-            "startedAt": "2026-08-06T03:44:39.380Z",
-            "finishedAt": "2026-08-06T03:45:00.000Z",
-            "durationMs": 20620,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
@@ -121,21 +114,21 @@
           "agentId": "program_tester_agent",
           "name": "プログラムテスタ",
           "role": "",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-06T04:24:06.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:90:program_validation:90",
             "startedAt": "2026-08-06T04:18:35.938Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T04:24:06.000Z",
+            "durationMs": 330062,
+            "running": false,
+            "completionStatus": "completed"
           }
         }
       ],
@@ -213,16 +206,16 @@
           "label": "program validation",
           "agentId": "program_tester_agent",
           "agentName": "プログラムテスタ",
-          "status": "ready",
+          "status": "completed",
           "attempt": 90,
-          "completedAt": null,
+          "completedAt": "2026-08-06T04:24:06.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:90:program_validation:90",
             "startedAt": "2026-08-06T04:18:35.938Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T04:24:06.000Z",
+            "durationMs": 330062,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -230,7 +223,7 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 90,
           "completedAt": null,
           "timing": null
@@ -274,6 +267,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 90,
+          "taskId": "program_validation",
+          "taskLabel": "program validation",
+          "agentId": "program_tester_agent",
+          "status": "completed",
+          "completedAt": "2026-08-06T04:24:06.000Z",
+          "verdict": "fail",
+          "nextTask": "manager_review"
+        },
         {
           "iteration": 90,
           "taskId": "program_build",
