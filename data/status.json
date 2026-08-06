@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T14:24:00.338Z",
-  "sourceUpdatedAt": "2026-08-06T13:50:04.000Z",
+  "generatedAt": "2026-08-06T14:41:52.054Z",
+  "sourceUpdatedAt": "2026-08-06T14:40:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T13:50:04.000Z",
-      "currentTaskId": "program_build",
-      "currentTaskLabel": "program build",
-      "currentAgentId": "program_manager_agent",
-      "currentAgentName": "program_manager_agent",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
+      "updatedAt": "2026-08-06T14:40:00.000Z",
+      "currentTaskId": "program_validation",
+      "currentTaskLabel": "program validation",
+      "currentAgentId": "program_tester_agent",
+      "currentAgentName": "program_tester_agent",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
       "iteration": {
         "current": 97,
         "max": 100
       },
       "progress": {
-        "completed": 3,
+        "completed": 4,
         "total": 6,
-        "percentage": 50
+        "percentage": 67
       },
       "completion": {
         "done": false
@@ -100,31 +100,31 @@
           "agentId": "program_manager_agent",
           "name": "program_manager_agent",
           "role": "",
-          "status": "ready",
+          "status": "completed",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-06T14:40:00.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:97:program_build:97",
             "startedAt": "2026-08-06T13:59:45.962Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T14:40:00.000Z",
+            "durationMs": 2414038,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "program_tester_agent",
           "name": "program_tester_agent",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -189,16 +189,16 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "program_manager_agent",
-          "status": "ready",
+          "status": "completed",
           "attempt": 97,
-          "completedAt": null,
+          "completedAt": "2026-08-06T14:40:00.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:97:program_build:97",
             "startedAt": "2026-08-06T13:59:45.962Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T14:40:00.000Z",
+            "durationMs": 2414038,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -206,7 +206,7 @@
           "label": "program validation",
           "agentId": "program_tester_agent",
           "agentName": "program_tester_agent",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 97,
           "completedAt": null,
           "timing": null
@@ -260,6 +260,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 97,
+          "taskId": "program_build",
+          "taskLabel": "program build",
+          "agentId": "program_manager_agent",
+          "status": "completed",
+          "completedAt": "2026-08-06T14:40:00.000Z",
+          "verdict": "",
+          "nextTask": "program_validation"
+        },
         {
           "iteration": 97,
           "taskId": "asset_creation",
