@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T05:28:43.708Z",
-  "sourceUpdatedAt": "2026-08-06T05:00:50.000Z",
+  "generatedAt": "2026-08-06T05:28:51.708Z",
+  "sourceUpdatedAt": "2026-08-06T05:21:20.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,12 +9,12 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T05:00:50.000Z",
-      "currentTaskId": "program_build",
-      "currentTaskLabel": "program build",
-      "currentAgentId": "program_manager_agent",
-      "currentAgentName": "プログラマ-マネージャ",
-      "nextActionToken": "BLACKBOARD_WAIT_PROGRAM_WORKERS",
+      "updatedAt": "2026-08-06T05:21:20.000Z",
+      "currentTaskId": "program_validation",
+      "currentTaskLabel": "program validation",
+      "currentAgentId": "program_tester_agent",
+      "currentAgentName": "プログラムテスタ",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
       "iteration": {
         "current": 91,
         "max": 100
@@ -100,31 +100,31 @@
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "in_progress",
+          "activityStatus": "failed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-06T05:21:20.000Z",
           "taskCount": 1,
           "completedCount": 0,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:91:program_build:91",
             "startedAt": "2026-08-06T05:00:58.216Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T05:21:20.000Z",
+            "durationMs": 1221784,
+            "running": false,
+            "completionStatus": "failed"
           }
         },
         {
           "agentId": "program_tester_agent",
           "name": "プログラムテスタ",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -135,7 +135,7 @@
           "agentId": "program_worker_1",
           "name": "プログラム-ワーカー1",
           "role": "",
-          "status": "ready",
+          "status": "error",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -149,7 +149,7 @@
           "agentId": "program_worker_2",
           "name": "プログラム-ワーカー2",
           "role": "",
-          "status": "ready",
+          "status": "error",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -163,7 +163,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "",
-          "status": "ready",
+          "status": "error",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -231,16 +231,16 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "in_progress",
+          "status": "failed",
           "attempt": 91,
-          "completedAt": null,
+          "completedAt": "2026-08-06T05:21:20.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:91:program_build:91",
             "startedAt": "2026-08-06T05:00:58.216Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T05:21:20.000Z",
+            "durationMs": 1221784,
+            "running": false,
+            "completionStatus": "failed"
           }
         },
         {
@@ -248,7 +248,7 @@
           "label": "program validation",
           "agentId": "program_tester_agent",
           "agentName": "プログラムテスタ",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 91,
           "completedAt": null,
           "timing": null
@@ -304,6 +304,16 @@
       "history": [
         {
           "iteration": 91,
+          "taskId": "program_build",
+          "taskLabel": "program build",
+          "agentId": "program_manager_agent",
+          "status": "failed",
+          "completedAt": "2026-08-06T05:21:20.000Z",
+          "verdict": "",
+          "nextTask": "program_validation"
+        },
+        {
+          "iteration": 91,
           "taskId": "asset_creation",
           "taskLabel": "asset creation",
           "agentId": "asset_agent",
@@ -323,92 +333,7 @@
           "nextTask": "asset_creation"
         }
       ],
-      "parallelGroups": [
-        {
-          "groupId": "runtime_activation_i91_a91",
-          "revision": 1,
-          "parentTaskId": "program_build",
-          "parentTaskStatus": "in_progress",
-          "phase": "workers",
-          "coordinatorAgentId": "program_manager_agent",
-          "maxConcurrency": 3,
-          "timeoutMinutes": 30,
-          "status": "integration_ready",
-          "startedAt": "2026-08-06T05:10:25.724Z",
-          "completedAt": null,
-          "durationMs": null,
-          "updatedAt": "2026-08-06T05:28:20.767Z",
-          "counts": {
-            "total": 3,
-            "terminal": 3,
-            "completed": 0,
-            "failed": 3,
-            "active": 0,
-            "dispatched": 0,
-            "ready": 0
-          },
-          "integration": {
-            "status": "response_started",
-            "dispatchedAt": null,
-            "runtimePhase": "generating",
-            "observerState": "ACTIVE",
-            "runtimeFresh": true
-          },
-          "workers": [
-            {
-              "workerId": "worker_1",
-              "label": "runtime header + predecessor test",
-              "agentId": "program_worker_1",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "failed",
-              "formalStatus": "failed",
-              "runtimePhase": "idle",
-              "observerState": "IDLE",
-              "runtimeFresh": true,
-              "startedAt": "2026-08-06T05:10:25.724Z",
-              "completedAt": "2026-08-06T05:24:00.000Z",
-              "durationMs": 814276,
-              "running": false,
-              "timeoutAt": null
-            },
-            {
-              "workerId": "worker_2",
-              "label": "runtime header + scheduler test",
-              "agentId": "program_worker_2",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "failed",
-              "formalStatus": "failed",
-              "runtimePhase": "stale",
-              "observerState": "IDLE",
-              "runtimeFresh": false,
-              "startedAt": null,
-              "completedAt": "2026-08-06T05:10:59.110Z",
-              "durationMs": null,
-              "running": false,
-              "timeoutAt": null
-            },
-            {
-              "workerId": "worker_3",
-              "label": "runtime header + authorization test",
-              "agentId": "program_worker_3",
-              "taskId": "worker_implementation",
-              "attempt": 1,
-              "status": "failed",
-              "formalStatus": "failed",
-              "runtimePhase": "stale",
-              "observerState": "IDLE",
-              "runtimeFresh": false,
-              "startedAt": null,
-              "completedAt": "2026-08-06T05:10:26.722Z",
-              "durationMs": null,
-              "running": false,
-              "timeoutAt": null
-            }
-          ]
-        }
-      ]
+      "parallelGroups": []
     }
   ]
 }
