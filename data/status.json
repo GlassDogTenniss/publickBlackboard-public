@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T02:43:59.908Z",
-  "sourceUpdatedAt": "2026-08-06T02:20:51.000Z",
+  "generatedAt": "2026-08-06T02:44:52.183Z",
+  "sourceUpdatedAt": "2026-08-06T02:34:21.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,12 +9,12 @@
       "theme": "旧制作物を参照元に、企画、要件、アセット、3 worker並列実装、統合、独立テスト、商品判定を反復する",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T02:20:51.000Z",
-      "currentTaskId": "asset_creation",
-      "currentTaskLabel": "asset creation",
-      "currentAgentId": "asset_agent",
-      "currentAgentName": "アセット",
-      "nextActionToken": "BLACKBOARD_NEXT_ASSET_CREATION",
+      "updatedAt": "2026-08-06T02:34:21.000Z",
+      "currentTaskId": "program_build",
+      "currentTaskLabel": "program build",
+      "currentAgentId": "program_manager_agent",
+      "currentAgentName": "プログラマ-マネージャ",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
       "iteration": {
         "current": 89,
         "max": 100
@@ -44,7 +44,7 @@
           "activityInstruction": "",
           "completedAt": "2026-08-06T02:13:00.000Z",
           "taskCount": 2,
-          "completedCount": 2,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:89:manager_direction:89",
             "startedAt": "2026-08-06T02:09:34.692Z",
@@ -79,31 +79,31 @@
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-06T02:34:21.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:89:asset_creation:89",
             "startedAt": "2026-08-06T02:34:37.841Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T02:34:37.841Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -207,16 +207,16 @@
           "label": "asset creation",
           "agentId": "asset_agent",
           "agentName": "アセット",
-          "status": "ready",
+          "status": "completed",
           "attempt": 89,
-          "completedAt": null,
+          "completedAt": "2026-08-06T02:34:21.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:89:asset_creation:89",
             "startedAt": "2026-08-06T02:34:37.841Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T02:34:37.841Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -224,7 +224,7 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 89,
           "completedAt": null,
           "timing": null
@@ -244,9 +244,9 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "completed",
-          "attempt": 88,
-          "completedAt": "2026-08-06T02:03:00.000Z",
+          "status": "waiting",
+          "attempt": 89,
+          "completedAt": null,
           "timing": null
         }
       ],
@@ -295,6 +295,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 89,
+          "taskId": "asset_creation",
+          "taskLabel": "asset creation",
+          "agentId": "asset_agent",
+          "status": "completed",
+          "completedAt": "2026-08-06T02:34:21.000Z",
+          "verdict": "",
+          "nextTask": "program_build"
+        },
         {
           "iteration": 89,
           "taskId": "requirements_definition",
