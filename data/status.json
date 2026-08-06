@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T06:13:00.378Z",
-  "sourceUpdatedAt": "2026-08-06T05:57:21.000Z",
+  "generatedAt": "2026-08-06T06:13:22.353Z",
+  "sourceUpdatedAt": "2026-08-06T06:07:52.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,12 +9,12 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-06T05:57:21.000Z",
-      "currentTaskId": "asset_creation",
-      "currentTaskLabel": "asset creation",
-      "currentAgentId": "asset_agent",
-      "currentAgentName": "アセット",
-      "nextActionToken": "BLACKBOARD_NEXT_ASSET_CREATION",
+      "updatedAt": "2026-08-06T06:07:52.000Z",
+      "currentTaskId": "program_build",
+      "currentTaskLabel": "program build",
+      "currentAgentId": "program_manager_agent",
+      "currentAgentName": "プログラマ-マネージャ",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
       "iteration": {
         "current": 92,
         "max": 100
@@ -44,7 +44,7 @@
           "activityInstruction": "",
           "completedAt": "2026-08-06T05:50:00.000Z",
           "taskCount": 2,
-          "completedCount": 2,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:92:manager_direction:92",
             "startedAt": "2026-08-06T05:48:13.714Z",
@@ -79,31 +79,31 @@
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-06T06:07:52.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:92:asset_creation:92",
             "startedAt": "2026-08-06T06:08:11.821Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T06:08:11.821Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -165,16 +165,16 @@
           "label": "asset creation",
           "agentId": "asset_agent",
           "agentName": "アセット",
-          "status": "ready",
+          "status": "completed",
           "attempt": 92,
-          "completedAt": null,
+          "completedAt": "2026-08-06T06:07:52.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:92:asset_creation:92",
             "startedAt": "2026-08-06T06:08:11.821Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-06T06:08:11.821Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -182,7 +182,7 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "プログラマ-マネージャ",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 92,
           "completedAt": null,
           "timing": null
@@ -202,9 +202,9 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "全体マネージャ",
-          "status": "completed",
-          "attempt": 91,
-          "completedAt": "2026-08-06T05:41:00.000Z",
+          "status": "waiting",
+          "attempt": 92,
+          "completedAt": null,
           "timing": null
         }
       ],
@@ -248,6 +248,16 @@
       "history": [
         {
           "iteration": 92,
+          "taskId": "asset_creation",
+          "taskLabel": "asset creation",
+          "agentId": "asset_agent",
+          "status": "completed",
+          "completedAt": "2026-08-06T06:07:52.000Z",
+          "verdict": "",
+          "nextTask": "program_build"
+        },
+        {
+          "iteration": 92,
           "taskId": "requirements_definition",
           "taskLabel": "requirements definition",
           "agentId": "requirements_agent",
@@ -255,16 +265,6 @@
           "completedAt": "2026-08-06T05:57:21.000Z",
           "verdict": "",
           "nextTask": "asset_creation"
-        },
-        {
-          "iteration": 92,
-          "taskId": "manager_direction",
-          "taskLabel": "manager direction",
-          "agentId": "manager_agent",
-          "status": "completed",
-          "completedAt": "2026-08-06T05:50:00.000Z",
-          "verdict": "",
-          "nextTask": "requirements_definition"
         }
       ],
       "parallelGroups": []
