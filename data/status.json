@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T15:45:54.205Z",
+  "generatedAt": "2026-08-06T15:48:41.184Z",
   "sourceUpdatedAt": "2026-08-06T15:45:00.000Z",
   "runs": [
     {
@@ -121,7 +121,7 @@
           "agentId": "program_tester_agent",
           "name": "program_tester_agent",
           "role": "",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
           "activityStatus": "ready",
