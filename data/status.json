@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-06T00:26:25.260Z",
+  "generatedAt": "2026-08-06T00:26:27.786Z",
   "sourceUpdatedAt": "2026-08-05T17:23:50.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "全体マネージャ",
           "role": "欲しいゲームの企画と商品像を定義し、成果がその水準に達したか判定する",
-          "status": "waiting",
+          "status": "completed",
           "activityTaskId": "manager_direction",
           "activityTaskLabel": "manager direction",
           "activityStatus": "completed",
@@ -45,7 +45,14 @@
           "completedAt": "2026-08-05T16:23:00.000Z",
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:manager_direction:88",
+            "startedAt": "2026-08-05T16:22:33.816Z",
+            "finishedAt": "2026-08-05T16:23:00.000Z",
+            "durationMs": 26184,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "requirements_agent",
@@ -59,13 +66,20 @@
           "completedAt": "2026-08-05T16:27:21.000Z",
           "taskCount": 1,
           "completedCount": 1,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:requirements_definition:89",
+            "startedAt": "2026-08-05T16:27:36.967Z",
+            "finishedAt": "2026-08-05T16:27:36.967Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "agentId": "asset_agent",
           "name": "アセット",
           "role": "画像、音楽、効果音、文章、データなどのゲーム素材を制作する",
-          "status": "error",
+          "status": "completed",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
           "activityStatus": "failed",
@@ -73,13 +87,20 @@
           "completedAt": "2026-08-05T16:43:00.000Z",
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:asset_creation:88",
+            "startedAt": "2026-08-05T16:43:08.831Z",
+            "finishedAt": "2026-08-05T16:43:08.831Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "failed"
+          }
         },
         {
           "agentId": "program_manager_agent",
           "name": "プログラマ-マネージャ",
           "role": "実装を3 workerへ分解し、全成果を統合してcandidateを固定する",
-          "status": "error",
+          "status": "completed",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "failed",
@@ -87,7 +108,14 @@
           "completedAt": "2026-08-05T17:23:50.000Z",
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:program_build:88",
+            "startedAt": "2026-08-05T16:53:29.250Z",
+            "finishedAt": "2026-08-05T17:23:50.000Z",
+            "durationMs": 1820750,
+            "running": false,
+            "completionStatus": "failed"
+          }
         },
         {
           "agentId": "program_tester_agent",
@@ -107,7 +135,7 @@
           "agentId": "program_worker_1",
           "name": "プログラム-ワーカー1",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "completed",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -121,7 +149,7 @@
           "agentId": "program_worker_2",
           "name": "プログラム-ワーカー2",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "completed",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -135,7 +163,7 @@
           "agentId": "program_worker_3",
           "name": "プログラム-ワーカー3",
           "role": "program managerから割り当てられた独立範囲だけを実装する",
-          "status": "waiting",
+          "status": "completed",
           "activityTaskId": "",
           "activityTaskLabel": "",
           "activityStatus": "",
@@ -155,7 +183,14 @@
           "status": "completed",
           "attempt": 88,
           "completedAt": "2026-08-05T16:23:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:manager_direction:88",
+            "startedAt": "2026-08-05T16:22:33.816Z",
+            "finishedAt": "2026-08-05T16:23:00.000Z",
+            "durationMs": 26184,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "requirements_definition",
@@ -165,7 +200,14 @@
           "status": "completed",
           "attempt": 89,
           "completedAt": "2026-08-05T16:27:21.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:requirements_definition:89",
+            "startedAt": "2026-08-05T16:27:36.967Z",
+            "finishedAt": "2026-08-05T16:27:36.967Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
+          }
         },
         {
           "id": "asset_creation",
@@ -175,7 +217,14 @@
           "status": "failed",
           "attempt": 88,
           "completedAt": "2026-08-05T16:43:00.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:asset_creation:88",
+            "startedAt": "2026-08-05T16:43:08.831Z",
+            "finishedAt": "2026-08-05T16:43:08.831Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "failed"
+          }
         },
         {
           "id": "program_build",
@@ -185,7 +234,14 @@
           "status": "failed",
           "attempt": 88,
           "completedAt": "2026-08-05T17:23:50.000Z",
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:88:program_build:88",
+            "startedAt": "2026-08-05T16:53:29.250Z",
+            "finishedAt": "2026-08-05T17:23:50.000Z",
+            "durationMs": 1820750,
+            "running": false,
+            "completionStatus": "failed"
+          }
         },
         {
           "id": "program_validation",
@@ -255,16 +311,6 @@
       "history": [
         {
           "iteration": 88,
-          "taskId": "program_validation",
-          "taskLabel": "program validation",
-          "agentId": "program_tester_agent",
-          "status": "",
-          "completedAt": null,
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 88,
           "taskId": "program_build",
           "taskLabel": "program build",
           "agentId": "program_manager_agent",
@@ -280,16 +326,6 @@
           "agentId": "program_manager_agent",
           "status": "completed",
           "completedAt": "2026-08-05T17:23:50.000Z",
-          "verdict": "",
-          "nextTask": ""
-        },
-        {
-          "iteration": 88,
-          "taskId": "program_build",
-          "taskLabel": "program build",
-          "agentId": "program_manager_agent",
-          "status": "",
-          "completedAt": null,
           "verdict": "",
           "nextTask": ""
         },
