@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-07T12:34:57.581Z",
+  "generatedAt": "2026-08-07T14:57:21.703Z",
   "sourceUpdatedAt": "2026-08-06T15:47:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "manager_agent",
           "role": "",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
           "activityStatus": "ready",
@@ -281,6 +281,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 98,
+          "taskId": "manager_review",
+          "taskLabel": "manager review",
+          "agentId": "manager_agent",
+          "status": "",
+          "completedAt": null,
+          "verdict": "",
+          "nextTask": ""
+        },
         {
           "iteration": 98,
           "taskId": "program_validation",
