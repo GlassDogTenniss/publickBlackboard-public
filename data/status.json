@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-08T19:00:21.791Z",
+  "generatedAt": "2026-08-08T19:00:41.222Z",
   "sourceUpdatedAt": "2026-08-08T18:51:04.000Z",
   "runs": [
     {
@@ -129,7 +129,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:101:program_validation:101",
+            "startedAt": "2026-08-08T19:00:39.576Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         }
       ],
       "tasks": [
@@ -209,7 +216,14 @@
           "status": "ready",
           "attempt": 101,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:101:program_validation:101",
+            "startedAt": "2026-08-08T19:00:39.576Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "manager_review",
