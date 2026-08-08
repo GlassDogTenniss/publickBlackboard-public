@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-08T19:58:32.396Z",
+  "generatedAt": "2026-08-08T19:59:01.896Z",
   "sourceUpdatedAt": "2026-08-08T19:49:00.000Z",
   "runs": [
     {
@@ -37,7 +37,7 @@
           "agentId": "manager_agent",
           "name": "manager_agent",
           "role": "",
-          "status": "ready",
+          "status": "active",
           "activityTaskId": "manager_review",
           "activityTaskLabel": "manager review",
           "activityStatus": "ready",
