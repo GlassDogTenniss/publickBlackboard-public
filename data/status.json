@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-08T20:08:03.222Z",
+  "generatedAt": "2026-08-08T20:09:33.998Z",
   "sourceUpdatedAt": "2026-08-08T19:59:51.000Z",
   "runs": [
     {
@@ -58,7 +58,7 @@
           "agentId": "requirements_agent",
           "name": "requirements_agent",
           "role": "",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "requirements_definition",
           "activityTaskLabel": "requirements definition",
           "activityStatus": "ready",
