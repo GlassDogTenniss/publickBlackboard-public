@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-08T16:00:24.621Z",
-  "sourceUpdatedAt": "2026-08-08T03:56:32.000Z",
+  "generatedAt": "2026-08-08T18:29:52.992Z",
+  "sourceUpdatedAt": "2026-08-08T18:23:00.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-08T03:56:32.000Z",
-      "currentTaskId": "program_validation",
-      "currentTaskLabel": "program validation",
-      "currentAgentId": "program_tester_agent",
-      "currentAgentName": "program_tester_agent",
-      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_VALIDATION",
+      "updatedAt": "2026-08-08T18:23:00.000Z",
+      "currentTaskId": "manager_review",
+      "currentTaskLabel": "manager review",
+      "currentAgentId": "manager_agent",
+      "currentAgentName": "manager_agent",
+      "nextActionToken": "BLACKBOARD_NEXT_MANAGER_REVIEW",
       "iteration": {
         "current": 100,
         "max": 100
       },
       "progress": {
-        "completed": 4,
+        "completed": 5,
         "total": 6,
-        "percentage": 67
+        "percentage": 83
       },
       "completion": {
         "done": false
@@ -37,22 +37,15 @@
           "agentId": "manager_agent",
           "name": "manager_agent",
           "role": "",
-          "status": "waiting",
-          "activityTaskId": "manager_direction",
-          "activityTaskLabel": "manager direction",
-          "activityStatus": "completed",
+          "status": "ready",
+          "activityTaskId": "manager_review",
+          "activityTaskLabel": "manager review",
+          "activityStatus": "ready",
           "activityInstruction": "",
-          "completedAt": "2026-08-08T03:25:20.000Z",
+          "completedAt": null,
           "taskCount": 2,
           "completedCount": 1,
-          "activityTiming": {
-            "key": "run_20260716T203853JST_legacy_jrpg_parallel:100:manager_direction:100",
-            "startedAt": "2026-08-08T03:25:30.600Z",
-            "finishedAt": "2026-08-08T03:25:30.600Z",
-            "durationMs": 0,
-            "running": false,
-            "completionStatus": "completed"
-          }
+          "activityTiming": null
         },
         {
           "agentId": "requirements_agent",
@@ -121,21 +114,21 @@
           "agentId": "program_tester_agent",
           "name": "program_tester_agent",
           "role": "",
-          "status": "ready",
+          "status": "completed",
           "activityTaskId": "program_validation",
           "activityTaskLabel": "program validation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-08T18:23:00.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:100:program_validation:100",
             "startedAt": "2026-08-08T03:58:42.371Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-08T18:23:00.000Z",
+            "durationMs": 51857629,
+            "running": false,
+            "completionStatus": "completed"
           }
         }
       ],
@@ -213,16 +206,16 @@
           "label": "program validation",
           "agentId": "program_tester_agent",
           "agentName": "program_tester_agent",
-          "status": "ready",
+          "status": "completed",
           "attempt": 100,
-          "completedAt": null,
+          "completedAt": "2026-08-08T18:23:00.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:100:program_validation:100",
             "startedAt": "2026-08-08T03:58:42.371Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-08T18:23:00.000Z",
+            "durationMs": 51857629,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -230,7 +223,7 @@
           "label": "manager review",
           "agentId": "manager_agent",
           "agentName": "manager_agent",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 100,
           "completedAt": null,
           "timing": null
@@ -274,6 +267,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 100,
+          "taskId": "program_validation",
+          "taskLabel": "program validation",
+          "agentId": "program_tester_agent",
+          "status": "completed",
+          "completedAt": "2026-08-08T18:23:00.000Z",
+          "verdict": "",
+          "nextTask": "manager_review"
+        },
         {
           "iteration": 100,
           "taskId": "program_build",
