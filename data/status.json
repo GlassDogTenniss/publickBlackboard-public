@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-08T20:20:01.753Z",
+  "generatedAt": "2026-08-08T20:21:32.295Z",
   "sourceUpdatedAt": "2026-08-08T20:09:57.000Z",
   "runs": [
     {
@@ -100,7 +100,7 @@
           "agentId": "program_manager_agent",
           "name": "program_manager_agent",
           "role": "",
-          "status": "active",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
           "activityStatus": "ready",
