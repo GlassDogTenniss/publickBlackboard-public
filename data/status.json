@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-08T19:32:22.522Z",
+  "generatedAt": "2026-08-08T19:32:45.907Z",
   "sourceUpdatedAt": "2026-08-08T19:31:00.000Z",
   "runs": [
     {
@@ -87,7 +87,14 @@
           "completedAt": null,
           "taskCount": 1,
           "completedCount": 0,
-          "activityTiming": null
+          "activityTiming": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:102:asset_creation:102",
+            "startedAt": "2026-08-08T19:32:44.534Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "agentId": "program_manager_agent",
@@ -161,7 +168,14 @@
           "status": "ready",
           "attempt": 102,
           "completedAt": null,
-          "timing": null
+          "timing": {
+            "key": "run_20260716T203853JST_legacy_jrpg_parallel:102:asset_creation:102",
+            "startedAt": "2026-08-08T19:32:44.534Z",
+            "finishedAt": null,
+            "durationMs": null,
+            "running": true,
+            "completionStatus": ""
+          }
         },
         {
           "id": "program_build",
