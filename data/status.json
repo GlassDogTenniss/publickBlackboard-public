@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.3.0",
-  "generatedAt": "2026-08-08T18:45:58.736Z",
-  "sourceUpdatedAt": "2026-08-08T18:45:00.000Z",
+  "generatedAt": "2026-08-08T18:48:22.777Z",
+  "sourceUpdatedAt": "2026-08-08T18:45:23.000Z",
   "runs": [
     {
       "id": "run_20260716T203853JST_legacy_jrpg_parallel",
@@ -9,20 +9,20 @@
       "theme": "",
       "status": "in_progress",
       "createdAt": null,
-      "updatedAt": "2026-08-08T18:45:00.000Z",
-      "currentTaskId": "asset_creation",
-      "currentTaskLabel": "asset creation",
-      "currentAgentId": "asset_agent",
-      "currentAgentName": "asset_agent",
-      "nextActionToken": "BLACKBOARD_NEXT_ASSET_CREATION",
+      "updatedAt": "2026-08-08T18:45:23.000Z",
+      "currentTaskId": "program_build",
+      "currentTaskLabel": "program build",
+      "currentAgentId": "program_manager_agent",
+      "currentAgentName": "program_manager_agent",
+      "nextActionToken": "BLACKBOARD_NEXT_PROGRAM_BUILD",
       "iteration": {
         "current": 101,
         "max": 101
       },
       "progress": {
-        "completed": 2,
+        "completed": 3,
         "total": 6,
-        "percentage": 33
+        "percentage": 50
       },
       "completion": {
         "done": false
@@ -79,31 +79,31 @@
           "agentId": "asset_agent",
           "name": "asset_agent",
           "role": "",
-          "status": "active",
+          "status": "completed",
           "activityTaskId": "asset_creation",
           "activityTaskLabel": "asset creation",
-          "activityStatus": "ready",
+          "activityStatus": "completed",
           "activityInstruction": "",
-          "completedAt": null,
+          "completedAt": "2026-08-08T18:45:23.000Z",
           "taskCount": 1,
-          "completedCount": 0,
+          "completedCount": 1,
           "activityTiming": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:101:asset_creation:101",
             "startedAt": "2026-08-08T18:45:44.956Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-08T18:45:44.956Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
           "agentId": "program_manager_agent",
           "name": "program_manager_agent",
           "role": "",
-          "status": "waiting",
+          "status": "ready",
           "activityTaskId": "program_build",
           "activityTaskLabel": "program build",
-          "activityStatus": "waiting",
+          "activityStatus": "ready",
           "activityInstruction": "",
           "completedAt": null,
           "taskCount": 1,
@@ -165,16 +165,16 @@
           "label": "asset creation",
           "agentId": "asset_agent",
           "agentName": "asset_agent",
-          "status": "ready",
+          "status": "completed",
           "attempt": 101,
-          "completedAt": null,
+          "completedAt": "2026-08-08T18:45:23.000Z",
           "timing": {
             "key": "run_20260716T203853JST_legacy_jrpg_parallel:101:asset_creation:101",
             "startedAt": "2026-08-08T18:45:44.956Z",
-            "finishedAt": null,
-            "durationMs": null,
-            "running": true,
-            "completionStatus": ""
+            "finishedAt": "2026-08-08T18:45:44.956Z",
+            "durationMs": 0,
+            "running": false,
+            "completionStatus": "completed"
           }
         },
         {
@@ -182,7 +182,7 @@
           "label": "program build",
           "agentId": "program_manager_agent",
           "agentName": "program_manager_agent",
-          "status": "waiting",
+          "status": "ready",
           "attempt": 101,
           "completedAt": null,
           "timing": null
@@ -246,6 +246,16 @@
         }
       ],
       "history": [
+        {
+          "iteration": 101,
+          "taskId": "asset_creation",
+          "taskLabel": "asset creation",
+          "agentId": "asset_agent",
+          "status": "completed",
+          "completedAt": "2026-08-08T18:45:23.000Z",
+          "verdict": "",
+          "nextTask": "program_build"
+        },
         {
           "iteration": 101,
           "taskId": "requirements_definition",
